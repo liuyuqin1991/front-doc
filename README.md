@@ -1,6 +1,6 @@
 # front-standard
 
-A static site base on [dumi](https://d.umijs.org).
+前端规范标准
 
 ## Development
 
