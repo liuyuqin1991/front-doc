@@ -71,14 +71,8 @@ function getData() {}
 ### 3. vue组件
 
 ```
-// 在单文件组件和字符串模板中 PascalCase
+// 在Dom模版，单文件组件，字符串模板中都采用 PascalCase
 <MyComponent/>
-  
-// 在 DOM 模板中 kebab-case
-<my-component></my-component>
-
-// 在所有地方 kebab-case
-<my-component></my-component>
 ```
 
 ## 约定建议
@@ -86,7 +80,7 @@ function getData() {}
 ### 1. 可见性状态（组件显示场景）
 
 ```
-约定： is+动词（现在进行时）/形容词
+约定： is+动词（现在进行时）/形容词，类型必须是boolean
 
 isShow：是否显示
 isVisible：是否可见
@@ -100,7 +94,7 @@ isListening：正在监听中
 ### 2. 属性状态（实体属性）
 
 ```
-约定： 形容词
+约定： 形容词，类型必须是Boolean
 
 disabled：是否禁用
 editable：是否可编辑
@@ -117,7 +111,7 @@ draggable：是否可拖拽
 ### 3. 配置项（功能开启）
 
 ```
-约定： allow、with、enable、no等动词为前缀的camelCase
+约定： allow、with、enable、no等动词为前缀的camelCase，类型必须是Boolean
 
 //是否带选项卡
 withTab
@@ -140,7 +134,7 @@ checkJs
 ### 4. 事件处理
 
 ```
-约定： 1. 原生事件 on为前缀的camelCase; 2. 自定义事件 handle为前缀的camelCase
+约定： 1. 原生事件 on为前缀的camelCase; 2. 自定义事件 handle为前缀的camelCase，类型必须是Function
 
 //提交表单
 onSubmit
@@ -237,7 +231,7 @@ backHome
 ### 7. 数据处理
 
 ```
-约定： 1. 获取数据用get或者query为前缀的camelCase 2. 格式化数据有format、convert、toggle、inverse、pharse、flat为前缀的camelCase
+约定： 1. 获取数据用get或者query为前缀的camelCase 2. 格式化数据有format、convert、、inverse、parse、sort等为前缀的camelCase
 
 //根据ID获取数据元素
 getItemById

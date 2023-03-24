@@ -16,7 +16,7 @@ order: 1
 
 启用Vetur插件的format on save配置，能够在保存时自动进行格式化规范，可规范的内容有：1. 缩进；2. 换行；3. 空格；4. 括号
 
-1. 添加配置
+1. 添加配置，并设置vetur的所有格式风格为prettier
 ```
   // vscode setting.json加入
   "[vue]": {
@@ -36,14 +36,14 @@ order: 1
   }
 ```
 
-> 如format失效，请检查配置，关闭vscode自带的format或其他插件如format on save</i>
-
-2. 设置vetur的所有格式风格为prettier
+:::warning{title=警告}
+如format失效，请检查配置，关闭vscode自带的format或其他插件如format on save
+:::
 
 #### 校验配置
 
-1. 打开 <b>Eslint</b> 校验
-2. 打开 <b>Code Spell Checker</b> 单词拼写校验
+1. 打开 <b>Eslint插件</b> 校验
+2. 打开 <b>Code Spell Checker插件</b> 单词拼写校验
 
 ## 人工规范
 1. [类型](#一类型)
