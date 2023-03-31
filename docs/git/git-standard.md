@@ -22,13 +22,15 @@ GitFlow 版本控制规范从整体上将代码分为两大分支结构，分别
 
 ### 日常开发流程
 
-1. 基于 Master 稳定分支先打标签 tag，如 V 1.0
-2. 从 tag：1.1 开始开发，checkout dev 分支，merge master 分支
+![gitflow](../assets/gitflow.webp)
+
+1. 基于 Master 稳定分支先打标签 tag，如 tag：V1.2
+2. 从 tag：V1.2 开始开发，在 dev 分支 merge master 分支
 3. 程序员 A，B，C 开始在 dev 分支开发
-4. tag1.1 功能开发完毕并自测通过后，测试介入开始测试
+4. tagV1.2 功能开发完毕并自测通过后，测试介入开始测试
 5. 产生的问题依旧在 dev 分支上修复
-6. 在此时间段上 master 运行分支上出现问题，checkout 一个 hotfix 分支修复，修复完成后 cherry-pick 到 dev 分支上
-7. tag1.1 功能全部测试通过后，merge 到 master 分支
+6. 在此时间段上 master 运行分支上出现问题，checkout 一个 hotfix 分支修复，修复完成后 cherry-pick 到 dev 分支上测试，再 merge 到 master 分支上，如果需要产生版本，可打 tag：V1.2.1
+7. 待 dev 分支的 tagV1.2 功能全部测试通过后，merge 到 master 分支
 
 ## commit 规范
 
@@ -36,7 +38,7 @@ GitFlow 版本控制规范从整体上将代码分为两大分支结构，分别
 commit 规范必须严格执行！
 :::
 
-> commit 格式：`<type>: <page>-<module>-<subject>(<ID>)`
+> commit 格式：`<type>: <page>-<module>-<subject>(<id>)`
 
 ```
 // 例如
@@ -70,9 +72,9 @@ fix: 修改任务管理-任务作业段编辑列表header文案（3288）
 
 主旨，此次代码提交所涉及到的模块，简明扼要的阐述下本次提交的内容，尽量控制在 50 字以内
 
-### 5. ID
+### 5. id
 
-禅道 ID，对应禅道的需求 ID 或者 bugID，不强制填写，但 bug 尽量注明
+禅道 id，对应禅道的需求 id 或者 bug id，需求 id 不强制填写，但 bug id 尽量注明
 
 ## 实际项目
 

@@ -37,5 +37,5 @@ order: 2
 1. vpn 地址：https://itsm.huaxincem.com/
 2. host：172.16.10.71 testzhsg.shantui.com
 3. 代码库：https://testzhsg.shantui.com/bitbucket/projects/Q/repos/huake/browse
-4. 测试服务器：http://192.168.1.248:9117'
+4. 测试服务器：http://192.168.1.248:9117
 5. 测试服务账号：shantui/Shantui123，csqyzh1/csqyzh123

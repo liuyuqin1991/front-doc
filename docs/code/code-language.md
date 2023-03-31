@@ -65,9 +65,10 @@ order: 1
 15. [命名规则](#十五命名规则)
 16. [存取器](#十六存取器)
 17. [事件](#十七事件)
-18. [标准库](#十八标准库)
-19. [性能](#十九性能)
-20. [资源](#二十资源)
+18. [异常](#十八异常)
+19. [标准库](#十九标准库)
+20. [性能](#二十性能)
+21. [资源](#二十一资源)
 
 ## 一、类型
 
@@ -1863,13 +1864,19 @@ const good = {
 
 **[⬆ back to top](#人工规范)**
 
-## 十八、标准库
+## 十八、异常
+
+对已知的异常处理逻辑需使用 try catch，并在 catch 中做异常处理，通常采用弹 Notification 或者 Message 告知用户
+
+**[⬆ back to top](#人工规范)**
+
+## 十九、标准库
 
 [标准库](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects)包含功能有问题但由于遗留原因保留下来的功能.
 
-<a name="standard-library--isnan"></a><a name="18.1"></a>
+<a name="standard-library--isnan"></a><a name="19.1"></a>
 
-- [18.1](#standard-library--isnan) 使用 `Number.isNaN` 代替全局 `isNaN`方法.
+- [19.1](#standard-library--isnan) 使用 `Number.isNaN` 代替全局 `isNaN`方法.
   eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
   > 原因: 全局的 `isNaN` 方法会将非数字转换为数字, 任何被转换为 NaN 的东西都会返回 true.
@@ -1885,9 +1892,9 @@ const good = {
   Number.isNaN(Number('1.2.3')); // true
   ```
 
-<a name="standard-library--isfinite"></a>
+<a name="standard-library--isfinite"></a><a name="19.2"></a>
 
-- [18.2](#standard-library--isfinite) 使用 `Number.isFinite` 代替全局 `isFinite`.
+- [19.2](#standard-library--isfinite) 使用 `Number.isFinite` 代替全局 `isFinite`.
   eslint: [`no-restricted-globals`](https://eslint.org/docs/rules/no-restricted-globals)
 
   > 原因: 全局 `isFinite` 会把非数字转换为数字, 任何被转换为有限大的数字都会返回 true.
@@ -1904,7 +1911,7 @@ const good = {
 
 **[⬆ back to top](#人工规范)**
 
-## 十九、性能
+## 二十、性能
 
 - [On Layout & Web Performance](http://www.kellegous.com/j/2013/01/26/layout-performance/)
 - [String vs Array Concat](http://jsperf.com/string-vs-array-concat/2)
@@ -1918,7 +1925,7 @@ const good = {
 
 **[⬆ back to top](#人工规范)**
 
-## 二十、资源
+## 二十一、资源
 
 **学习 ES6**
 
