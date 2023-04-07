@@ -1,5 +1,5 @@
 ---
-title: 武汉数字建造产业技术研究院有限公前端规范
+title: slash前端开源项目组
 hero:
   title: 前端文档库
   actions:
@@ -16,6 +16,6 @@ features:
     emoji: 🏠
     description: 统一公司前端业务组件库，为公司项目开发提供丰富的业务级组件，使用规范化的组件搭建公司项目，一致，反馈，效率，可控
   - title: 通用模块
-    emoji: 📌 
+    emoji: 📌
     description: 项目提炼出的通用模块，提高模块的可复用性
 ---
