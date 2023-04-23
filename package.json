@@ -2,16 +2,13 @@
   "name": "front-standard",
   "version": "0.0.1",
   "description": "frontend specifications and standards",
-  "scripts": {
-    "start": "npm run dev",
-    "dev": "dumi dev",
-    "build": "dumi build",
-    "prepare": "husky install && dumi setup"
-  },
-  "authors": [
-    "liuyuqin"
-  ],
   "license": "MIT",
+  "scripts": {
+    "build": "dumi build",
+    "dev": "dumi dev",
+    "prepare": "husky install && dumi setup",
+    "start": "npm run dev"
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -29,5 +26,11 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
-  }
+  },
+  " ": {
+    "gh-pages": "^5.0.0"
+  },
+  "authors": [
+    "liuyuqin"
+  ]
 }

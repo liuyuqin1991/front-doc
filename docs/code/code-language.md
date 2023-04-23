@@ -228,44 +228,44 @@ order: 1
 
 - [2.6](#objects--quoted-props) 只对非法标识符的属性使用引号. eslint: [`quote-props`](http://eslint.org/docs/rules/quote-props.html)
 
-> 原因：通常我们主观上认为更易读.有利于语法高亮，更容易被许多 JS 引擎优化.
+  > 原因：通常我们主观上认为更易读.有利于语法高亮，更容易被许多 JS 引擎优化.
 
-```javascript
-// bad
-const bad = {
-  foo: 3,
-  bar: 4,
-  'data-blah': 5,
-};
+  ```javascript
+  // bad
+  const bad = {
+    foo: 3,
+    bar: 4,
+    'data-blah': 5,
+  };
 
-// good
-const good = {
-  foo: 3,
-  bar: 4,
-  'data-blah': 5,
-};
-```
+  // good
+  const good = {
+    foo: 3,
+    bar: 4,
+    'data-blah': 5,
+  };
+  ```
 
 <a name="objects--rest-spread"></a>
 
 - [2.7](#objects--rest-spread) 优先使用对象展开运算符而不是对象浅拷贝[`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign). 使用对象剩余运算符来获得新的有具体被省略属性的对象.
 
-      ```javascript
-      // very bad
-      const original = { a: 1, b: 2 };
-      const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
-      delete copy.a; // so does this
+  ```javascript
+  // very bad
+  const original = { a: 1, b: 2 };
+  const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
+  delete copy.a; // so does this
 
-      // bad
-      const original = { a: 1, b: 2 };
-      const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
+  // bad
+  const original = { a: 1, b: 2 };
+  const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
 
-      // good
-      const original = { a: 1, b: 2 };
-      const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
+  // good
+  const original = { a: 1, b: 2 };
+  const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
 
-      const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
-      ```
+  const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
+  ```
 
   **[⬆ back to top](#人工规范)**
 
@@ -1110,6 +1110,7 @@ const good = {
 
 - [12.2](#comparison--if) 条件声明例如 `if` 会用 `ToBoolean` 这个抽象方法将表达式转成布尔值并遵循如下规则:
 
+  ```javascript
   - **Objects** 等于 **true**
   - **Undefined** 等于 **false**
   - **Null** 等于 **false**
@@ -1117,7 +1118,6 @@ const good = {
   - **Numbers** 在 **+0, -0, or NaN**的情况下等于**false**, 其他情况是 **true**
   - **Strings** 为`''`时等于 **false** , 否则是 **true**
 
-  ```javascript
   if ([0] && []) {
     // true
     // 数组(即使是空数组)也是对象，对象等于true

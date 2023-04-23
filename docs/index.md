@@ -1,5 +1,5 @@
 ---
-title: slash前端开源项目组
+title: 武汉数字建造产业技术研究院有限公司前端规范
 hero:
   title: 前端文档库
   actions:

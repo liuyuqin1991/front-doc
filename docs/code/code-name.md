@@ -8,20 +8,20 @@ order: 2
 
 # 命名规范
 
-基本命名准则：
+### 基本命名准则：
 
 1. 贴合业务
 2. 简洁、语义化，能够英文释义
 3. 始终保持一种命名方法。项目中可能多人协同开发，而命名方式有多种都是可行的，进行开发时应保持原来代码命名风格
 
-命名方式：
+### 命名方式：
 
 - PascalCase：帕斯卡命名方式，又称大驼峰命名方式(UpperCamelCase)，每个单词首字母大写。
 - camelCase：驼峰命名方式，又称小驼峰命名方式(lowerCamelCase)，第一个单词首字母小写，后面的每个单词首字母大写。
 - kebab-case 或 KEBAB-CASE：串式命名方式，又称破折号方式(dash-case)，每个单词全小写或全大写，多单词使用中划线隔开。
 - snake_case 或 SNAKE_CASE：蛇形命名方式，每个单词全小写或全大写，多单词使用下划线隔开。
 
-通用规则：
+### 通用规则：
 
 - 缩写只能是英文单词缩写，禁止中文拼音缩写，尽量不要使用缩写，会造成单词拼写插件误报
 - 禁止随意使用缩写
@@ -238,7 +238,7 @@ backHome
 ### 7. 数据处理
 
 ```
-约定： 1. 获取数据用get或者query为前缀的camelCase 2. 格式化数据有format、convert、、inverse、parse、sort等为前缀的camelCase
+约定： 1. 获取数据用get或者query为前缀的camelCase 2. 格式化数据有format、convert、inverse、parse、sort等为前缀的camelCase
 
 //根据ID获取数据元素
 getItemById
