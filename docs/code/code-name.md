@@ -1,5 +1,7 @@
 ---
-nav: 代码规范
+nav:
+  title: 代码规范
+  order: 1
 group:
   title: 基础
   order: 2

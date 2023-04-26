@@ -1,7 +1,7 @@
 ---
 nav:
-  title: GitFlow规范
-  order: 1
+  title: Git流程规范
+  order: 2
 group:
   order: 1
 ---
