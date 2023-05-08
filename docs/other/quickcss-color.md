@@ -6,7 +6,7 @@ nav:
   order: 4
 group:
   title: 设计
-  order: 1
+  order: 2
 ---
 
 # 颜色板
