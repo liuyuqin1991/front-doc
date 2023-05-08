@@ -92,11 +92,11 @@ group:
 
 ### 3.1 字体设计
 
-#### 1.1.1 字族
+#### 3.1.1 字族
 
 ![default_safe_font](../assets/default_safe_font.jpg)
 
-#### 1.1.2 字号
+#### 3.1.2 字号
 
 基础字号包含：
 
@@ -106,7 +106,7 @@ group:
 - <span style="font-size: 18px">标题: 18px large</span>
 - <span style="font-size: 20px">主标题: 20px Extra large</span>
 
-#### 1.1.3 字重
+#### 3.1.3 字重
 
 基础字重包含：
 
