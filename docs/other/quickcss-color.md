@@ -1,5 +1,5 @@
 ---
-title: '颜色板'
+title: 颜色板
 order: 3
 nav:
   title: 其他文档

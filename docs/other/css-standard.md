@@ -1,5 +1,5 @@
 ---
-title: 'CSS设计与规范'
+title: CSS设计与规范
 order: 1
 nav:
   title: 其他文档

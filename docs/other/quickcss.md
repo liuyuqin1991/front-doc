@@ -1,5 +1,5 @@
 ---
-title: 'Quickcss'
+title: Quickcss
 order: 2
 nav:
   title: 其他文档
