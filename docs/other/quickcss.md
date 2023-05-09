@@ -5,8 +5,8 @@ nav:
   title: 其他文档
   order: 4
 group:
-  title: 设计
-  order: 2
+  title: CSS
+  order: 1
 ---
 
 # quickcss
