@@ -18,10 +18,11 @@ order: 1
 
 启用 Vetur 插件的 format on save 配置，能够在保存时自动进行格式化规范，可规范的内容有：1. 缩进；2. 换行；3. 空格；4. 括号
 
-1. 添加配置，并设置 vetur 的所有格式风格为 prettier
+1. 添加配置，并设置 vetur 的除 html 外的所有格式风格为：prettier，html 格式为：prettyhtml
+2. 修改 setting.json
 
 ```
-  // vscode setting.json加入
+  // vscode setting.json 添加
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur",
     "editor.tabSize": 2,
@@ -35,7 +36,10 @@ order: 1
       "semi": false,
       // 末尾逗号
       "trailingComma": "none"
-    }
+    },
+    "prettyhtml": {
+			"printWidth": 160,
+		}
   }
 ```
 
