@@ -3,7 +3,7 @@ title: Quickcss
 order: 2
 nav:
   title: 其他文档
-  order: 4
+  order: 3
 group:
   title: CSS
   order: 1
@@ -142,7 +142,7 @@ import '@liuyuqin1991/quickcss/lib/main.css';
 
 ### 5. 颜色
 
-用于控制元素的文字颜色（color），背景颜色（background-color）和边框颜色（border-color）的功能类。详细的颜色色系，色值及颜色变量可查看项目中的[色系颜色板](./color.md)，特殊颜色除外。
+用于控制元素的文字颜色（color），背景颜色（background-color）和边框颜色（border-color）的功能类。详细的颜色色系，色值及颜色变量可查看项目中的[色系颜色板](./quickcss-color.md)，特殊颜色除外。
 
 #### 格式
 

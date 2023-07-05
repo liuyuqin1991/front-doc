@@ -1,12 +1,14 @@
 ---
 nav:
-  title: Git流程规范
-  order: 2
-group:
+  title: 规范
   order: 1
+group:
+  title: 版本控制
+  order: 4
+order: 1
 ---
 
-# GitFlow 规范
+# Git 规范
 
 ## 分支规范
 

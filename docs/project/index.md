@@ -1,7 +1,7 @@
 ---
 nav:
   title: 工程文档
-  order: 3
+  order: 2
 group:
   title: 介绍
   order: 1

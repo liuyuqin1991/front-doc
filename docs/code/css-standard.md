@@ -1,15 +1,14 @@
 ---
-title: CSS设计与规范
-order: 1
 nav:
-  title: 其他文档
-  order: 4
+  title: 规范
+  order: 1
 group:
   title: CSS
-  order: 1
+  order: 5
+order: 1
 ---
 
-# CSS 设计与规范
+# Css 设计与规范
 
 规范原则：制定 CSS 样式书写的全局规则，也为设计提供方向指导
 

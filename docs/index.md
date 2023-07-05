@@ -6,9 +6,9 @@ hero:
     - text: 立即上手
       link: /code
 features:
-  - title: 代码规范
+  - title: 规范
     emoji: ✏️
-    description: 统一团队的 JS vue语法风格、书写习惯、命名规范，减少程序出错的概率，其中也包含了 ES6+ 的语法规范和最佳实践
+    description: 统一团队的ES6+的vue语法风格、书写习惯、命名规范，减少程序出错的概率，也包含了git相关流程及规范
   - title: GitFlow规范
     emoji: ✏️
     description: 多人的协作必须有一个规范的工作流程，统一团队的GitFlow 规范，完善项目版本控制

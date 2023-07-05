@@ -1,6 +1,6 @@
 ---
 nav:
-  title: 代码规范
+  title: 规范
   order: 1
 group:
   title: 介绍
