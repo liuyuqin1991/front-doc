@@ -22,9 +22,7 @@ title: QueryForm
 
 ## 属性
 
-### QueryForm Attributes
-
-QueryForm 组件的属性
+### Attributes
 
 |    参数     | 说明                                          |  类型   | 是否必须 | 默认值 |
 | :---------: | :-------------------------------------------- | :-----: | :------: | :----: |
@@ -33,17 +31,13 @@ QueryForm 组件的属性
 | labelWidth  | label 宽度                                    | Number  |   可选   |  100   |
 | defaultShow | 是否默认展开                                  | Boolean |   可选   |  true  |
 
-### QueryForm Event
-
-QueryForm 组件的事件方法
+### Event
 
 | 事件  | 说明     |     回调参数     |
 | :---: | :------- | :--------------: |
 | query | 查询回调 | queryParams 对象 |
 
 ### Data Attributes
-
-Data 配置的属性
 
 |    参数     | 说明                            |  类型  |          是否必须          |
 | :---------: | :------------------------------ | :----: | :------------------------: |
@@ -70,9 +64,7 @@ data: {
 
 ```
 
-### Slot Attributes
-
-QueryForm 组件的插槽
+### Slot
 
 |  插槽  | 说明                                      |
 | :----: | :---------------------------------------- |
