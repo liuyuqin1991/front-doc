@@ -3,7 +3,7 @@ title: ES6升级
 order: 3
 nav:
   title: 其他文档
-  order: 3
+  order: 4
 group:
   title: 评审
   order: 3

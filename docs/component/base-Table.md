@@ -1,7 +1,7 @@
 ---
 nav:
   title: 组件
-  order: 4
+  order: 2
 group:
   title: 基础组件
   order: 1
@@ -43,25 +43,27 @@ title: Table
 |       事件       | 说明                                |         回调参数         |
 | :--------------: | :---------------------------------- | :----------------------: |
 |     refresh      | 刷新回调                            |            -             |
-|     dbclick      | 双击回调                            |           row            |
-|      select      | 当选择项发生变化时会触发该事件      |        selection         |
+|     dbclick      | 双击回调                            |       row: Object        |
+|      select      | 当选择项发生变化时会触发该事件      |     selection: Array     |
+|       sort       | 排序回调                            |     orderList: Array     |
 | paginationChange | 当点击分页按钮触发该事件            | {pageNum:xx,pageSize:xx} |
 |    自定义事件    | 列配置中 type 为 tag 时的自定义事件 |
 
 ### Columns Attributes
 
-|   参数   | 说明                                              |  类型  |         是否必须          |
-| :------: | :------------------------------------------------ | :----: | :-----------------------: |
-|   type   | 列类型                                            | String |            是             |
-|  label   | 列名                                              | String |            是             |
-|   key    | 列键值                                            | String |            是             |
-|  align   | 对齐方式                                          | String |            否             |
-|  width   | 列宽                                              | String |            否             |
-|   dict   | type 为 text 特有，字典数据，需要映射字典时使用   | Array  |            否             |
-|   map    | type 为 text 特有，map 数据，需要映射 map 时使用  | Object |            否             |
-| mapType  | type 为 tag 特有，map 数据，需要映射 map 时使用   | Object |  否，但 type 为 tag 必须  |
-| mapLabel | type 为 tag 特有，map 数据，需要映射 map 时使用   | Object |  否，但 type 为 tag 必须  |
-| mapSize  | type 为 image 特有，map 数据，需要映射 map 时使用 | Object | 否，但 type 为 image 必须 |
+|   参数   | 说明                                              |  类型   |         是否必须          |
+| :------: | :------------------------------------------------ | :-----: | :-----------------------: |
+|   type   | 列类型                                            | String  |            是             |
+|  label   | 列名                                              | String  |            是             |
+|   key    | 列键值                                            | String  |            是             |
+|  align   | 对齐方式                                          | String  |            否             |
+|  width   | 列宽                                              | String  |            否             |
+| sortable | 是否排序                                          | Boolean |            否             |
+|   dict   | type 为 text 特有，字典数据，需要映射字典时使用   |  Array  |            否             |
+|   map    | type 为 text 特有，map 数据，需要映射 map 时使用  | Object  |            否             |
+| mapType  | type 为 tag 特有，map 数据，需要映射 map 时使用   | Object  |  否，但 type 为 tag 必须  |
+| mapLabel | type 为 tag 特有，map 数据，需要映射 map 时使用   | Object  |  否，但 type 为 tag 必须  |
+| mapSize  | type 为 image 特有，map 数据，需要映射 map 时使用 | Object  | 否，但 type 为 image 必须 |
 
 注：
 

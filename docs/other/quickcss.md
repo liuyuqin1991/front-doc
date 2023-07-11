@@ -3,7 +3,7 @@ title: Quickcss
 order: 2
 nav:
   title: 其他文档
-  order: 3
+  order: 4
 group:
   title: CSS
   order: 1

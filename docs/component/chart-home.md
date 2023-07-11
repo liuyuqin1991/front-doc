@@ -1,7 +1,7 @@
 ---
 nav:
   title: 组件
-  order: 4
+  order: 2
 order: 1
 group:
   title: 图表组件

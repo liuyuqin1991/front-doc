@@ -1,7 +1,7 @@
 ---
 nav:
   title: 组件
-  order: 4
+  order: 2
 group:
   title: 基础组件
   order: 1

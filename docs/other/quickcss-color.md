@@ -3,7 +3,7 @@ title: 颜色板
 order: 3
 nav:
   title: 其他文档
-  order: 3
+  order: 4
 group:
   title: 设计
   order: 2
