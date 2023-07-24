@@ -99,7 +99,7 @@ order: 2
    字典数据，会根据值映射字典的 label 显示，如果 type=tag，还会根据字典设置里的回显样式和样式属性设置 tag 的颜色值，样式属性优先回显样式
 
 3. mapSize
-   大小图片 size 的 map 映射，type 为 image 时的必填项，key 为 size 和 small，value 为数据的大小图字段，例如：{ small: 'smallImageUrl', big: 'bigImageUrl' }
+   大小图片 size 的 map 映射，type 为 image 时的必填项，key 为 size 和 small，value 为数据的大小图字段，必须同时设置大小图的 url，如果相同，可以设置为同一个 url，例如：`{ small: 'smallImageUrl', big: 'bigImageUrl' }`
 
 4. click
    自定义点击事件 emit 名称，设置后，在 Table 组件属性中声明与该名称相同的事件
