@@ -28,6 +28,7 @@ order: 1
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
   },
+  "vetur.format.defaultFormatter.html": "prettyhtml",
   "vetur.format.defaultFormatterOptions": {
     "prettier": {
       // 使用单引号代替双引号

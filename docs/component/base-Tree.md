@@ -6,6 +6,7 @@ group:
   title: 基础组件
   order: 1
 title: Tree
+order: 3
 ---
 
 # Tree

@@ -414,6 +414,20 @@ title: 导航
   </div>
 </div>
 
+### 前端知识学习
+
+<div class="ul">
+  <div class="li">
+    <a href="https://muyiy.cn/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">木易杨前端进阶</div>
+      </div>
+      <div class="sub-title">木易杨前端进阶，高级前端进阶之路</div>
+    </a>
+  </div>
+</div>
+
 <style>
   .ul {
     display: flex;

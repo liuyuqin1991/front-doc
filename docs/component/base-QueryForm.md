@@ -6,6 +6,7 @@ group:
   title: 基础组件
   order: 1
 title: QueryForm
+order: 1
 ---
 
 # QueryForm
@@ -33,9 +34,9 @@ title: QueryForm
 
 ### Event
 
-| 事件  | 说明     |     回调参数     |
-| :---: | :------- | :--------------: |
-| query | 查询回调 | queryParams 对象 |
+| 事件  | 说明     |        回调参数        |
+| :---: | :------- | :--------------------: |
+| query | 查询回调 | {queryParams, isReset} |
 
 ### Data Attributes
 
@@ -46,6 +47,7 @@ title: QueryForm
 |     key     | 单个查询键值                    | String |             是             |
 | placeholder | 占位显示文案                    | String |             否             |
 |    data     | type 为 select 特有，数据集对象 | Object | 否，但 type 为 select 必须 |
+|    span     | 占据列数                        | Number |             否             |
 
 注：
 
@@ -63,6 +65,9 @@ data: {
 }
 
 ```
+
+3. span
+   占据列数，用于超长的查询项，默认占据 1 列，需小于 columns
 
 ### Slot
 

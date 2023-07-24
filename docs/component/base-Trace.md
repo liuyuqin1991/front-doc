@@ -6,6 +6,7 @@ group:
   title: 基础组件
   order: 1
 title: Trace
+order: 4
 ---
 
 # Trace
