@@ -40,14 +40,14 @@ order: 1
 
 ### Data Attributes
 
-|    参数     | 说明                            |  类型  |          是否必须          |
-| :---------: | :------------------------------ | :----: | :------------------------: |
-|    type     | 单个查询类型                    | String |             是             |
-|    name     | 单个查询名称                    | String |             是             |
-|     key     | 单个查询键值                    | String |             是             |
-| placeholder | 占位显示文案                    | String |             否             |
-|    data     | type 为 select 特有，数据集对象 | Object | 否，但 type 为 select 必须 |
-|    span     | 占据列数                        | Number |             否             |
+|    参数     | 说明                            |      类型      |          是否必须          |
+| :---------: | :------------------------------ | :------------: | :------------------------: |
+|    type     | 单个查询类型                    |     String     |             是             |
+|    name     | 单个查询名称                    |     String     |             是             |
+|     key     | 单个查询键值                    |     String     |             是             |
+| placeholder | 占位显示文案                    |     String     |             否             |
+|    data     | type 为 select 特有，数据集对象 | [Array,Object] | 否，但 type 为 select 必须 |
+|    span     | 占据列数                        |     Number     |             否             |
 
 注：
 
@@ -55,13 +55,17 @@ order: 1
    列类型，可选值：input（输入框）、select（下拉框）、daterange（日期范围）、datetimerange（日期时间范围）、custom（自定义）
 
 2. data
-   数据集对象，包含数据，字段映射，例如：
+   下拉框数据集，类型为 Array 或 Object，示例如下：
 
 ```
+// data类型为Array，映射关系默认为{ label: 'label' , value: 'value'}
+data: this.dict.type.event_status,
+
+// data类型为Object，手动指定映射关系
 data: {
   data: this.dict.type.event_status,
-  label: 'label',
-  value: 'value'
+  label: 'name',
+  value: 'id'
 }
 
 ```

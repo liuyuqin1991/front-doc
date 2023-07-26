@@ -32,19 +32,19 @@ order: 2
 
 ### Attributes
 
-|     参数      | 说明                                                     |  类型   | 是否必须 | 默认值 |
-| :-----------: | :------------------------------------------------------- | :-----: | :------: | :----: | ----- |
-|     data      | 显示的数据，为对象数组，与 el-table 组件中 data 结构一致 |  Array  |   必选   |   []   |
-|    columns    | 列配置，也对象数组，详细见下方的 columns 配置项          |  Array  |   必选   |   []   |
-|     total     | 总数据数，分页必须                                       | Number  |   可选   |   0    |
-|  selectable   | 多选框配置                                               | Boolean | Function |  可选  | false |
-| serializable  | 是否在行头显示序号                                       | Boolean |   可选   | false  |
-| showTopAction | 是否显示 top action                                      | Boolean |   可选   |  true  |
+|     参数      | 说明                                                     |        类型        | 是否必须 | 默认值 |
+| :-----------: | :------------------------------------------------------- | :----------------: | :------: | :----: |
+|     data      | 显示的数据，为对象数组，与 el-table 组件中 data 结构一致 |       Array        |   必选   |   []   |
+|    columns    | 列配置，也对象数组，详细见下方的 columns 配置项          |       Array        |   必选   |   []   |
+|     total     | 总数据数，分页必须                                       |       Number       |   可选   |   0    |
+|  selectable   | 多选框配置                                               | [Boolean,Function] |   可选   | false  |
+| serializable  | 是否在行头显示序号                                       |      Boolean       |   可选   | false  |
+| showTopAction | 是否显示 top action                                      |      Boolean       |   可选   |  true  |
 
 注：
 
 1. selectable
-   selectable 可以设置为 boolean，是否展示多选框。也可以设置为一个 function，必定展示多选框，并且相当于 el-table -> Table-column Attributes -> selectable ，决定是否可以对其勾选
+   selectable 可以设置为 boolean，是否展示多选框。也可以设置为一个 function，必定展示多选框，并且相当于 el-table -> Table-column Attributes -> selectable ，函数返回值决定是否可以对其勾选
 2. showTopAction
    TopAction 包含列表上左侧的自定义 button 区和上右侧的通用 button 区，自定义 button 区可通用插槽进行添加自定义 button，通用 button 区包含折叠查询框 button 和刷新列表 button
 
