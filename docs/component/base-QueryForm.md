@@ -63,7 +63,7 @@ data: this.dict.type.event_status,
 
 // data类型为Object，手动指定映射关系
 data: {
-  data: this.dict.type.event_status,
+  data: customArray,
   label: 'name',
   value: 'id'
 }
