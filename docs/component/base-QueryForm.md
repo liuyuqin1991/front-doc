@@ -40,14 +40,14 @@ order: 1
 
 ### Data Attributes
 
-|    参数     | 说明                            |      类型      |          是否必须          |
-| :---------: | :------------------------------ | :------------: | :------------------------: |
-|    type     | 单个查询类型                    |     String     |             是             |
-|    name     | 单个查询名称                    |     String     |             是             |
-|     key     | 单个查询键值                    |     String     |             是             |
-| placeholder | 占位显示文案                    |     String     |             否             |
-|    data     | type 为 select 特有，数据集对象 | [Array,Object] | 否，但 type 为 select 必须 |
-|    span     | 占据列数                        |     Number     |             否             |
+|    参数     | 说明                        |      类型      |          是否必须          |
+| :---------: | :-------------------------- | :------------: | :------------------------: |
+|    type     | 单个查询类型                |     String     |             是             |
+|    name     | 单个查询名称                |     String     |             是             |
+|     key     | 单个查询键值                |     String     |             是             |
+| placeholder | 占位显示文案                |     String     |             否             |
+|    data     | type 为 select 特有，数据集 | [Array,Object] | 否，但 type 为 select 必须 |
+|    span     | 占据列数                    |     Number     |             否             |
 
 注：
 

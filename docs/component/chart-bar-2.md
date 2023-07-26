@@ -1,6 +1,6 @@
 ---
 title: bar-2
-order: 2
+order: 1
 group:
   title: 图表组件
   order: 2
