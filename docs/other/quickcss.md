@@ -2,7 +2,7 @@
 title: Quickcss
 order: 2
 nav:
-  title: 其他文档
+  title: 文档
   order: 4
 group:
   title: CSS
