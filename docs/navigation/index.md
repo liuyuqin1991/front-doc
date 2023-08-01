@@ -4,47 +4,6 @@ title: 导航
 
 # 前端导航
 
-### 公司系统
-
-<div class="ul">
-  <div class="li">
-    <a href="http://192.168.1.238:8088/" target="_blank" class="a">
-      <div class="title-box">
-        <div>🔖</div>
-        <div class="title">GitLab</div>
-      </div>
-      <div class="sub-title">代码仓库</div>
-    </a>
-  </div>
-  <div class="li">
-    <a href="http://192.168.1.151:8088/" target="_blank" class="a">
-      <div class="title-box">
-        <div>🔖</div>
-        <div class="title">内部管理信息系统</div>
-      </div>
-      <div class="sub-title">每天的日志填写平台</div>
-    </a>
-  </div>
-  <div class="li">
-    <a href="http://113.57.152.239:8089/" target="_blank" class="a">
-      <div class="title-box">
-        <div>🔖</div>
-        <div class="title">禅道系统</div>
-      </div>
-      <div class="sub-title">项目，任务，BUG跟踪平台</div>
-    </a>
-  </div>
-  <div class="li">
-    <a href="https://modao.cc/" target="_blank" class="a">
-      <div class="title-box">
-        <div>🔖</div>
-        <div class="title">墨刀系统</div>
-      </div>
-      <div class="sub-title">需求原型设计平台</div>
-    </a>
-  </div>
-</div>
-
 ### 开发社区
 
 <div class="ul">
@@ -244,21 +203,21 @@ title: 导航
     </a>
   </div>
   <div class="li">
-    <a href="https://moment.nodejs.cn/docs/" target="_blank" class="a">
-      <div class="title-box">
-        <div>🔖</div>
-        <div class="title">Moment</div>
-      </div>
-      <div class="sub-title">日期时间控件</div>
-    </a>
-  </div>
-  <div class="li">
     <a href="https://dayjs.gitee.io/zh-CN/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
         <div class="title">Day</div>
       </div>
       <div class="sub-title">日期时间控件（推荐）</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://moment.nodejs.cn/docs/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Moment</div>
+      </div>
+      <div class="sub-title">日期时间控件</div>
     </a>
   </div>
 </div>
