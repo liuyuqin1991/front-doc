@@ -90,55 +90,14 @@ export default {
       )
     }
   },
+  watch: {
+    data() {
+      this.chart.setOption(this.getOption())
+    }
+  },
   mounted() {
     this.chart = this.$echarts.init(document.getElementById(this.id))
-    const option = {
-      color: this.color,
-      legend: {
-        show: false
-      },
-      title: {
-        text: this.title,
-        subtext: this.total,
-        left: 'center',
-        top: '38%',
-        textStyle: {
-          color: '#fff',
-          fontSize: 12
-        },
-        subtextStyle: {
-          color: '#6ec0ff',
-          fontSize: 20
-        }
-      },
-      series: [
-        {
-          type: 'pie',
-          radius: ['50%', '65%'],
-          avoidLabelOverlap: false,
-          percentPrecision: 0,
-          itemStyle: {
-            borderRadius: 20,
-            borderWidth: 5,
-            borderColor: this.bgColor
-          },
-          label: {
-            show: true,
-            position: 'outside',
-            formatter: '{c}\n({d}%)',
-            color: '#fff',
-            distanceToLabelLine: 0
-          },
-          labelLine: {
-            show: false,
-            length: 15,
-            length2: 0
-          },
-          data: this.data
-        }
-      ]
-    }
-    this.chart.setOption(option)
+    this.chart.setOption(this.getOption())
     window.addEventListener('resize', this.resize)
   },
   beforeDestroy() {
@@ -147,7 +106,56 @@ export default {
   methods: {
     resize: _.debounce(function () {
       this.chart.resize()
-    }, 300)
+    }, 300),
+    getOption() {
+      const option = {
+        color: this.color,
+        legend: {
+          show: false
+        },
+        title: {
+          text: this.title,
+          subtext: this.total,
+          left: 'center',
+          top: '38%',
+          textStyle: {
+            color: '#fff',
+            fontSize: 12
+          },
+          subtextStyle: {
+            color: '#6ec0ff',
+            fontSize: 20
+          }
+        },
+        series: [
+          {
+            type: 'pie',
+            radius: ['50%', '65%'],
+            avoidLabelOverlap: false,
+            percentPrecision: 0,
+            itemStyle: {
+              borderRadius: 20,
+              borderWidth: 5,
+              borderColor: this.bgColor
+            },
+            label: {
+              show: true,
+              position: 'outside',
+              formatter: '{c}\n({d}%)',
+              color: '#fff',
+              distanceToLabelLine: 0
+            },
+            labelLine: {
+              show: false,
+              length: 15,
+              length2: 0
+            },
+            data: this.data
+          }
+        ]
+      }
+      return option
+    }
   }
 }
 </script>

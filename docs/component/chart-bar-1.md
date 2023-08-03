@@ -78,84 +78,14 @@ export default {
       chart: {}
     }
   },
+  watch: {
+    data() {
+      this.chart.setOption(this.getOption())
+    }
+  },
   mounted() {
     this.chart = this.$echarts.init(document.getElementById(this.id))
-    const option = {
-      color: this.color,
-      grid: {
-        left: 35,
-        top: 50,
-        right: 20,
-        bottom: 40
-      },
-      tooltip: {
-        trigger: 'axis',
-        axisPointer: {
-          type: 'shadow',
-          crossStyle: {
-            color: '#fff'
-          }
-        }
-      },
-      legend: {
-        top: 8,
-        itemGap: 32,
-        icon: 'circle',
-        itemWidth: 8,
-        itemHeight: 8,
-        textStyle: {
-          color: '#fff'
-        },
-        selectedMode: false,
-        data: this.data.legend
-      },
-      xAxis: [
-        {
-          type: 'category',
-          data: this.data.xAxis,
-          axisLabel: {
-            rotate: 20,
-            margin: 20,
-            color: '#fff',
-            align: 'center'
-          },
-          axisTick: {
-            show: false
-          }
-        }
-      ],
-      yAxis: [
-        {
-          type: 'value',
-          name: '',
-          axisLabel: {
-            color: '#fff'
-          },
-          splitLine: {
-            show: true,
-            lineStyle: {
-              color: '#163e7f'
-            }
-          }
-        }
-      ],
-      series: []
-    }
-    _.forEach(this.data.data, (d, i) => {
-      option.series.push({
-        name: this.data.legend[i],
-        type: 'bar',
-        data: d,
-        barGap: 0,
-        barWidth: 12,
-        label: {
-          show: true,
-          position: 'top',
-          color: '#fff'
-        }
-      })
-    })
-    this.chart.setOption(option)
+    this.chart.setOption(this.getOption())
     window.addEventListener('resize', this.resize)
   },
   beforeDestroy() {
@@ -164,7 +94,85 @@ export default {
   methods: {
     resize: _.debounce(function () {
       this.chart.resize()
-    }, 300)
+    }, 300),
+    getOption() {
+      const option = {
+        color: this.color,
+        grid: {
+          left: 35,
+          top: 50,
+          right: 20,
+          bottom: 40
+        },
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow',
+            crossStyle: {
+              color: '#fff'
+            }
+          }
+        },
+        legend: {
+          top: 8,
+          itemGap: 32,
+          icon: 'circle',
+          itemWidth: 8,
+          itemHeight: 8,
+          textStyle: {
+            color: '#fff'
+          },
+          selectedMode: false,
+          data: this.data.legend
+        },
+        xAxis: [
+          {
+            type: 'category',
+            data: this.data.xAxis,
+            axisLabel: {
+              rotate: 20,
+              margin: 20,
+              color: '#fff',
+              align: 'center'
+            },
+            axisTick: {
+              show: false
+            }
+          }
+        ],
+        yAxis: [
+          {
+            type: 'value',
+            name: '',
+            axisLabel: {
+              color: '#fff'
+            },
+            splitLine: {
+              show: true,
+              lineStyle: {
+                color: '#163e7f'
+              }
+            }
+          }
+        ],
+        series: []
+      }
+      _.forEach(this.data.data, (d, i) => {
+        option.series.push({
+          name: this.data.legend[i],
+          type: 'bar',
+          data: d,
+          barGap: 0,
+          barWidth: 12,
+          label: {
+            show: false,
+            position: 'top',
+            color: '#fff'
+          }
+        })
+      })
+      return option
+    }
   }
 }
 </script>

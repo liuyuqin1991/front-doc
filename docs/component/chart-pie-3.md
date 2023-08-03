@@ -39,19 +39,19 @@ group:
   <div style="position: relative" class="w--100 h--100">
     <div :id="id" class="w--100 h--100" />
     <ul class="legend">
-      <li v-for="(l,i) in data" :key="`${id}-chart-legend-${i}`" class="f-r --c w--50 mt-4">
+      <li v-for="(l,i) in data" :key="`${id}-chart-legend-${i}`" class="f-r --c w--50 pl-20 mt-4">
         <div class="w-8 h-8 br--50" :style="`background-color: ${color[i]}`" />
         <span class="fs-14 ml-8">{{ `${data[i].name}：` }}</span>
-        <span class="fs-20" style="color: #579eda">{{ `${data[i].value}` }}</span>
+        <span class="fs-20" style="color: #579eda">{{ data[i].value }}</span>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-const CHART_ID = 'HdTypeChart'
+const CHART_ID = 'HdTodayWarnTypeChart'
 /**
- * 隐患类别分布-半圆环饼图
+ * 今日预警类别分布-半圆环饼图
  */
 export default {
   name: CHART_ID,
@@ -89,51 +89,14 @@ export default {
       )
     }
   },
+  watch: {
+    data() {
+      this.chart.setOption(this.getOption())
+    }
+  },
   mounted() {
     this.chart = this.$echarts.init(document.getElementById(this.id))
-    const option = {
-      color: this.color,
-      legend: {
-        show: false
-      },
-      tooltip: {
-        show: true,
-        formatter: '{b}: {c}'
-      },
-      series: [
-        {
-          name: this.id,
-          type: 'pie',
-          radius: ['80%', '100%'],
-          center: ['50%', '60%'],
-          startAngle: 180,
-          label: {
-            show: false,
-            color: '#fff',
-            fontSize: 16,
-            formatter(param) {
-              return parseInt(param.percent * 2, 0) + '%'
-            }
-          },
-          data: [
-            ...this.data,
-            {
-              value: this.total,
-              itemStyle: {
-                color: 'none',
-                decal: {
-                  symbol: 'none'
-                }
-              },
-              label: {
-                show: false
-              }
-            }
-          ]
-        }
-      ]
-    }
-    this.chart.setOption(option)
+    this.chart.setOption(this.getOption())
     window.addEventListener('resize', this.resize)
   },
   beforeDestroy() {
@@ -142,7 +105,52 @@ export default {
   methods: {
     resize: _.debounce(function () {
       this.chart.resize()
-    }, 300)
+    }, 300),
+    getOption() {
+      const option = {
+        color: this.color,
+        legend: {
+          show: false
+        },
+        tooltip: {
+          show: true,
+          formatter: '{b}: {c}'
+        },
+        series: [
+          {
+            name: this.id,
+            type: 'pie',
+            radius: ['75%', '95%'],
+            center: ['50%', '60%'],
+            startAngle: 180,
+            label: {
+              show: false,
+              color: '#fff',
+              fontSize: 16,
+              formatter(param) {
+                return parseInt(param.percent * 2, 0) + '%'
+              }
+            },
+            data: [
+              ...this.data,
+              {
+                value: this.total,
+                itemStyle: {
+                  color: 'none',
+                  decal: {
+                    symbol: 'none'
+                  }
+                },
+                label: {
+                  show: false
+                }
+              }
+            ]
+          }
+        ]
+      }
+      return option
+    }
   }
 }
 </script>
@@ -152,7 +160,7 @@ export default {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 0 12px;
+  padding: 0 20px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
