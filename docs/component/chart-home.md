@@ -12,6 +12,7 @@ group:
 .title {
   font-size: 20px;
   font-weight: bold;
+  padding-bottom: 4px;
 }
 </style>
 
