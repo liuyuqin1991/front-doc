@@ -363,12 +363,57 @@ title: 导航
 
 <div class="ul">
   <div class="li">
+    <a href="https://www.easeconvert.com/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">易转换</div>
+      </div>
+      <div class="sub-title">数百种在线文件转换工具</div>
+    </a>
+  </div>
+  <div class="li">
     <a href="http://hemin.cn/jq/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
         <div class="title">Jquery Api</div>
       </div>
       <div class="sub-title">Jquery Api速查手册</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://sfz.fatcarter.cn/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">身份证号生成</div>
+      </div>
+      <div class="sub-title">在线身份证号生成</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">emoji-cheat-sheet</div>
+      </div>
+      <div class="sub-title">emoji素材库</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://smallpdf.com/pdf-tools" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">PDF在线转换</div>
+      </div>
+      <div class="sub-title">PDF与各种格式在线互转</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://carbon.now.sh/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">代码作图</div>
+      </div>
+      <div class="sub-title">代码作图</div>
     </a>
   </div>
 </div>
