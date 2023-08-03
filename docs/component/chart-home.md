@@ -13,8 +13,6 @@ group:
   font-size: 20px;
   font-weight: bold;
 }
-.img {
-}
 </style>
 
 # 总览
