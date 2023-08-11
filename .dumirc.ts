@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  publicPath: '/',
   themeConfig: {
     logo: false,
     name: '',
