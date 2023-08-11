@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  base: '/',
+  base: '/front-library',
   publicPath: '/front-library/',
   themeConfig: {
     logo: false,
