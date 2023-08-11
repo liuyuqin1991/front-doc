@@ -13,12 +13,6 @@ order: 3
 
 基于 element ui 的 Tree 进行树组件封装，只适用于一般通用树。
 
-## 使用案例
-
-- 长勘院
-  - enterprisePerson 模块
-  - organization 模块
-
 ## 属性
 
 ### Attributes

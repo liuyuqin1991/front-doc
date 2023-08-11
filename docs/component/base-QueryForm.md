@@ -13,14 +13,6 @@ order: 1
 
 基于 element ui 的 Form 进行查询栏表单封装，只适用于一般通用查询栏。
 
-## 使用案例
-
-- 长勘院
-  - enterprisePerson 模块
-  - organization 模块
-- 地铁
-  - 隐患排查-ai 预警模块
-
 ## 属性
 
 ### Attributes

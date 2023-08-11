@@ -13,14 +13,6 @@ order: 5
 
 基于 element ui 的 FileUpload 进行封装，只适用于一般文件上传。
 
-## 使用案例
-
-- cuihua
-  - contractorPage 模块
-  - contractorsPersonnel 模块
-  - workPermit 模块
-  - ImportDataDialog 公共组件模块
-
 ## 属性
 
 ### Attributes

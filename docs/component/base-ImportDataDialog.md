@@ -13,13 +13,6 @@ order: 6
 
 导入弹窗，功能为下载标准模板并填写信息后上传，再导入
 
-![组件](../assets/base-component/ImportDataDialog.png)
-
-## 使用案例
-
-- cuihua
-  - contractorsPersonnel 模块
-
 ## 属性
 
 ### Attributes

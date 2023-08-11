@@ -13,21 +13,6 @@ order: 2
 
 基于 element ui 的 Table 进行了封装，只适用于一般通用表格。
 
-## 使用案例
-
-- cuihua
-
-  - contractorPage 模块
-  - contractorsPersonnel 模块
-  - workPermit 模块
-  - peccancyPage 模块
-
-- 长勘院
-  - enterprisePerson 模块
-  - organization 模块
-- 地铁
-  - 隐患排查-ai 预警模块
-
 ## 属性
 
 ### Attributes
