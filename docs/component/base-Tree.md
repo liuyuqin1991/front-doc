@@ -20,9 +20,9 @@ order: 3
 |     参数     | 说明                                             |  类型   | 是否必须 |                      默认值                       |
 | :----------: | :----------------------------------------------- | :-----: | :------: | :-----------------------------------------------: |
 |     data     | 显示的数据，与 el-tree 的 data 一致              |  Array  |   必选   |                        []                         |
-| defaultProps | 显示数据对象的映射关系，与 el-tree 的 props 一致 | Object  |   可选   | {children: 'children',label: 'label',value: 'id'} |
+| default-props | 显示数据对象的映射关系，与 el-tree 的 props 一致 | Object  |   可选   | {children: 'children',label: 'label',value: 'id'} |
 |   default    | 默认值，为 data 数组中的某个对象 node            | Object  |   可选   |                        {}                         |
-| isExpandAll  | 是否默认展开                                     | Boolean |   可选   |                       false                       |
+| is-expand-all  | 是否默认展开                                     | Boolean |   可选   |                       false                       |
 
 ### Event
 

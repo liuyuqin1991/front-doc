@@ -21,8 +21,8 @@ order: 1
 | :---------: | :-------------------------------------------- | :-----: | :------: | :----: |
 |    data     | Form 配置，对象数组，详细见下方的 data 配置项 |  Array  |   必选   |   []   |
 |   columns   | 列数，仅可选 2,3,4 列                         | Number  |   可选   |   4    |
-| labelWidth  | label 宽度                                    | Number  |   可选   |  100   |
-| defaultShow | 是否默认展开                                  | Boolean |   可选   |  true  |
+| label-width  | label 宽度                                    | Number  |   可选   |  100   |
+| default-show | 是否默认展开                                  | Boolean |   可选   |  true  |
 
 ### Event
 
@@ -38,16 +38,18 @@ order: 1
 |    name     | 单个查询名称                |     String     |             是             |
 |     key     | 单个查询键值                |     String     |             是             |
 | placeholder | 占位显示文案                |     String     |             否             |
-|    data     | type 为 select 特有，数据集 | [Array,Object] | 否，但 type 为 select 必须 |
+|    data     | 数据集 | [Array,Object] | 否，但 type 为 select 必须 |
 |    span     | 占据列数                    |     Number     |             否             |
+|    format     | 显示格式化                    |     String     |             否             |
+|    valueFormat     | 输出格式化                    |     String     |             否             |
 
 注：
 
 1. type
-   列类型，可选值：input（输入框）、select（下拉框）、daterange（日期范围）、datetimerange（日期时间范围）、custom（自定义）
+   列类型，可选值：input（输入框）、select（下拉框）、data（日）、week（周）、month（月）、year（年）、daterange（日期范围）、datetimerange（日期时间范围）、custom（自定义）
 
 2. data
-   下拉框数据集，类型为 Array 或 Object，示例如下：
+   type 为 select 特有，下拉框数据集，类型为 Array 或 Object，示例如下：
 
 ```
 // data类型为Array，映射关系默认为{ label: 'label' , value: 'value'}
@@ -64,6 +66,9 @@ data: {
 
 3. span
    占据列数，用于超长的查询项，默认占据 1 列，需小于 columns
+  
+4. format与valueFormat
+  type 为 data、daterange、datetimerange 特有，同elementui里DatePicker组件里的format与value-format
 
 ### Slot
 

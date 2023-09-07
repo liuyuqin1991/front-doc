@@ -24,7 +24,7 @@ order: 2
 |     total     | 总数据数，分页必须                                       |       Number       |   可选   |   0    |
 |  selectable   | 多选框配置                                               | [Boolean,Function] |   可选   | false  |
 | serializable  | 是否在行头显示序号                                       |      Boolean       |   可选   | false  |
-| showTopAction | 是否显示 top action                                      |      Boolean       |   可选   |  true  |
+| show-top-action | 是否显示 top action                                      |      Boolean       |   可选   |  true  |
 
 注：
 
