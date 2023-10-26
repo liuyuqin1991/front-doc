@@ -20,9 +20,11 @@ order: 1
 |    参数     | 说明                                          |  类型   | 是否必须 | 默认值 |
 | :---------: | :-------------------------------------------- | :-----: | :------: | :----: |
 |    data     | Form 配置，对象数组，详细见下方的 data 配置项 |  Array  |   必选   |   []   |
-|   columns   | 列数，仅可选 2,3,4 列                         | Number  |   可选   |   4    |
+|   columns   | 列数，仅可选 1,2,3,4 列                         | Number  |   可选   |   4    |
 | label-width  | label 宽度                                    | Number  |   可选   |  100   |
 | default-show | 是否默认展开                                  | Boolean |   可选   |  true  |
+| is-show-border | 是否显示边框                                  | Boolean |   可选   |  true  |
+
 
 ### Event
 

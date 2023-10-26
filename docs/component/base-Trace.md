@@ -21,6 +21,7 @@ order: 4
 | :----: | :------------------------------------------------------------ | :----: | :------: | :----: |
 | action | 表单类型，为'add','edit','view'                               | String |   可选   | 'add'  |
 |  data  | 追踪对象，action='edit'必须，包含 recorder 和 editor 相关参数 | Object |   可选   |   {}   |
+| is-narrow | 是否窄屏显示                                             | Boolean |   可选   |   false   |
 
 ### Event
 
