@@ -23,7 +23,7 @@ order: 1
 |   columns   | 列数，仅可选 1,2,3,4 列                         | Number  |   可选   |   4    |
 | label-width  | label 宽度                                    | Number  |   可选   |  100   |
 | default-show | 是否默认展开                                  | Boolean |   可选   |  true  |
-| is-show-border | 是否显示边框                                  | Boolean |   可选   |  true  |
+| is-show-border | 是否显示边框                                   | Boolean |   可选   |  true  |
 
 
 ### Event
