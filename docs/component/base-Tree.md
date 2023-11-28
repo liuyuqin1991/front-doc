@@ -23,6 +23,7 @@ order: 3
 | default-props | 显示数据对象的映射关系，与 el-tree 的 props 一致 | Object  |   可选   | {children: 'children',label: 'label',value: 'id'} |
 |   default    | 默认值，为 data 数组中的某个对象 node            | Object  |   可选   |                        {}                         |
 | is-expand-all  | 是否默认展开                                     | Boolean |   可选   |                       false                       |
+| expand-on-click-node | 是否点击节点默认展开/收缩子节点              | Boolean |   可选   |                       true                       |
 
 ### Event
 
