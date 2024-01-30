@@ -235,6 +235,15 @@ title: 导航
 
 <div class="ul">
   <div class="li">
+    <a href="https://router.vuejs.org/zh/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Vue Router</div>
+      </div>
+      <div class="sub-title">Vue官方路由</div>
+    </a>
+  </div>
+  <div class="li">
     <a href="https://cli.vuejs.org/zh/guide/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
