@@ -48,7 +48,7 @@ order: 1
 注：
 
 1. type
-   列类型，可选值：input（输入框）、select（下拉框）、data（日）、week（周）、month（月）、year（年）、daterange（日期范围）、datetimerange（日期时间范围）、custom（自定义）
+   列类型，可选值：input（输入框）、select（下拉框）、data（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、custom（自定义）
 
 2. data
    type 为 select 特有，下拉框数据集，类型为 Array 或 Object，示例如下：
