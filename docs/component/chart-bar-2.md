@@ -40,9 +40,8 @@ group:
 
 <script>
 const CHART_ID = 'HdNotClosedChart'
-/**
- * 隐患未关闭情况-柱状图
- */
+
+
 export default {
   name: CHART_ID,
   props: {

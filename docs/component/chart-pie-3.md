@@ -50,9 +50,7 @@ group:
 
 <script>
 const CHART_ID = 'HdTodayWarnTypeChart'
-/**
- * 今日预警类别分布-半圆环饼图
- */
+
 export default {
   name: CHART_ID,
   props: {

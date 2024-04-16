@@ -1,5 +1,5 @@
 ---
-title: bar-1
+title: line-1
 order: 1
 group:
   title: 图表组件
@@ -8,7 +8,7 @@ group:
 
 #### 示例
 
-![bar-1](../assets/screen-component/bar1.png)
+![bar-1](../assets/screen-component/line1.png)
 
 #### 引用代码
 
@@ -21,7 +21,7 @@ group:
   data() {
     return {
       data: {
-        legend: ['逾期未关闭', '逾期已关闭'],
+        legend: ['电流', '电压'],
         xAxis: [
           '2022-12',
           '2023-01',
@@ -32,10 +32,10 @@ group:
         ],
         data: [
           [18, 23, 18, 19, 17, 22],
-          [32, 49, 32, 49, 33, 48]
+          [32, 4, 32, 49, 100, 48]
         ]
       }
-      color:['#faa21f', '#32b34a']
+      color:['#0070F0', '#00F0C8']
     }
   }
 </script>
@@ -49,8 +49,8 @@ group:
 </template>
 
 <script>
-const CHART_ID = 'hdOverdueNumChart'
-
+import * as echarts from 'echarts'
+const CHART_ID = 'ElectricStatisticsChart'
 
 export default {
   name: CHART_ID,
@@ -77,6 +77,28 @@ export default {
       chart: {}
     }
   },
+  computed: {
+    // 双Y轴辅助线调整，只针对双Y轴两条线数据情况
+    computeYAxis() {
+      if (this.data?.data) {
+        const dataA = this.data.data[0]
+        const dataB = this.data.data[1]
+        const maxA = _.max(dataA)
+        const maxB = _.max(dataB)
+        const newMaxA = _.ceil(maxA / 5) * 5
+        const newMaxB = _.ceil(maxB / 5) * 5
+        const intervalA = newMaxA / 5
+        const intervalB = newMaxB / 5
+        return { newMaxA, newMaxB, intervalA, intervalB }
+      }
+      return {
+        newMaxA: 0,
+        newMaxB: 0,
+        intervalA: 5,
+        intervalB: 5
+      }
+    }
+  },
   watch: {
     data() {
       this.chart.setOption(this.getOption())
@@ -98,9 +120,9 @@ export default {
       const option = {
         color: this.color,
         grid: {
-          left: 35,
-          top: 50,
-          right: 20,
+          left: 50,
+          top: 45,
+          right: 50,
           bottom: 40
         },
         tooltip: {
@@ -113,7 +135,7 @@ export default {
           }
         },
         legend: {
-          top: 8,
+          top: 12,
           itemGap: 32,
           icon: 'circle',
           itemWidth: 8,
@@ -143,11 +165,38 @@ export default {
           {
             type: 'value',
             name: '',
+            splitNumber: 6,
             axisLabel: {
-              color: '#fff'
+              color: '#fff',
+              formatter: function (value) {
+                return value + 'V'
+              }
             },
+            min: 0,
+            max: this.computeYAxis.newMaxA,
+            interval: this.computeYAxis.intervalA,
             splitLine: {
               show: true,
+              lineStyle: {
+                color: '#163e7f'
+              }
+            }
+          },
+          {
+            type: 'value',
+            name: '',
+            splitNumber: 6,
+            axisLabel: {
+              color: '#fff',
+              formatter: function (value) {
+                return value + 'A'
+              }
+            },
+            min: 0,
+            max: this.computeYAxis.newMaxB,
+            interval: this.computeYAxis.intervalB,
+            splitLine: {
+              show: false,
               lineStyle: {
                 color: '#163e7f'
               }
@@ -159,18 +208,40 @@ export default {
       _.forEach(this.data.data, (d, i) => {
         option.series.push({
           name: this.data.legend[i],
-          type: 'bar',
+          yAxisIndex: i,
+          type: 'line',
           data: d,
-          barGap: 0,
-          barWidth: 12,
           label: {
             show: false,
             position: 'top',
             color: '#fff'
+          },
+          areaStyle: {
+            // 该属性设置可以使这下图区域颜色达到渐变的效果
+            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+              {
+                offset: 0,
+                color: this.hexToRgba(this.color[i], 1)
+              },
+              {
+                offset: 1,
+                color: this.hexToRgba(this.color[i], 0)
+              }
+            ])
           }
         })
       })
       return option
+    },
+
+    hexToRgba(hex, opacity) {
+      // 移除十六进制颜色代码中的'#'
+      const sanitizedHex = hex.replace('#', '')
+      // 解析红、绿、蓝值
+      const r = parseInt(sanitizedHex.substring(0, 2), 16)
+      const g = parseInt(sanitizedHex.substring(2, 4), 16)
+      const b = parseInt(sanitizedHex.substring(4, 6), 16)
+      return `rgba(${r}, ${g}, ${b}, ${opacity})`
     }
   }
 }

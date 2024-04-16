@@ -43,9 +43,8 @@ group:
 
 <script>
 const CHART_ID = 'HdNumPieChart'
-/**
- * 有间隔的圆角环形饼图
- */
+
+
 export default {
   name: CHART_ID,
   props: {
