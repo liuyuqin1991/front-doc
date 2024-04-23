@@ -36,4 +36,4 @@ group:
 |                                                              示例                                                               |                                                              示例                                                               |
 | :-----------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
 | <span class="title">pie-1</span><br><img class="img" src="../assets/screen-component/pie1.png"><br>[查看源码](./chart-pie-1.md) | <span class="title">pie-2</span><br><img class="img" src="../assets/screen-component/pie2.png"><br>[查看源码](./chart-pie-2.md) |
-| <span class="title">pie-3</span><br><img class="img" src="../assets/screen-component/pie3.png"><br>[查看源码](./chart-pie-3.md)
+| <span class="title">pie-3</span><br><img class="img" src="../assets/screen-component/pie3.png"><br>[查看源码](./chart-pie-3.md) | <span class="title">pie-4</span><br><img class="img" src="../assets/screen-component/pie4.png"><br>[查看源码](./chart-pie-4.md) |
