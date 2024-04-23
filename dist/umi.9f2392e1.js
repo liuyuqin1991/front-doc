@@ -1139,8 +1139,8 @@ const obj = {
 };
 `,paraId:31,tocIndex:6},{value:"2.6",paraId:32,tocIndex:6},{value:" \u53EA\u5BF9\u975E\u6CD5\u6807\u8BC6\u7B26\u7684\u5C5E\u6027\u4F7F\u7528\u5F15\u53F7. eslint: ",paraId:33,tocIndex:6},{value:"quote-props",paraId:33,tocIndex:6},{value:"\u539F\u56E0\uFF1A\u901A\u5E38\u6211\u4EEC\u4E3B\u89C2\u4E0A\u8BA4\u4E3A\u66F4\u6613\u8BFB.\u6709\u5229\u4E8E\u8BED\u6CD5\u9AD8\u4EAE\uFF0C\u66F4\u5BB9\u6613\u88AB\u8BB8\u591A JS \u5F15\u64CE\u4F18\u5316.",paraId:34,tocIndex:6},{value:`// bad
 const bad = {
-  foo: 3,
-  bar: 4,
+  'foo': 3,
+  'bar': 4,
   'data-blah': 5,
 };
 
