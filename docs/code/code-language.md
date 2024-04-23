@@ -218,8 +218,8 @@ order: 1
   ```javascript
   // bad
   const bad = {
-    foo: 3,
-    bar: 4,
+    'foo': 3,
+    'bar': 4,
     'data-blah': 5,
   };
 
