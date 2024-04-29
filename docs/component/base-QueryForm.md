@@ -5,11 +5,11 @@ nav:
 group:
   title: 基础组件
   order: 1
-title: QueryForm
-order: 1
+title: VQueryForm
+order: 2
 ---
 
-# QueryForm
+# VQueryForm
 
 基于 element ui 的 Form 进行查询栏表单封装，只适用于一般通用查询栏。
 
@@ -37,11 +37,12 @@ order: 1
 |    参数     | 说明                        |      类型      |          是否必须          |
 | :---------: | :-------------------------- | :------------: | :------------------------: |
 |    type     | 单个查询类型                |     String     |             是             |
-|    name     | 单个查询名称                |     String     |             是             |
+|    label     | 表单label                |     String     |             是             |
+|    name     | 插槽名称，特殊form-item场景定制时使用         |     String     |            否，但 type 为 custom 必须             |
 |     key     | 单个查询键值                |     String     |             是             |
 | placeholder | 占位显示文案                |     String     |             否             |
 |    data     | 数据集 | [Array,Object] | 否，但 type 为 select 必须 |
-|    span     | 占据列数                    |     Number     |             否             |
+|    span     | 占据列数，小于columns列数        |     Number     |             否             |
 |    format     | 显示格式化                    |     String     |             否             |
 |    valueFormat     | 输出格式化                    |     String     |             否             |
 
@@ -77,3 +78,5 @@ data: {
 |  插槽  | 说明                                      |
 | :----: | :---------------------------------------- |
 | 自定义 | Form 配置中 type 为 custom 时的自定义插槽 |
+
+

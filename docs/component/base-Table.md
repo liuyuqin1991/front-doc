@@ -5,11 +5,11 @@ nav:
 group:
   title: 基础组件
   order: 1
-title: Table
-order: 2
+title: VTable
+order: 3
 ---
 
-# Table
+# VTable
 
 基于 element ui 的 Table 进行了封装，只适用于一般通用表格。
 
@@ -22,6 +22,8 @@ order: 2
 |     data      | 显示的数据，为对象数组，与 el-table 组件中 data 结构一致 |       Array        |   必选   |   []   |
 |    columns    | 列配置，也对象数组，详细见下方的 columns 配置项          |       Array        |   必选   |   []   |
 |     total     | 总数据数，分页必须                                       |       Number       |   可选   |   0    |
+|     page-num    | 当前页数，分页必须                                       |       Number       |   可选   |   1    |
+|     page-size   | 每页显示条目个数，分页必须                                       |       Number       |   可选   |   10    |
 |  selectable   | 多选框配置                                               | [Boolean,Function] |   可选   | false  |
 | serializable  | 是否在行头显示序号                                       |      Boolean       |   可选   | false  |
 | show-top-action | 是否显示 top action                                      |      Boolean       |   可选   |  true  |

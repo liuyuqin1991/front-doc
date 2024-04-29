@@ -5,11 +5,11 @@ nav:
 group:
   title: 基础组件
   order: 1
-title: Trace
-order: 4
+title: VTrace
+order: 5
 ---
 
-# Trace
+# VTrace
 
 重构版的追踪组件，显示填报信息（人，单位，时间）和修改信息（人，单位，时间）
 

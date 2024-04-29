@@ -5,11 +5,11 @@ nav:
 group:
   title: 基础组件
   order: 1
-title: FileUpload
-order: 5
+title: VFileUpload
+order: 6
 ---
 
-# FileUpload
+# VFileUpload
 
 基于 element ui 的 FileUpload 进行封装，只适用于一般文件上传。
 

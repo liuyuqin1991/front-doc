@@ -5,11 +5,11 @@ nav:
 group:
   title: 基础组件
   order: 1
-title: Tree
-order: 3
+title: VTree
+order: 4
 ---
 
-# Tree
+# VTree
 
 基于 element ui 的 Tree 进行树组件封装，只适用于一般通用树。
 

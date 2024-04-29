@@ -5,11 +5,11 @@ nav:
 group:
   title: 基础组件
   order: 1
-title: ImportDataDialog
-order: 6
+title: VImportDataDialog
+order: 7
 ---
 
-# ImportDataDialog
+# VImportDataDialog
 
 导入弹窗，功能为下载标准模板并填写信息后上传，再导入
 
