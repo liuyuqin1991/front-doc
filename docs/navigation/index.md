@@ -212,7 +212,7 @@ title: 导航
     </a>
   </div>
   <div class="li">
-    <a href="https://dayjs.gitee.io/zh-CN/" target="_blank" class="a">
+    <a href="https://dayjs.fenxianglu.cn/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
         <div class="title">Day</div>
