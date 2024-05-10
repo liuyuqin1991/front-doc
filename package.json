@@ -8,7 +8,8 @@
     "build": "dumi build",
     "dev": "dumi dev",
     "prepare": "husky install && dumi setup",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "deploy": "gh-pages -d dist"
   },
   "commitlint": {
     "extends": [
@@ -19,12 +20,10 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "dumi": "^2.0.2",
+    "gh-pages": "^6.1.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
-  },
-  " ": {
-    "gh-pages": "^5.0.0"
   },
   "authors": [
     "liuyuqin"
