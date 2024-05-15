@@ -17,7 +17,7 @@ group:
 
 站内资源
 
-- [HTML5 与 CSS3 权威指南笔记](https://github.com/liuyuqin1991/polaris/blob/master/frontend/note/HTML5%E4%B8%8ECSS3%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E7%AC%94%E8%AE%B0.md)
+- [HTML5与HTML4的区别](https://github.com/liuyuqin1991/polaris/blob/master/frontend/note/HTML5%E4%B8%8ECSS3%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%E7%AC%94%E8%AE%B0.md)
 
 ## **css**
 
@@ -141,10 +141,6 @@ liuyuqin1991<贡献者>博客资源
 
 ## **webpack**
 
-站内资源
-
-- [webpack 中各种 loader 介绍](https://github.com/liuyuqin1991/polaris/blob/master/frontend/webpack/loader.md)
-
 站外资源
 
 - [webpack 官方网站](https://webpack.js.org)
@@ -185,19 +181,7 @@ liuyuqin1991<贡献者>博客资源
 - [gulp 插件-gulp.spritesmith——2017 年 11 月 02 日](https://blog.csdn.net/liuyuqin1991/article/details/78425384)
 - [gulp 插件-gulp-usemin——2017 年 08 月 25 日](https://blog.csdn.net/liuyuqin1991/article/details/77574932)
 
-
-## **插件库**
-
-站内资源
-
-- [常用第三方插件库](https://github.com/liuyuqin1991/polaris/blob/master/frontend/links/component-plugin.md)
-
 ## **vue**
-
-liuyuqin1991<贡献者>博客资源
-
-- [Vue.js 动态数据处理 简单版——2016 年 02 月 01 日](https://blog.csdn.net/liuyuqin1991/article/details/50617188)
-- [Vue.js Ajax 动态参数与列表显示——2016 年 01 月 28 日](https://blog.csdn.net/liuyuqin1991/article/details/50601947)
 
 站外资源
 
