@@ -340,6 +340,15 @@ title: 导航
 
 <div class="ul">
   <div class="li">
+    <a href="https://developer.mozilla.org/zh-CN/docs/Web/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Web技术大全</div>
+      </div>
+      <div class="sub-title">系统学习 Web 开发，特别是Html，Css，Javascript</div>
+    </a>
+  </div>
+  <div class="li">
     <a href="https://webpack.docschina.org/concepts/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
