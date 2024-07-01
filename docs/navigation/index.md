@@ -336,6 +336,39 @@ title: 导航
   </div>
 </div>
 
+### AI
+
+<div class="ul">
+  <div class="li">
+    <a href="https://kimi.moonshot.cn/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Kimi</div>
+      </div>
+      <div class="sub-title">Moonshot AI 出品的智能助手</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://www.sass.hk/docs/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">文心一言</div>
+      </div>
+      <div class="sub-title">百度全新一代知识增强大语言模型</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://animate.style/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Gnomic智能体</div>
+      </div>
+      <div class="sub-title">复旦大学语富与视觉团队推出了一个名为AgentGym的通用智能体平台</div>
+    </a>
+  </div>
+</div>
+
+
 ### 其他
 
 <div class="ul">
