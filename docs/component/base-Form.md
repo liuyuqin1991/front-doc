@@ -53,11 +53,12 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    参数     | 说明                        |      类型      |          是否必须          |
 | :---------: | :-------------------------- | :------------: | :------------------------: |
 |    type     | 表单form-item类型                |     String     |             是             |
-|    label     | 表单label                |     String     |             是             |
+|    label    | 表单label                |     String     |             是             |
 |    name     | 插槽名称，type 为 custom 的特殊form-item场景定制时使用         |     String     |            否，但 type 为 custom 必须             |
 |     key     | 键值                |     String     |             是             |
 |    width    | form-item内容宽度                |     String     |             否             |
 | placeholder | 占位显示文案                |     String     |             否             |
+|    rule     | 规则               |     Array     |             否             |
 |   disabled  | form-item内容是否禁用     |     Boolean     |             否             |
 |    span     | 占据列数，小于columns列数        |     Number     |             否             |
 |    data     | 数据集，type 为 select 特有                       | [Array,Object] | 否，但 type 为 select 必须 | 
