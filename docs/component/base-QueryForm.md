@@ -73,6 +73,18 @@ data: {
 4. format与valueFormat
   type 为 data、daterange、datetimerange 特有，同elementui里DatePicker组件里的format与value-format
 
+5. 如需初始化回显url传递的参数值，只需要在mounted方法中写入下面的代码
+```
+// 设置VQueryForm组件的ref为VQueryForm,例如设置productId的值
+mounted() {
+  this.$set(
+    this.$refs.VQueryForm.queryParams,
+    'productId',
+    this.$route.query.productId
+  )
+}
+```
+
 ### Slot
 
 |  插槽  | 说明                                      |
