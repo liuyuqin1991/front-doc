@@ -56,6 +56,17 @@ group:
 |Emoji|[emoji-mart](https://github.com/missive/emoji-mart)|
 |右键菜单|[react-contextmenu](https://github.com/vkbansal/react-contextmenu)|
 
+# **vue组件三方库**
+
+| **类型**| **组件**|
+|-|-|
+|UI库|[element](https://element.eleme.cn/#/zh-CN)|
+|拖拽|[Vue Fluid DnD](https://vue-fluid-dnd.netlify.app/introduction/introduction/)|
+|    |[Vue-drag-resize](https://github.com/kirillmurashov/vue-drag-resize#readme)|
+|    |[Vue.draggable.next](https://github.com/SortableJS/vue.draggable.next#readme)|
+|    |[Vue3-draggable-resizable](https://github.com/a7650/vue3-draggable-resizable/blob/main/docs/document_zh.md)|
+|    |[Revue-draggable](https://github.com/bcakmakoglu/revue-draggable#readme)|
+
 # ui三方库
 
 | <div style="width:60px;">分类</div> | <div style="width:200px;">名称</div> | **资源** |
