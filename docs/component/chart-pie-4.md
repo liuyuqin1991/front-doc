@@ -8,7 +8,7 @@ group:
 
 #### 示例
 
-![pie-3](../assets/screen-component/pie4.png)
+![pie-4](../assets/screen-component/pie4.png)
 
 #### 引用代码
 
