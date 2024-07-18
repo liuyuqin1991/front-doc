@@ -450,6 +450,15 @@ title: 导航
     </a>
   </div>
   <div class="li">
+    <a href="https://www.isqqw.com/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Echarts Demos</div>
+      </div>
+      <div class="sub-title">集合了各种Echarts Demo</div>
+    </a>
+  </div>
+  <div class="li">
     <a href="http://hemin.cn/jq/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
