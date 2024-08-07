@@ -12,7 +12,7 @@ group:
 
 #### 引用代码
 
-```javascript
+```vue
 <template>
   <Chart id="" :data="data" :color="color" style="width: 300px;height: 250px"/>
 </template>
@@ -33,7 +33,7 @@ group:
 
 #### 组件代码
 
-```javascript
+```vue
 <template>
   <div :id="id" />
 </template>

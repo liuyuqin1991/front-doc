@@ -12,9 +12,9 @@ group:
 
 #### 引用代码
 
-```javascript
+```vue
 <template>
-  <Chart :data="data" :color="color" style="width: 300px;height: 200px"/>
+  <Chart :data="data" style="width: 300px;height: 200px"/>
 </template>
 
 <script>
@@ -45,8 +45,7 @@ group:
 
 #### 组件代码
 
-```javascript
-<script>
+```vue
 <template>
   <div :id="id" />
 </template>
@@ -412,8 +411,5 @@ export default {
     }
   }
 }
-</script>
-
-
 </script>
 ```

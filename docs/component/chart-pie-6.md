@@ -1,5 +1,5 @@
 ---
-title: pie-2
+title: pie-6
 order: 1
 group:
   title: 图表组件
@@ -8,27 +8,23 @@ group:
 
 #### 示例
 
-![pie-2](../assets/screen-component/pie2.png)
+![pie-6](../assets/screen-component/pie6.png)
 
 #### 引用代码
 
 ```vue
 <template>
-  <Chart id="xxx" :data="data" :color="color" :title="title" :bg-color="bgColor" style="width: 300px;height: 250px"/>
+  <Chart :data="data" :title="title" style="width: 300px;height: 200px"/>
 </template>
 
 <script>
   data() {
     return {
-      title: '人工填报隐患',
+      title: '隐患数据情况',
       data: [
-        { value: 1048, name: 'Search Engine' },
-        { value: 735, name: 'Direct' },
-        { value: 580, name: 'Email' },
-        { value: 484, name: 'Union Ads' }
-      ]
-      color:['#e14b28', '#faa21f', '#f1ec41', '#32b34a'],
-      bgColor: '#032656'
+          { value: 68, name: '一般较大', rate: '68%' },
+          { value: 32, name: '重特大', rate: '32%' }
+        ]
     }
   }
 </script>
@@ -42,7 +38,7 @@ group:
 </template>
 
 <script>
-const CHART_ID = 'HdRatePieChart'
+const CHART_ID = 'HiddenDamageDataPieChart'
 
 export default {
   name: CHART_ID,
@@ -58,7 +54,7 @@ export default {
     color: {
       type: Array,
       default() {
-        return []
+        return ['#32B34A', '#E04A29']
       }
     },
     bgColor: {
@@ -98,40 +94,45 @@ export default {
       const option = {
         color: this.color,
         legend: {
-          show: false
+          show: true,
+          textStyle: {
+            color: '#fff',
+            fontSize: 12
+          },
+          itemWidth: 10, // 图例图形的宽度
+          itemHeight: 10 // 图例图形的高度
         },
         title: {
           text: this.title,
-          subtext: this.data[0].rate,
           left: 'center',
-          top: '30%',
+          top: '24px',
           textStyle: {
             color: '#fff',
             fontSize: 14,
-            lineHeight: 16
-          },
-          subtextStyle: {
-            color: '#6ec0ff',
-            fontSize: 24
+            lineHeight: 16,
+            fontWeight: 400
           }
         },
         series: [
           {
             type: 'pie',
-            top: '2%',
-            radius: ['65%', '85%'],
-            avoidLabelOverlap: false,
-            percentPrecision: 0,
+            radius: '40%',
+            center: ['50%', 100],
             itemStyle: {
               borderRadius: 0,
               borderWidth: 5,
               borderColor: this.bgColor
             },
             label: {
-              show: false
+              show: true,
+              color: '#fff',
+              formatter: (params) => {
+                return params.data.rate || '-'
+              }
             },
             labelLine: {
-              show: false
+              length: 5,
+              length2: 5
             },
             data: this.data
           }
@@ -145,5 +146,4 @@ export default {
 
 <style lang="scss" scoped>
 </style>
-
 ```
