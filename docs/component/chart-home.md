@@ -29,7 +29,8 @@ group:
 
 |                                                              示例                                                               |                                                              示例                                                               |
 | :-----------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
-| <span class="title">bar-1</span><br><img class="img" src="../assets/screen-component/bar1.png"><br>[查看源码](./chart-bar-1.md) | <span class="title">bar-2</span><br><img class="img" src="../assets/screen-component/bar2.png"><br>[查看源码](./chart-bar-1.md) |
+| <span class="title">bar-1</span><br><img class="img" src="../assets/screen-component/bar1.png"><br>[查看源码](./chart-bar-1.md) | <span class="title">bar-2</span><br><img class="img" src="../assets/screen-component/bar2.png"><br>[查看源码](./chart-bar-1.md) | 
+| <span class="title">bar-3</span><br><img class="img" src="../assets/screen-component/bar3.png"><br>[查看源码](./chart-bar-3.md) |
 
 ### 饼状图
 
