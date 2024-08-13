@@ -372,6 +372,7 @@ export default {
             fontSize: 12,
             color: '#fff'
           },
+          data: legendData,
           formatter: (name) => {
             if (!_.isEmpty(name)) {
               const item = _.find(this.data, (item) => item.name === name)
