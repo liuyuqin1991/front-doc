@@ -67,6 +67,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    valueFormat     | 输出格式化，type 为 日期时间类 特有                    |     String     |             否             |
 |   prepend   | 输入框前置内容，type 为 input 特有         |     String     |            否             |
 |   append   | 输入框后置内容，type 为 input 特有         |     String     |            否             |
+|   ignore<sup style="color: red">v3</sup>   | form-item内容是否忽略     |     Boolean     |            否             |
 
 注：
 
@@ -94,6 +95,36 @@ data: {
   
 4. format与valueFormat
   type 为 data、daterange、datetimerange 特有，同elementui里DatePicker组件里的format与value-format
+
+5. ignore
+  form-item内容是否忽略，一般用于某一表单项在特定场景下显示或者忽略，比如在新增时显示，在修改/查看时忽略，可进行如下设置
+
+```
+{
+  type: 'input',
+  label: '用户密码',
+  key: 'password',
+  ignore: this.action !== 'add',  // 新增时显示密码表单项，修改/查看时忽略该表单项
+  rule: [
+    {
+      required: true,
+      message: '用户密码不能为空',
+      trigger: 'blur'
+    },
+    {
+      min: 5,
+      max: 20,
+      message: '用户密码长度必须介于 5 和 20 之间',
+      trigger: 'blur'
+    },
+    {
+      pattern: /^[^<>"'|\\]+$/,
+      message: '不能包含非法字符：< > " \' \\ |',
+      trigger: 'blur'
+    }
+  ]
+},
+```
 
 ## 示例
 
