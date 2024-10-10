@@ -6,7 +6,7 @@ group:
   title: 基础组件
   order: 1
 title: VBimface
-order: 8
+order: 9
 ---
 
 # VBimface
