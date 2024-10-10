@@ -200,19 +200,7 @@ data: {
   <summary><b style="color: #0366d6">查看代码</b></summary>
   <pre><code> 
     
-    <VForm ref="form" :config="formConfig" :label-width="120" :action="action" :object="object">
-        <template #liveFile="slotProps">
-          <FileUpload
-            v-model="slotProps.form.liveFile"
-            :limit="1"
-            :is-show-tip="true"
-            :disabled="action === 'view'"
-            :file-type="['png','jpg','jpeg']"
-            :file-size="30"
-            :label="'选择文件'"
-          />
-        </template>
-      </VForm>
+    <VForm ref="form" :config="formConfig" :label-width="120" :action="action" :object="object" />
 
     computed: {
       formConfig() {
@@ -359,8 +347,7 @@ data: {
                 key: 'useTo'
               },
               {
-                type: 'custom',
-                name: 'liveFile',
+                type: 'fileUpload',
                 label: '二维实景图',
                 key: 'liveFile'
               }
