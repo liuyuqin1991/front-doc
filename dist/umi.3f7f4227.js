@@ -2068,19 +2068,7 @@ computed: {\r
 `,paraId:16,tocIndex:8},{value:`
   `,paraId:15},{value:"\u67E5\u770B\u4EE3\u7801",paraId:15},{value:`
   `,paraId:15},{value:` 
-<VForm ref="form" :config="formConfig" :label-width="120" :action="action" :object="object">\r
-    <template #liveFile="slotProps">\r
-      <FileUpload\r
-        v-model="slotProps.form.liveFile"\r
-        :limit="1"\r
-        :is-show-tip="true"\r
-        :disabled="action === 'view'"\r
-        :file-type="['png','jpg','jpeg']"\r
-        :file-size="30"\r
-        :label="'\u9009\u62E9\u6587\u4EF6'"\r
-      />\r
-    </template>\r
-  </VForm>\r
+<VForm ref="form" :config="formConfig" :label-width="120" :action="action" :object="object" />\r
 \r
 computed: {\r
   formConfig() {\r
@@ -2227,8 +2215,7 @@ computed: {\r
             key: 'useTo'\r
           },\r
           {\r
-            type: 'custom',\r
-            name: 'liveFile',\r
+            type: 'fileUpload',\r
             label: '\u4E8C\u7EF4\u5B9E\u666F\u56FE',\r
             key: 'liveFile'\r
           }\r
