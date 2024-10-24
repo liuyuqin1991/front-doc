@@ -537,8 +537,8 @@ title: 导航
   }
 
   .li {
-    width: 180px;
-    height: 60px;
+    width: 240px;
+    height: 100px;
     margin: 10px;
     padding: 15px 20px;
     display: flex;
