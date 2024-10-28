@@ -91,4 +91,39 @@ mounted() {
 | :----: | :---------------------------------------- |
 | 自定义 | Form 配置中 type 为 custom 时的自定义插槽 |
 
+1. 插槽示例如下：
+
+```
+
+// 配置
+queryFormConfig() {
+  return [
+    ...
+    {
+      label: '登录时间',
+      key: 'dateRange',
+      type: 'custom',
+      name: 'dateRange'
+    }
+  ]
+},
+
+// 插槽代码
+<VQueryForm :config="queryFormConfig" @query="query">
+  <template #dateRange="slotProps">
+    <el-date-picker
+      v-model="slotProps.form.dateRange"
+      style="width: 100%"
+      value-format="yyyy-MM-dd HH:mm:ss"
+      type="daterange"
+      range-separator="-"
+      start-placeholder="开始日期"
+      end-placeholder="结束日期"
+      :default-time="['00:00:00', '23:59:59']"
+    />
+  </template>
+</VQueryForm>
+
+```
+
 
