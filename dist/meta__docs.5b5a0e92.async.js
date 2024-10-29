@@ -1,4 +1,4 @@
-"use strict";(self.webpackChunkfront_library=self.webpackChunkfront_library||[]).push([[904],{53624:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(89385),r={}},97787:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(60207),r={}},47384:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(63921),r={}},61073:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(96035),r={}},73201:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(2051),r={}},34546:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(24349),r={}},85737:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(75570),r={}},55835:function(t,e,a){var d;a.r(e),a.d(e,{demos:function(){return i}});var n=a(15009),r=a.n(n),p=a(99289),v=a.n(p),o=a(62435),g=a(64090),x=a(72925),l=a(55171),y=a.n(l),u=a(96486),_=a.n(u),s=a(53217),i={"docs-component-base-config-demo-config":{component:o.memo(o.lazy(function(){return a.e(433).then(a.bind(a,22566))})),asset:{type:"BLOCK",id:"docs-component-base-config-demo-config",refAtomIds:[],dependencies:{"index.jsx":{type:"FILE",value:a(78449).Z},react:{type:"NPM",value:"18.3.1"},antd:{type:"NPM",value:"5.21.5"},"react-json-view":{type:"NPM",value:"1.21.3"},lodash:{type:"NPM",value:"4.17.21"},"@liuyuqin1991/quickcss":{type:"NPM",value:"2.4.0"}},entry:"index.jsx"},context:{react:d||(d=a.t(o,2)),antd:x,"react-json-view":l,lodash:u,"@liuyuqin1991/quickcss/lib/main.css":s},renderOpts:{compile:function(){var m=v()(r()().mark(function f(){var c,b=arguments;return r()().wrap(function(I){for(;;)switch(I.prev=I.next){case 0:return I.next=2,a.e(19).then(a.bind(a,4019));case 2:return I.abrupt("return",(c=I.sent).default.apply(c,b));case 3:case"end":return I.stop()}},f)}));function h(){return m.apply(this,arguments)}return h}()}}}},82086:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(52534),r={}},3895:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(68673),r={}},54486:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(33021),r={}},35968:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(89938),r={}},77204:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(32403),r={}},26660:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(14345),r={}},49172:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(27430),r={}},83156:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(864),r={}},7366:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(79848),r={}},87225:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(26673),r={}},27906:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(79445),r={}},81268:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(4805),r={}},80383:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(52371),r={}},18776:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(18552),r={}},11058:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(23406),r={}},88564:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(66405),r={}},5895:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(81942),r={}},40153:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(74883),r={}},57650:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(63993),r={}},11171:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(68537),r={}},57671:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(25875),r={}},91703:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(38795),r={}},80041:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(18768),r={}},30196:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(28513),r={}},47165:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(5372),r={}},394:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(26956),r={}},22132:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(52838),r={}},94253:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(3309),r={}},53245:function(t,e,a){a.r(e),a.d(e,{texts:function(){return n}});var d=a(89385);const n=[{value:"\u6570\u7EC4\u3001\u96C6\u5408\u3001\u51FD\u6570\u3001\u6570\u5B66\u3001\u6570\u5B57\u3001\u5BF9\u8C61\u3001\u5B57\u7B26\u4E32\u3001\u4F7F\u7528\u51FD\u6570\u7B49\u8F6E\u5B50\u65B9\u6CD5\u7EDF\u4E00\u4F7F\u7528 ",paraId:0,tocIndex:1},{value:"lodash",paraId:0,tocIndex:1},{value:" \u5DE5\u5177\u5E93\u65B9\u6CD5",paraId:0,tocIndex:1},{value:"\u65E5\u671F\u3001\u65F6\u95F4\u7B49\u8F6E\u5B50\u65B9\u6CD5\u7EDF\u4E00\u4F7F\u7528 ",paraId:0,tocIndex:1},{value:"moment",paraId:0,tocIndex:1},{value:" \u6216 ",paraId:0,tocIndex:1},{value:"dayjs",paraId:0,tocIndex:1},{value:" \u5DE5\u5177\u5E93\u65B9\u6CD5",paraId:0,tocIndex:1},{value:"\u7279\u6B8A\u5DE5\u5177\u7C7B\u65B9\u6CD5\u9700\u8BC4\u4F30\u662F\u5426\u901A\u7528\uFF0C\u6839\u636E\u5176\u901A\u7528\u6027\u8BC4\u4F30\u5728VRM\u7248 utils/index \u6587\u4EF6\u4E2D\u6DFB\u52A0\uFF0C\u6216\u76F4\u63A5\u5728\u4E1A\u52A1\u6A21\u5757\u5185\u6DFB\u52A0",paraId:0,tocIndex:1}]},29737:function(t,e,a){a.r(e),a.d(e,{texts:function(){return n}});var d=a(60207);const n=[{value:"\u8BED\u8A00\u89C4\u8303\u4F7F\u7528 ES6+\u98CE\u683C\uFF0C\u907F\u514D\u4F7F\u7528 ES5 \u53CA\u4EE5\u4E0B\u7684\u8BED\u6CD5\u7CD6",paraId:0,tocIndex:0},{value:"\u542F\u7528 Vetur \u63D2\u4EF6\u7684 format on save \u914D\u7F6E\uFF0C\u80FD\u591F\u5728\u4FDD\u5B58\u65F6\u81EA\u52A8\u8FDB\u884C\u683C\u5F0F\u5316\u89C4\u8303\uFF0C\u53EF\u89C4\u8303\u7684\u5185\u5BB9\u6709\uFF1A1. \u7F29\u8FDB\uFF1B2. \u6362\u884C\uFF1B3. \u7A7A\u683C\uFF1B4. \u62EC\u53F7",paraId:1,tocIndex:2},{value:"\u6DFB\u52A0\u914D\u7F6E\uFF0C\u5E76\u8BBE\u7F6E vetur \u7684\u9664 html \u5916\u7684\u6240\u6709\u683C\u5F0F\u98CE\u683C\u4E3A\uFF1Aprettier\uFF0Chtml \u683C\u5F0F\u4E3A\uFF1Aprettyhtml",paraId:2,tocIndex:2},{value:"\u4FEE\u6539 setting.json",paraId:2,tocIndex:2},{value:`  // vscode setting.json \u6DFB\u52A0
+"use strict";(self.webpackChunkfront_library=self.webpackChunkfront_library||[]).push([[904],{53624:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(89385),r={}},97787:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(60207),r={}},47384:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(63921),r={}},61073:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(96035),r={}},73201:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(2051),r={}},34546:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(24349),r={}},85737:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(75570),r={}},55835:function(t,e,a){var d;a.r(e),a.d(e,{demos:function(){return w}});var n=a(15009),r=a.n(n),C=a(99289),A=a.n(C),g=a(62435),_=a(64090),f=a(72925),S=a(53217),v=a(89706),c=a(55171),B=a.n(c),D=a(96486),E=a.n(D),w={"docs-component-base-config-demo-config":{component:g.memo(g.lazy(function(){return a.e(433).then(a.bind(a,22566))})),asset:{type:"BLOCK",id:"docs-component-base-config-demo-config",refAtomIds:[],dependencies:{"index.jsx":{type:"FILE",value:a(78449).Z},react:{type:"NPM",value:"18.3.1"},antd:{type:"NPM",value:"5.21.5"},"@liuyuqin1991/quickcss":{type:"NPM",value:"2.4.0"},"./QueryForm.jsx":{type:"FILE",value:a(50578).Z},"react-json-view":{type:"NPM",value:"1.21.3"},lodash:{type:"NPM",value:"4.17.21"}},entry:"index.jsx"},context:{"./QueryForm.jsx":v,react:d||(d=a.t(g,2)),antd:f,"@liuyuqin1991/quickcss/lib/main.css":S,"E:/repo/front-standard/src/config/QueryForm.jsx":v,"react-json-view":c,lodash:D},renderOpts:{compile:function(){var R=A()(r()().mark(function j(){var P,s=arguments;return r()().wrap(function(m){for(;;)switch(m.prev=m.next){case 0:return m.next=2,a.e(19).then(a.bind(a,4019));case 2:return m.abrupt("return",(P=m.sent).default.apply(P,s));case 3:case"end":return m.stop()}},j)}));function O(){return R.apply(this,arguments)}return O}()}}}},82086:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(52534),r={}},3895:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(68673),r={}},54486:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(33021),r={}},35968:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(89938),r={}},77204:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(32403),r={}},26660:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(14345),r={}},49172:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(27430),r={}},83156:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(864),r={}},7366:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(79848),r={}},87225:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(26673),r={}},27906:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(79445),r={}},81268:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(4805),r={}},80383:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(52371),r={}},18776:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(18552),r={}},11058:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(23406),r={}},88564:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(66405),r={}},5895:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(81942),r={}},40153:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(74883),r={}},57650:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(63993),r={}},11171:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(68537),r={}},57671:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(25875),r={}},91703:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(38795),r={}},80041:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(18768),r={}},30196:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(28513),r={}},47165:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(5372),r={}},394:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(26956),r={}},22132:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(52838),r={}},94253:function(t,e,a){a.r(e),a.d(e,{demos:function(){return r}});var d=a(62435),n=a(3309),r={}},89706:function(t,e,a){a.r(e);var d=a(97857),n=a.n(d),r=a(19632),C=a.n(r),A=a(5574),g=a.n(A),_=a(62435),f=a(48464),S=a(14726),v=a(71230),c=a(15746),B=a(80446),D=a(85265),E=a(34041),w=a(42075),R=a(13457),O=a(55171),j=a.n(O),P=a(96486),s=a.n(P),o=a(86074),m=function(){var F=(0,_.useState)([]),L=g()(F,2),M=L[0],T=L[1],U=(0,_.useState)(!1),$=g()(U,2),k=$[0],N=$[1],l=(0,_.useRef)({}),H=[{title:"label",dataIndex:"label",render:function(I,u,y){return(0,o.jsx)(f.Z,{value:I,onChange:function(i){return x("label",i.currentTarget.value,u.id)}})}},{title:"key",dataIndex:"key",render:function(I,u,y){return(0,o.jsx)(f.Z,{value:I,onChange:function(i){return x("key",i.currentTarget.value,u.id)}})}},{title:"\u64CD\u4F5C",dataIndex:"operation",width:100,render:function(I,u,y){return(0,o.jsxs)("span",{children:[(0,o.jsx)("a",{onClick:function(){return J(u)},children:"\u8BE6\u60C5"}),(0,o.jsx)("span",{className:"mx-4"}),(0,o.jsx)("a",{onClick:function(){return z(u)},children:"\u5220\u9664"})]})}}],W=function(I,u){I(u)},x=function(I,u,y){var h=C()(M),i=s().find(h,function(b){return b.id===y});i[I]=u,T(h),l.current=i},K=function(){T([].concat(C()(M),[{id:s().uniqueId(),label:"",key:"",type:"input",span:1}]))},J=function(I){W(N,!0),l.current=I},z=function(I){T(s().filter(M,function(u){return u.id!==I.id}))},G=function(){var I=l.current.type==="input"?"\u8BF7\u8F93\u5165":"\u8BF7\u9009\u62E9",u=s().isEmpty(l.current.label)?"":l.current.label;x("placeholder",I+u,l.current.id)},V=function(){var I=s().isEmpty(l.current.key)?"":l.current.key;x("name",I,l.current.id)},Y=function(){return s().map(M,function(I){var u=n()({},I);return u.id&&delete u.id,u.span===1&&delete u.span,u})},Z=function(I){var u=document.createElement("textarea"),y=I.src,h=s().map(y,function(b){return b.type==="select"&&b.data}),i=JSON.stringify(y);s().forEach(h,function(b){i=s().replace(i,'"'.concat(b,'"'),b)}),u.innerHTML=i,document.body.appendChild(u),u.select(),document.execCommand("copy"),document.body.removeChild(u)};return(0,o.jsxs)("div",{className:"f-c",children:[(0,o.jsx)("div",{children:(0,o.jsx)(S.ZP,{type:"primary",onClick:K,children:"\u65B0\u589E"})}),(0,o.jsxs)(v.Z,{className:"mt-12",gutter:12,children:[(0,o.jsx)(c.Z,{span:12,children:(0,o.jsx)(B.Z,{rowKey:"id",columns:H,dataSource:M})}),(0,o.jsx)(c.Z,{span:12,children:(0,o.jsx)(j(),{src:Y(),theme:"google",indentWidth:2,iconStyle:"circle",style:{minHeight:"300px"},name:!1,quotesOnKeys:!1,enableClipboard:Z})})]}),(0,o.jsx)(D.Z,{title:"QueryForm\u914D\u7F6E\u8BE6\u60C5",placement:"right",closable:!1,onClose:function(){return W(N,!1)},open:k,children:(0,o.jsxs)("div",{className:"f-c",children:[(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u7C7B\u578B"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsx)(E.default,{value:l.current.type,style:{width:"100%"},onChange:function(I){return x("type",I,l.current.id)},options:[{value:"input",label:"input-\u8F93\u5165\u6846"},{value:"select",label:"select-\u4E0B\u62C9\u6846"},{value:"date",label:"date-\u65E5\u671F"},{value:"custom",label:"custom-\u81EA\u5B9A\u4E49"},{value:"week",label:"week-\u5468"},{value:"month",label:"month-\u6708"},{value:"year",label:"year-\u5E74"},{value:"datetime",label:"datetime-\u65E5\u671F+\u65F6\u95F4"},{value:"daterange",label:"daterange-\u65E5\u671F\u8303\u56F4"},{value:"datetimerange",label:"datetimerange-\u65E5\u671F\u65F6\u95F4\u8303\u56F4"}]})})]}),l.current.type==="select"&&(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u5B57\u5178\u6570\u636E\u96C6"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsx)(f.Z,{value:l.current.data?l.current.data.replace(new RegExp("^this.dict.type."),""):"",prefix:"this.dict.type.",onChange:function(I){return x("data","this.dict.type.".concat(I.currentTarget.value),l.current.id)}})}),(0,o.jsx)(c.Z,{span:24,className:"c-r10 mt-4",children:"\uFF08\u6CE8\uFF1A\u81EA\u5B9A\u4E49\u6570\u636E\u96C6\u8BF7\u5728\u914D\u7F6E\u4EE3\u7801\u4E2D\u81EA\u884C\u4FEE\u6539\uFF09"})]}),l.current.type!=="custom"&&(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u5360\u4F4D\u5B57\u7B26"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsxs)(w.Z.Compact,{style:{width:"100%"},children:[(0,o.jsx)(f.Z,{value:l.current.placeholder,onChange:function(I){return x("placeholder",I.currentTarget.value,l.current.id)}}),(0,o.jsx)(S.ZP,{type:"primary",onClick:G,children:"\u81EA\u52A8\u5199\u5165"})]})})]}),(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u5360\u636E\u5217\u6570"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsx)(R.Z,{value:l.current.span,onChange:function(I){return x("span",I,l.current.id)}})})]}),l.current.type=="date"&&(0,o.jsxs)(_.Fragment,{children:[(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u663E\u793A\u683C\u5F0F\u5316"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsx)(E.default,{value:l.current.format,style:{width:"100%"},onChange:function(I){return x("format",I,l.current.id)},options:[{value:"yyyy-MM-dd",label:"yyyy-MM-dd"},{value:"yyyy-M-d",label:"yyyy-M-d"},{value:"yyyy/MM/dd",label:"yyyy/MM/dd"},{value:"yyyy/M/d",label:"yyyy/M/d"},{value:"yyyy\u5E74MM\u6708dd\u65E5",label:"yyyy\u5E74MM\u6708dd\u65E5"},{value:"yyyy\u5E74M\u6708d\u65E5",label:"yyyy\u5E74M\u6708d\u65E5"}]})})]}),(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u8F93\u51FA\u683C\u5F0F\u5316"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsx)(E.default,{value:l.current.valueFormat,style:{width:"100%"},onChange:function(I){return x("valueFormat",I,l.current.id)},options:[{value:"yyyy-MM-dd",label:"yyyy-MM-dd"},{value:"yyyy-M-d",label:"yyyy-M-d"},{value:"yyyy/MM/dd",label:"yyyy/MM/dd"},{value:"yyyy/M/d",label:"yyyy/M/d"},{value:"yyyy\u5E74MM\u6708dd\u65E5",label:"yyyy\u5E74MM\u6708dd\u65E5"},{value:"yyyy\u5E74M\u6708d\u65E5",label:"yyyy\u5E74M\u6708d\u65E5"}]})})]})]}),l.current.type=="datetime"&&(0,o.jsxs)(_.Fragment,{children:[(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u663E\u793A\u683C\u5F0F\u5316"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsx)(E.default,{value:l.current.format,style:{width:"100%"},onChange:function(I){return x("format",I,l.current.id)},options:[{value:"yyyy-MM-dd HH:mm:ss",label:"yyyy-MM-dd HH:mm:ss"},{value:"yyyy-M-d H:m:s",label:"yyyy-M-d H:m:s"},{value:"yyyy/MM/dd HH:mm:ss ",label:"yyyy/MM/dd HH:mm:ss"},{value:"yyyy/M/d H:m:s",label:"yyyy/M/d H:m:s"},{value:"yyyy\u5E74MM\u6708dd\u65E5 HH\u65F6mm\u5206ss\u79D2",label:"yyyy\u5E74MM\u6708dd\u65E5 HH\u65F6mm\u5206ss\u79D2"},{value:"yyyy\u5E74M\u6708d\u65E5 H\u65F6m\u5206s\u79D2",label:"yyyy\u5E74M\u6708d\u65E5 H\u65F6m\u5206s\u79D2"}]})})]}),(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u8F93\u51FA\u683C\u5F0F\u5316"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsx)(E.default,{value:l.current.valueFormat,style:{width:"100%"},onChange:function(I){return x("valueFormat",I,l.current.id)},options:[{value:"yyyy-MM-dd",label:"yyyy-MM-dd"},{value:"yyyy-M-d",label:"yyyy-M-d"},{value:"yyyy/MM/dd",label:"yyyy/MM/dd"},{value:"yyyy/M/d",label:"yyyy/M/d"},{value:"yyyy\u5E74MM\u6708dd\u65E5",label:"yyyy\u5E74MM\u6708dd\u65E5"},{value:"yyyy\u5E74M\u6708d\u65E5",label:"yyyy\u5E74M\u6708d\u65E5"}]})})]})]}),l.current.type==="custom"&&(0,o.jsxs)(v.Z,{className:"my-12",gutter:4,children:[(0,o.jsx)(c.Z,{span:6,className:"f-r --c",children:"\u63D2\u69FD\u540D\u79F0"}),(0,o.jsx)(c.Z,{span:18,children:(0,o.jsxs)(w.Z.Compact,{style:{width:"100%"},children:[(0,o.jsx)(f.Z,{value:l.current.name,onChange:function(I){return x("name",I.currentTarget.value,l.current.id)}}),(0,o.jsx)(S.ZP,{type:"primary",onClick:V,children:"\u81EA\u52A8\u5199\u5165"})]})})]})]})})]})};e.default=function(){return(0,o.jsx)(m,{})}},53245:function(t,e,a){a.r(e),a.d(e,{texts:function(){return n}});var d=a(89385);const n=[{value:"\u6570\u7EC4\u3001\u96C6\u5408\u3001\u51FD\u6570\u3001\u6570\u5B66\u3001\u6570\u5B57\u3001\u5BF9\u8C61\u3001\u5B57\u7B26\u4E32\u3001\u4F7F\u7528\u51FD\u6570\u7B49\u8F6E\u5B50\u65B9\u6CD5\u7EDF\u4E00\u4F7F\u7528 ",paraId:0,tocIndex:1},{value:"lodash",paraId:0,tocIndex:1},{value:" \u5DE5\u5177\u5E93\u65B9\u6CD5",paraId:0,tocIndex:1},{value:"\u65E5\u671F\u3001\u65F6\u95F4\u7B49\u8F6E\u5B50\u65B9\u6CD5\u7EDF\u4E00\u4F7F\u7528 ",paraId:0,tocIndex:1},{value:"moment",paraId:0,tocIndex:1},{value:" \u6216 ",paraId:0,tocIndex:1},{value:"dayjs",paraId:0,tocIndex:1},{value:" \u5DE5\u5177\u5E93\u65B9\u6CD5",paraId:0,tocIndex:1},{value:"\u7279\u6B8A\u5DE5\u5177\u7C7B\u65B9\u6CD5\u9700\u8BC4\u4F30\u662F\u5426\u901A\u7528\uFF0C\u6839\u636E\u5176\u901A\u7528\u6027\u8BC4\u4F30\u5728VRM\u7248 utils/index \u6587\u4EF6\u4E2D\u6DFB\u52A0\uFF0C\u6216\u76F4\u63A5\u5728\u4E1A\u52A1\u6A21\u5757\u5185\u6DFB\u52A0",paraId:0,tocIndex:1}]},29737:function(t,e,a){a.r(e),a.d(e,{texts:function(){return n}});var d=a(60207);const n=[{value:"\u8BED\u8A00\u89C4\u8303\u4F7F\u7528 ES6+\u98CE\u683C\uFF0C\u907F\u514D\u4F7F\u7528 ES5 \u53CA\u4EE5\u4E0B\u7684\u8BED\u6CD5\u7CD6",paraId:0,tocIndex:0},{value:"\u542F\u7528 Vetur \u63D2\u4EF6\u7684 format on save \u914D\u7F6E\uFF0C\u80FD\u591F\u5728\u4FDD\u5B58\u65F6\u81EA\u52A8\u8FDB\u884C\u683C\u5F0F\u5316\u89C4\u8303\uFF0C\u53EF\u89C4\u8303\u7684\u5185\u5BB9\u6709\uFF1A1. \u7F29\u8FDB\uFF1B2. \u6362\u884C\uFF1B3. \u7A7A\u683C\uFF1B4. \u62EC\u53F7",paraId:1,tocIndex:2},{value:"\u6DFB\u52A0\u914D\u7F6E\uFF0C\u5E76\u8BBE\u7F6E vetur \u7684\u9664 html \u5916\u7684\u6240\u6709\u683C\u5F0F\u98CE\u683C\u4E3A\uFF1Aprettier\uFF0Chtml \u683C\u5F0F\u4E3A\uFF1Aprettyhtml",paraId:2,tocIndex:2},{value:"\u4FEE\u6539 setting.json",paraId:2,tocIndex:2},{value:`  // vscode setting.json \u6DFB\u52A0
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur",
     "editor.tabSize": 2,
@@ -4121,26 +4121,23 @@ import '@liuyuqin1991/quickcss/lib/main.css';
 \u81EA\u589E\u7684\u56FA\u5B9A\u5B57\u4F53\u7C97\u7EC6\uFF0C\u7279\u6B8A\u5927\u5C0F\u4E0E\u7C97\u7EC6\u9664\u5916\u3002`,paraId:16,tocIndex:10},{value:"fs-?: \u5B57\u4F53\u5927\u5C0F",paraId:17,tocIndex:11},{value:"fw-?: \u5B57\u4F53\u7C97\u7EC6",paraId:17,tocIndex:11},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:18,tocIndex:11},{value:"Class",paraId:19,tocIndex:11},{value:"Properties",paraId:19,tocIndex:11},{value:"fs-12",paraId:19,tocIndex:11},{value:"font-size:12px",paraId:19,tocIndex:11},{value:"fw-500",paraId:19,tocIndex:11},{value:"font-weight:500",paraId:19,tocIndex:11},{value:"fs-18",paraId:19,tocIndex:11},{value:"font-size:18px",paraId:19,tocIndex:11},{value:"fw-1200",paraId:19,tocIndex:11},{value:"font-weight:1200",paraId:19,tocIndex:11},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u7684\u6587\u5B57\u989C\u8272\uFF08color\uFF09\uFF0C\u80CC\u666F\u989C\u8272\uFF08background-color\uFF09\u548C\u8FB9\u6846\u989C\u8272\uFF08border-color\uFF09\u7684\u529F\u80FD\u7C7B\u3002\u8BE6\u7EC6\u7684\u989C\u8272\u8272\u7CFB\uFF0C\u8272\u503C\u53CA\u989C\u8272\u53D8\u91CF\u53EF\u67E5\u770B\u9879\u76EE\u4E2D\u7684",paraId:20,tocIndex:12},{value:"\u8272\u7CFB\u989C\u8272\u677F",paraId:21,tocIndex:12},{value:"\uFF0C\u7279\u6B8A\u989C\u8272\u9664\u5916\u3002",paraId:20,tocIndex:12},{value:"c-?\uFF1A \u6587\u672C\u989C\u8272",paraId:22,tocIndex:13},{value:"bgc-?: \u80CC\u666F\u989C\u8272",paraId:22,tocIndex:13},{value:"bc-?: \u8FB9\u6846\u989C\u8272",paraId:22,tocIndex:13},{value:"\u6CE8\uFF1A\u8FD9\u91CC\uFF1F\u4E3A\u9879\u76EE\u989C\u8272\u5E93\u4E2D\u7684\u8272\u7CFB\u503C\u3002\u4E3A\u65B9\u4FBF\u4F7F\u7528\u989C\u8272 css\uFF0C\u8FD9\u91CC\u53EF\u4EE5\u901A\u8FC7\u5728 chrome \u4E2D\u4F7F\u7528",paraId:23,tocIndex:13},{value:"chrome-figma-color \u63D2\u4EF6",paraId:23,tocIndex:13},{value:"\uFF0C\u80FD\u591F\u5728 figma \u7F51\u9875\u7248\u8BBE\u8BA1\u7A3F\u4E2D\u663E\u793A\u989C\u8272\u8272\u503C\u5BF9\u5E94\u7684\u989C\u8272\u53D8\u91CF\uFF08\u53EA\u770B\u663E\u793A\u7684\u7B2C\u4E00\u4E2A\u53D8\u91CF\uFF09\uFF0C\u7136\u540E\u4F1A\u6839\u636E\u6240\u5BF9\u5E94\u7684\u8272\u7CFB\u548C\u8272\u503C\u6765\u5B9A\uFF1F\uFF0C\u4F8B\u5982\uFF0C#324558 \u5BF9\u5E94\u7684$neutral-15\uFF0C\u8272\u7CFB\u4E3A n\uFF08neutral\uFF09\uFF0C\u8272\u503C\u4E3A 15\uFF0C\u90A3\u4E48 x=n15\uFF0Cclass \u5373\u53EF\u4EE5\u5199\u6210 c-n15\u3002\u5982\u9700\u53D8\u66F4\u989C\u8272\u5E93\uFF0C\u53EF\u4EE5\u5728 fork \u9879\u76EE\u4FEE\u6539 variables.scss \u4E2D\u7684\u5404\u989C\u8272\u53D8\u91CF\u4E0E\u4E1A\u52A1\u53D8\u91CF\u540E\u91CD\u65B0 build\uFF0C\u5F15\u5165\u7F16\u8BD1\u597D\u7684 css \u5230\u9879\u76EE\u4E2D\u5373\u53EF\u3002",paraId:23,tocIndex:13},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:24,tocIndex:13},{value:"Class",paraId:25,tocIndex:13},{value:"Properties",paraId:25,tocIndex:13},{value:"c-n8",paraId:25,tocIndex:13},{value:"color: $help2",paraId:25,tocIndex:13},{value:"c-n15",paraId:25,tocIndex:13},{value:"color: $title3",paraId:25,tocIndex:13},{value:"c-g11",paraId:25,tocIndex:13},{value:"color: $primary",paraId:25,tocIndex:13},{value:"c-g11",paraId:25,tocIndex:13},{value:"color: $primary",paraId:25,tocIndex:13},{value:"bc-n3",paraId:25,tocIndex:13},{value:"border-color: $border-color",paraId:25,tocIndex:13},{value:"bgc-n0",paraId:25,tocIndex:13},{value:"background-color: $white",paraId:25,tocIndex:13},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u8FB9\u6846\u534A\u5F84\uFF08border-radius\uFF09\u548C\u8FB9\u6846\u539A\u5EA6\uFF08border-width\uFF09\u7684\u529F\u80FD\u7C7B\uFF0C\u5B9A\u4E49\u4E86 1-10 \u4EE5",paraId:26,tocIndex:14},{value:" 1px ",paraId:26,tocIndex:14},{value:`
 \u81EA\u589E\u7684\u8FB9\u6846\u534A\u5F84\u548C\u5B9A\u4E49\u4E86 1-10 \u4EE5`,paraId:26,tocIndex:14},{value:" 1px ",paraId:26,tocIndex:14},{value:`
 \u81EA\u589E\u7684\u8FB9\u6846\u539A\u5EA6\u3002\u5B9A\u4E49\u4E86\u8FB9\u6846\u534A\u5F84\u4E3A 1/4 \u5706\u7684 1 \u4E2A\u7279\u6B8A\u8FB9\u6846\u534A\u5F84\u548C 3 \u4E2A\u5E38\u7528\u7279\u6B8A\u7684\u8FB9\u6846\u6837\u5F0F\u3002\u8FB9\u6846\u989C\u8272\u89C1\u989C\u8272\u7C7B\u3002`,paraId:26,tocIndex:14},{value:"br-?\uFF1A \u8FB9\u6846\u534A\u5F84",paraId:27,tocIndex:15},{value:"bw-?: \u8FB9\u6846\u539A\u5EA6",paraId:27,tocIndex:15},{value:"b-?: \u7279\u6B8A\u8FB9\u6846\uFF08\u53EA\u5305\u542B 3 \u4E2A\u7279\u6B8A\u8FB9\u6846\uFF09",paraId:27,tocIndex:15},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:28,tocIndex:15},{value:"Class",paraId:29,tocIndex:15},{value:"Properties",paraId:29,tocIndex:15},{value:"br-1",paraId:29,tocIndex:15},{value:"border-radius: 1px",paraId:29,tocIndex:15},{value:"br-8",paraId:29,tocIndex:15},{value:"border-radius: 8px",paraId:29,tocIndex:15},{value:"bw-1",paraId:29,tocIndex:15},{value:"border-width: 1px;",paraId:29,tocIndex:15},{value:"bw-5",paraId:29,tocIndex:15},{value:"border-width: 5px;",paraId:29,tocIndex:15},{value:"\u7279\u6B8A\u8FB9\u6846\u534A\u5F84",paraId:29,tocIndex:15},{value:"br--50",paraId:29,tocIndex:15},{value:"border-radius: 50%",paraId:29,tocIndex:15},{value:"\u7279\u6B8A\u8FB9\u6846\uFF08normal\uFF09",paraId:29,tocIndex:15},{value:"b-n",paraId:29,tocIndex:15},{value:"border: 1px solid $border-color;",paraId:29,tocIndex:15},{value:"\u7279\u6B8A\u8FB9\u6846\uFF08light-normal\uFF09",paraId:29,tocIndex:15},{value:"b-ln",paraId:29,tocIndex:15},{value:"border: 1px solid $light-border-color",paraId:29,tocIndex:15},{value:"\u7279\u6B8A\u8FB9\u6846\uFF08primary\uFF09",paraId:29,tocIndex:15},{value:"b-p",paraId:29,tocIndex:15},{value:"border: 1px solid $primary;",paraId:29,tocIndex:15},{value:"\u7528\u4E8E\u63A7\u5236\u4EA4\u4E92\u65B9\u9762\u7684\u529F\u80FD\u7C7B\uFF0C\u6301\u7EED\u7684\u66F4\u65B0\u4E2D\uFF0C\u4E5F\u4F1A\u76F4\u63A5\u5168\u90E8\u5728\u793A\u4F8B\u4E2D\u4ECB\u7ECD\u3002",paraId:30,tocIndex:16},{value:"Class",paraId:31,tocIndex:16},{value:"Properties",paraId:31,tocIndex:16},{value:"cur-p",paraId:31,tocIndex:16},{value:"cursor: pointer;",paraId:31,tocIndex:16},{value:"cur-w",paraId:31,tocIndex:16},{value:"cursor: wait;",paraId:31,tocIndex:16},{value:"cur-t",paraId:31,tocIndex:16},{value:"cursor: text;",paraId:31,tocIndex:16},{value:"cur-m",paraId:31,tocIndex:16},{value:"cursor: move;",paraId:31,tocIndex:16},{value:"cur-h",paraId:31,tocIndex:16},{value:"cursor: help;",paraId:31,tocIndex:16},{value:"cur-na",paraId:31,tocIndex:16},{value:"cursor: not-allowed;",paraId:31,tocIndex:16},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u6EA2\u51FA\uFF08overflow\uFF09\u7684\u529F\u80FD\u7C7B\uFF0C\u5B9A\u4E49\u4E86 overflow\uFF0Coverflow-x\uFF0Coverflow-y \u4E09\u4E2A\u7EF4\u5EA6\uFF0Cauto\uFF0Chidden\uFF0Cvisible \u548C scroll \u56DB\u4E2A\u7C7B\u578B\u3002",paraId:32,tocIndex:17},{value:"o-?\uFF1A xy \u8F74\u6EA2\u51FA\u65B9\u5F0F",paraId:33,tocIndex:18},{value:"ox-?\uFF1Ax \u8F74\u6EA2\u51FA\u65B9\u5F0F",paraId:33,tocIndex:18},{value:"oy-?\uFF1Ay \u8F74\u6EA2\u51FA\u65B9\u5F0F",paraId:33,tocIndex:18},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:34,tocIndex:18},{value:"Class",paraId:35,tocIndex:18},{value:"Properties",paraId:35,tocIndex:18},{value:"o-a",paraId:35,tocIndex:18},{value:"overflow: auto;",paraId:35,tocIndex:18},{value:"o-h",paraId:35,tocIndex:18},{value:"overflow: hidden;",paraId:35,tocIndex:18},{value:"o-v",paraId:35,tocIndex:18},{value:"overflow: visible;",paraId:35,tocIndex:18},{value:"o-s",paraId:35,tocIndex:18},{value:"overflow: scroll;",paraId:35,tocIndex:18},{value:"ox-s",paraId:35,tocIndex:18},{value:"overflow-x: scroll;",paraId:35,tocIndex:18},{value:"oy-h",paraId:35,tocIndex:18},{value:"overflow-y: hidden;",paraId:35,tocIndex:18},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u5806\u6808\u5C42\u7EA7\uFF08z-index\uFF09\u7684\u529F\u80FD\u7C7B\uFF0C\u5B9A\u4E49\u4E86 0-100 \u4EE5",paraId:36,tocIndex:19},{value:" 1 ",paraId:36,tocIndex:19},{value:`
-\u81EA\u589E\u7684 z-index \u5C42\u7EA7\u3002`,paraId:36,tocIndex:19},{value:"z-?\uFF1A \u5C42\u7EA7",paraId:37,tocIndex:20},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:38,tocIndex:20},{value:"Class",paraId:39,tocIndex:20},{value:"Properties",paraId:39,tocIndex:20},{value:"z-1",paraId:39,tocIndex:20},{value:"z-index: 1;",paraId:39,tocIndex:20},{value:"z-11",paraId:39,tocIndex:20},{value:"z-index: 11;",paraId:39,tocIndex:20},{value:"z-57",paraId:39,tocIndex:20},{value:"z-index: 57;",paraId:39,tocIndex:20},{value:"z-100",paraId:39,tocIndex:20},{value:"z-index: 100;",paraId:39,tocIndex:20},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u7684\u76D2\u72B6\u9634\u5F71\uFF08box-shadow\uFF09\u7684\u529F\u80FD\u7C7B\uFF0C\u5B9A\u4E49\u4E86\u5E38\u89C1\u7684 5 \u79CD\u9634\u5F71\u7C7B\u578B\u3002",paraId:40,tocIndex:21},{value:"shadow-?\uFF1A \u9634\u5F71",paraId:41,tocIndex:22},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:42,tocIndex:22},{value:"Class",paraId:43,tocIndex:22},{value:"Properties",paraId:43,tocIndex:22},{value:"shadow-0",paraId:43,tocIndex:22},{value:"box-shadow: none;",paraId:43,tocIndex:22},{value:"shadow-1",paraId:43,tocIndex:22},{value:"box-shadow: 0px 1px 3px rgba(26, 30, 34, 0.08);",paraId:43,tocIndex:22},{value:"shadow-2",paraId:43,tocIndex:22},{value:"box-shadow: 0px 4px 6px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"shadow-3",paraId:43,tocIndex:22},{value:"box-shadow: 0px 5px 15px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"shadow-4",paraId:43,tocIndex:22},{value:"box-shadow: 0px 10px 24px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"shadow-5",paraId:43,tocIndex:22},{value:"box-shadow: 0px 15px 30px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u5982\u4F55\u9690\u85CF\u7684\u529F\u80FD\u7C7B\uFF0C\u5B9A\u4E49\u4E86\u5143\u7D20\u79FB\u9664(display: none)\u4E0E\u5143\u7D20\u4E0D\u53EF\u89C1(visibility: hidden)\u4E24\u79CD\u9690\u85CF\u65B9\u5F0F\u3002",paraId:44,tocIndex:23},{value:"none: \u5143\u7D20\u79FB\u9664",paraId:45,tocIndex:24},{value:"hidden: \u5143\u7D20\u4E0D\u53EF\u89C1",paraId:45,tocIndex:24},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:46,tocIndex:24},{value:"Class",paraId:47,tocIndex:24},{value:"Properties",paraId:47,tocIndex:24},{value:"none",paraId:47,tocIndex:24},{value:"display: none;",paraId:47,tocIndex:24},{value:"hidden",paraId:47,tocIndex:24},{value:"visibility: hidden;",paraId:47,tocIndex:24},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u4F2A\u7C7B\u7684\u529F\u80FD\u7C7B\uFF0C\u76EE\u524D\u53EA\u5B9A\u4E49\u4E86\u4E0B\u5217\u4E94\u79CD\u5E38\u89C1\u7684 hover \u7684\u6548\u679C\u3002",paraId:48,tocIndex:25},{value:"h:c-? hover color",paraId:49,tocIndex:26},{value:"h:bc-? hover border-color",paraId:49,tocIndex:26},{value:"h:bgc-? hover background-color",paraId:49,tocIndex:26},{value:"h:fs-? hover font-size",paraId:49,tocIndex:26},{value:"h:fw-? hover font-weight",paraId:49,tocIndex:26},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:50,tocIndex:26},{value:"Class",paraId:51,tocIndex:26},{value:"Properties",paraId:51,tocIndex:26},{value:"h:c-n8",paraId:51,tocIndex:26},{value:"&:hover{ color: $help2 }",paraId:51,tocIndex:26},{value:"h:bc-n3",paraId:51,tocIndex:26},{value:"&:hover { border-color: $border-color }",paraId:51,tocIndex:26},{value:"h:fs-14",paraId:51,tocIndex:26},{value:"&:hover { font-size: 14px }",paraId:51,tocIndex:26},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u4F4D\u7F6E\uFF08position\uFF09\u7684\u529F\u80FD\u7C7B\uFF0C\u76EE\u524D\u5B9A\u4E49\u4E86\u4E0B\u52173\u79CD\u5E38\u89C1\u7684position\u6548\u679C",paraId:52,tocIndex:27},{value:"pos-?\uFF1A \u4F4D\u7F6E",paraId:53,tocIndex:28},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:54,tocIndex:28},{value:"Class",paraId:55,tocIndex:28},{value:"Properties",paraId:55,tocIndex:28},{value:"pos-r",paraId:55,tocIndex:28},{value:"position: relative;",paraId:55,tocIndex:28},{value:"pos-a",paraId:55,tocIndex:28},{value:"position: absolute;",paraId:55,tocIndex:28},{value:"pos-f",paraId:55,tocIndex:28},{value:"position: fixed;",paraId:55,tocIndex:28},{value:"pos-s",paraId:55,tocIndex:28},{value:"position: sticky;",paraId:55,tocIndex:28},{value:"\u8BC4\u4F30\u5E76\u5438\u6536\u66F4\u591A\u7684\u53EF\u7B80\u5316\u7684 css \u7C7B",paraId:56,tocIndex:29},{value:"\u81EA\u5B9A\u4E49\u4E3B\u9898\u8272\u914D\u7F6E\u65B9\u6848",paraId:56,tocIndex:29},{value:"\u81EA\u9002\u5E94\u65B9\u6848",paraId:56,tocIndex:29},{value:"\u4F2A\u7C7B\u7B49\u7279\u6B8A\u7C7B\u65B9\u6848",paraId:56,tocIndex:29}]},78449:function(t,e){e.Z=`\r
-import React, { useState, useRef } from 'react'\r
-import { Tabs, Button, Drawer, Row, Col, Table, Input, InputNumber, Select, Space } from 'antd';\r
+\u81EA\u589E\u7684 z-index \u5C42\u7EA7\u3002`,paraId:36,tocIndex:19},{value:"z-?\uFF1A \u5C42\u7EA7",paraId:37,tocIndex:20},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:38,tocIndex:20},{value:"Class",paraId:39,tocIndex:20},{value:"Properties",paraId:39,tocIndex:20},{value:"z-1",paraId:39,tocIndex:20},{value:"z-index: 1;",paraId:39,tocIndex:20},{value:"z-11",paraId:39,tocIndex:20},{value:"z-index: 11;",paraId:39,tocIndex:20},{value:"z-57",paraId:39,tocIndex:20},{value:"z-index: 57;",paraId:39,tocIndex:20},{value:"z-100",paraId:39,tocIndex:20},{value:"z-index: 100;",paraId:39,tocIndex:20},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u7684\u76D2\u72B6\u9634\u5F71\uFF08box-shadow\uFF09\u7684\u529F\u80FD\u7C7B\uFF0C\u5B9A\u4E49\u4E86\u5E38\u89C1\u7684 5 \u79CD\u9634\u5F71\u7C7B\u578B\u3002",paraId:40,tocIndex:21},{value:"shadow-?\uFF1A \u9634\u5F71",paraId:41,tocIndex:22},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:42,tocIndex:22},{value:"Class",paraId:43,tocIndex:22},{value:"Properties",paraId:43,tocIndex:22},{value:"shadow-0",paraId:43,tocIndex:22},{value:"box-shadow: none;",paraId:43,tocIndex:22},{value:"shadow-1",paraId:43,tocIndex:22},{value:"box-shadow: 0px 1px 3px rgba(26, 30, 34, 0.08);",paraId:43,tocIndex:22},{value:"shadow-2",paraId:43,tocIndex:22},{value:"box-shadow: 0px 4px 6px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"shadow-3",paraId:43,tocIndex:22},{value:"box-shadow: 0px 5px 15px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"shadow-4",paraId:43,tocIndex:22},{value:"box-shadow: 0px 10px 24px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"shadow-5",paraId:43,tocIndex:22},{value:"box-shadow: 0px 15px 30px rgba(3, 5, 7, 0.08);",paraId:43,tocIndex:22},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u5982\u4F55\u9690\u85CF\u7684\u529F\u80FD\u7C7B\uFF0C\u5B9A\u4E49\u4E86\u5143\u7D20\u79FB\u9664(display: none)\u4E0E\u5143\u7D20\u4E0D\u53EF\u89C1(visibility: hidden)\u4E24\u79CD\u9690\u85CF\u65B9\u5F0F\u3002",paraId:44,tocIndex:23},{value:"none: \u5143\u7D20\u79FB\u9664",paraId:45,tocIndex:24},{value:"hidden: \u5143\u7D20\u4E0D\u53EF\u89C1",paraId:45,tocIndex:24},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:46,tocIndex:24},{value:"Class",paraId:47,tocIndex:24},{value:"Properties",paraId:47,tocIndex:24},{value:"none",paraId:47,tocIndex:24},{value:"display: none;",paraId:47,tocIndex:24},{value:"hidden",paraId:47,tocIndex:24},{value:"visibility: hidden;",paraId:47,tocIndex:24},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u4F2A\u7C7B\u7684\u529F\u80FD\u7C7B\uFF0C\u76EE\u524D\u53EA\u5B9A\u4E49\u4E86\u4E0B\u5217\u4E94\u79CD\u5E38\u89C1\u7684 hover \u7684\u6548\u679C\u3002",paraId:48,tocIndex:25},{value:"h:c-? hover color",paraId:49,tocIndex:26},{value:"h:bc-? hover border-color",paraId:49,tocIndex:26},{value:"h:bgc-? hover background-color",paraId:49,tocIndex:26},{value:"h:fs-? hover font-size",paraId:49,tocIndex:26},{value:"h:fw-? hover font-weight",paraId:49,tocIndex:26},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:50,tocIndex:26},{value:"Class",paraId:51,tocIndex:26},{value:"Properties",paraId:51,tocIndex:26},{value:"h:c-n8",paraId:51,tocIndex:26},{value:"&:hover{ color: $help2 }",paraId:51,tocIndex:26},{value:"h:bc-n3",paraId:51,tocIndex:26},{value:"&:hover { border-color: $border-color }",paraId:51,tocIndex:26},{value:"h:fs-14",paraId:51,tocIndex:26},{value:"&:hover { font-size: 14px }",paraId:51,tocIndex:26},{value:"\u7528\u4E8E\u63A7\u5236\u5143\u7D20\u4F4D\u7F6E\uFF08position\uFF09\u7684\u529F\u80FD\u7C7B\uFF0C\u76EE\u524D\u5B9A\u4E49\u4E86\u4E0B\u52173\u79CD\u5E38\u89C1\u7684position\u6548\u679C",paraId:52,tocIndex:27},{value:"pos-?\uFF1A \u4F4D\u7F6E",paraId:53,tocIndex:28},{value:"\u5982\u4E0B\u793A\u4F8B\uFF1A",paraId:54,tocIndex:28},{value:"Class",paraId:55,tocIndex:28},{value:"Properties",paraId:55,tocIndex:28},{value:"pos-r",paraId:55,tocIndex:28},{value:"position: relative;",paraId:55,tocIndex:28},{value:"pos-a",paraId:55,tocIndex:28},{value:"position: absolute;",paraId:55,tocIndex:28},{value:"pos-f",paraId:55,tocIndex:28},{value:"position: fixed;",paraId:55,tocIndex:28},{value:"pos-s",paraId:55,tocIndex:28},{value:"position: sticky;",paraId:55,tocIndex:28},{value:"\u8BC4\u4F30\u5E76\u5438\u6536\u66F4\u591A\u7684\u53EF\u7B80\u5316\u7684 css \u7C7B",paraId:56,tocIndex:29},{value:"\u81EA\u5B9A\u4E49\u4E3B\u9898\u8272\u914D\u7F6E\u65B9\u6848",paraId:56,tocIndex:29},{value:"\u81EA\u9002\u5E94\u65B9\u6848",paraId:56,tocIndex:29},{value:"\u4F2A\u7C7B\u7B49\u7279\u6B8A\u7C7B\u65B9\u6848",paraId:56,tocIndex:29}]},50578:function(t,e){e.Z=`import React, { useState, useRef } from 'react'\r
+import { Button, Drawer, Row, Col, Table, Input, InputNumber, Select, Space } from 'antd';\r
 import ReactJson from 'react-json-view'\r
 import _ from 'lodash'\r
 \r
-import '@liuyuqin1991/quickcss/lib/main.css';\r
-\r
-const Config = () => {\r
-  const [queryFormTableData, setQueryFormTableData] = useState([])\r
-  const [queryFormDrawer, setQueryFormDrawer] = useState(false)\r
+const QueryForm = () => {\r
+  const [tableData, setTableData] = useState([])\r
+  const [drawer, setDrawer] = useState(false)\r
   let currentRow =  useRef({})\r
-  const queryFormColumns = [{\r
+  const columns = [{\r
     title: 'label',\r
     dataIndex: 'label',\r
-    render: (text, record, index) => { return(<Input value={text} onChange={(e) => editQueryFormData('label', e.currentTarget.value, record.id)} />)},\r
+    render: (text, record, index) => { return(<Input value={text} onChange={(e) => edit('label', e.currentTarget.value, record.id)} />)},\r
   },{\r
     title: 'key',\r
     dataIndex: 'key',\r
-    render: (text, record, index) => {  return(<Input value={text} onChange={(e) => editQueryFormData('key', e.currentTarget.value, record.id)} />)},\r
+    render: (text, record, index) => {  return(<Input value={text} onChange={(e) => edit('key', e.currentTarget.value, record.id)} />)},\r
   },{\r
     title: '\u64CD\u4F5C',\r
     dataIndex: 'operation',\r
@@ -4153,22 +4150,20 @@ const Config = () => {\r
       </span>\r
   }]\r
 \r
-  const { TabPane } = Tabs;\r
-\r
   const toggleDrawer = (func, toggle) => {\r
     func(toggle)\r
   }\r
 \r
-  const editQueryFormData = (key, value, id) => {\r
-    let temp = [...queryFormTableData]\r
+  const edit = (key, value, id) => {\r
+    let temp = [...tableData]\r
     const obj = _.find(temp, (t) => t.id === id)\r
     obj[key] = value\r
-    setQueryFormTableData(temp)\r
+    setTableData(temp)\r
     currentRow.current = obj\r
   }\r
 \r
-  const addQueryFormData = () => {\r
-    setQueryFormTableData([...queryFormTableData, {\r
+  const add = () => {\r
+    setTableData([...tableData, {\r
       id: _.uniqueId(),\r
       label: '',\r
       key: '',\r
@@ -4178,12 +4173,12 @@ const Config = () => {\r
   }\r
 \r
   const selectRow = (record) => {\r
-    toggleDrawer(setQueryFormDrawer, true)\r
+    toggleDrawer(setDrawer, true)\r
     currentRow.current = record\r
   }\r
 \r
   const deleteRow = (record) => {\r
-    setQueryFormTableData(_.filter(queryFormTableData, (q) => {\r
+    setTableData(_.filter(tableData, (q) => {\r
       return q.id !== record.id\r
     }))\r
   }\r
@@ -4192,18 +4187,18 @@ const Config = () => {\r
   const autoPlaceholder = () => {\r
     const prefix = currentRow.current.type === 'input' ? '\u8BF7\u8F93\u5165' : '\u8BF7\u9009\u62E9'\r
     const label = !_.isEmpty(currentRow.current.label) ? currentRow.current.label : ''\r
-    editQueryFormData('placeholder', prefix + label, currentRow.current.id)\r
+    edit('placeholder', prefix + label, currentRow.current.id)\r
   }\r
 \r
   // \u81EA\u52A8\u6CE8\u5165\u63D2\u69FD\r
   const autoSlot = () => {\r
     const label = !_.isEmpty(currentRow.current.key) ? currentRow.current.key : ''\r
-    editQueryFormData('name', label, currentRow.current.id)\r
+    edit('name', label, currentRow.current.id)\r
   }\r
 \r
-  // \u5904\u7406\u8F93\u51FAjson\r
+  // \u5904\u7406QueryForm\u8F93\u51FAjson\uFF0C\u53BB\u6389id\u548Cspan\u4E3A1\u7684\u60C5\u51B5\r
   const processJson = () => {\r
-    return _.map(queryFormTableData, (q) => {\r
+    return _.map(tableData, (q) => {\r
       const temp = {\r
         ...q\r
       }\r
@@ -4213,35 +4208,51 @@ const Config = () => {\r
     })\r
   }\r
 \r
+  // \u5904\u7406QueryForm\u8F93\u51FA\u7C98\u8D34\u677F\uFF0C\u53BB\u6389\u5B57\u5178\u7684\u5F15\u53F7\r
+  const onCopy = (copy) => {\r
+    const container = document.createElement('textarea')\r
+    const arr = copy.src\r
+    const filterStr = _.map(arr, (item) => {\r
+      return item.type === 'select' && item.data\r
+    })\r
+    let tempStr = JSON.stringify(arr)\r
+    _.forEach(filterStr, (s) => {\r
+      tempStr = _.replace(tempStr, \`"\${s}"\`, s)\r
+    })\r
+    container.innerHTML = tempStr\r
+    document.body.appendChild(container)\r
+    container.select()\r
+    document.execCommand('copy')\r
+    document.body.removeChild(container)\r
+  }\r
+\r
   return (\r
-    <React.Fragment>\r
-      <Tabs defaultActiveKey="1">\r
-        <TabPane tab="QueryForm" key="QueryForm">\r
-          <div className="f-c">\r
-            <div>\r
-              <Button type="primary" onClick={addQueryFormData}>\u65B0\u589E</Button>\r
-            </div>\r
-            <Row className="mt-12" gutter={12}>\r
-              <Col span={12}>\r
-                <Table rowKey="id" columns={queryFormColumns} dataSource={queryFormTableData}/>\r
-              </Col>\r
-              <Col span={12}><ReactJson src={processJson()} theme="google" indentWidth={2} iconStyle="circle" style={{minHeight: '300px'}} name={false} /></Col>\r
-            </Row>\r
-          </div>\r
-        </TabPane>\r
-        <TabPane tab="Table" key="Table">\r
-          Content of Tab Pane 2\r
-        </TabPane>\r
-        <TabPane tab="Form" key="Form">\r
-          Content of Tab Pane 3\r
-        </TabPane>\r
-      </Tabs>\r
+    <div className="f-c">\r
+      <div>\r
+        <Button type="primary" onClick={add}>\u65B0\u589E</Button>\r
+      </div>\r
+      <Row className="mt-12" gutter={12}>\r
+        <Col span={12}>\r
+          <Table rowKey="id" columns={columns} dataSource={tableData}/>\r
+        </Col>\r
+        <Col span={12}>\r
+          <ReactJson \r
+            src={processJson()}\r
+            theme="google"\r
+            indentWidth={2}\r
+            iconStyle="circle"\r
+            style={{minHeight: '300px'}}\r
+            name={false}\r
+            quotesOnKeys={false}\r
+            enableClipboard={onCopy}\r
+          /></Col>\r
+      </Row>\r
       <Drawer\r
         title="QueryForm\u914D\u7F6E\u8BE6\u60C5"\r
         placement="right"\r
         closable={false}\r
-        onClose={() => toggleDrawer(setQueryFormDrawer,false)}\r
-        open={queryFormDrawer}\r
+        onClose={() => toggleDrawer(setDrawer,false)}\r
+        open={drawer}\r
       >\r
         <div className="f-c">\r
           <Row className="my-12" gutter={4}>\r
@@ -4250,7 +4261,7 @@ const Config = () => {\r
               <Select\r
                 value={currentRow.current.type}\r
                 style={{ width: '100%' }}\r
-                onChange={(v) => editQueryFormData('type', v, currentRow.current.id)}\r
+                onChange={(v) => edit('type', v, currentRow.current.id)}\r
                 options={[\r
                   { value: 'input', label: 'input-\u8F93\u5165\u6846' },\r
                   { value: 'select', label: 'select-\u4E0B\u62C9\u6846' },\r
@@ -4270,7 +4281,7 @@ const Config = () => {\r
           <Row className="my-12" gutter={4}>\r
             <Col span={6} className="f-r --c">\u5B57\u5178\u6570\u636E\u96C6</Col>\r
             <Col span={18}>\r
-              <Input value={currentRow.current.data?currentRow.current.data.replace(new RegExp('^this.dict.type.'), ''):''} prefix="this.dict.type." onChange={(e) => editQueryFormData('data', \`this.dict.type.\${e.currentTarget.value}\`, currentRow.current.id)} />\r
+              <Input value={currentRow.current.data?currentRow.current.data.replace(new RegExp('^this.dict.type.'), ''):''} prefix="this.dict.type." onChange={(e) => edit('data', \`this.dict.type.\${e.currentTarget.value}\`, currentRow.current.id)} />\r
             </Col>\r
             <Col span={24} className="c-r10 mt-4">\uFF08\u6CE8\uFF1A\u81EA\u5B9A\u4E49\u6570\u636E\u96C6\u8BF7\u5728\u914D\u7F6E\u4EE3\u7801\u4E2D\u81EA\u884C\u4FEE\u6539\uFF09</Col>\r
           </Row> \r
@@ -4280,7 +4291,7 @@ const Config = () => {\r
             <Col span={6} className="f-r --c">\u5360\u4F4D\u5B57\u7B26</Col>\r
             <Col span={18}>\r
               <Space.Compact style={{ width: '100%' }}>\r
-                <Input value={currentRow.current.placeholder} onChange={(e) => editQueryFormData('placeholder', e.currentTarget.value, currentRow.current.id)} />\r
+                <Input value={currentRow.current.placeholder} onChange={(e) => edit('placeholder', e.currentTarget.value, currentRow.current.id)} />\r
                 <Button type="primary" onClick={autoPlaceholder}>\u81EA\u52A8\u5199\u5165</Button>\r
               </Space.Compact>\r
             </Col>\r
@@ -4289,7 +4300,7 @@ const Config = () => {\r
           <Row className="my-12" gutter={4}>\r
             <Col span={6} className="f-r --c">\u5360\u636E\u5217\u6570</Col>\r
             <Col span={18}>\r
-              <InputNumber value={currentRow.current.span} onChange={(v) => editQueryFormData('span', v, currentRow.current.id)} />\r
+              <InputNumber value={currentRow.current.span} onChange={(v) => edit('span', v, currentRow.current.id)} />\r
             </Col>\r
           </Row>\r
           { currentRow.current.type == 'date' && \r
@@ -4300,7 +4311,7 @@ const Config = () => {\r
               <Select\r
                   value={currentRow.current.format}\r
                   style={{ width: '100%' }}\r
-                  onChange={(v) => editQueryFormData('format', v, currentRow.current.id)}\r
+                  onChange={(v) => edit('format', v, currentRow.current.id)}\r
                   options={[\r
                     { value: 'yyyy-MM-dd', label: 'yyyy-MM-dd' },\r
                     { value: 'yyyy-M-d', label: 'yyyy-M-d' },\r
@@ -4318,7 +4329,7 @@ const Config = () => {\r
               <Select\r
                   value={currentRow.current.valueFormat}\r
                   style={{ width: '100%' }}\r
-                  onChange={(v) => editQueryFormData('valueFormat', v, currentRow.current.id)}\r
+                  onChange={(v) => edit('valueFormat', v, currentRow.current.id)}\r
                   options={[\r
                     { value: 'yyyy-MM-dd', label: 'yyyy-MM-dd' },\r
                     { value: 'yyyy-M-d', label: 'yyyy-M-d' },\r
@@ -4340,7 +4351,7 @@ const Config = () => {\r
               <Select\r
                   value={currentRow.current.format}\r
                   style={{ width: '100%' }}\r
-                  onChange={(v) => editQueryFormData('format', v, currentRow.current.id)}\r
+                  onChange={(v) => edit('format', v, currentRow.current.id)}\r
                   options={[\r
                     { value: 'yyyy-MM-dd HH:mm:ss', label: 'yyyy-MM-dd HH:mm:ss' },\r
                     { value: 'yyyy-M-d H:m:s', label: 'yyyy-M-d H:m:s' },\r
@@ -4358,7 +4369,7 @@ const Config = () => {\r
               <Select\r
                   value={currentRow.current.valueFormat}\r
                   style={{ width: '100%' }}\r
-                  onChange={(v) => editQueryFormData('valueFormat', v, currentRow.current.id)}\r
+                  onChange={(v) => edit('valueFormat', v, currentRow.current.id)}\r
                   options={[\r
                     { value: 'yyyy-MM-dd', label: 'yyyy-MM-dd' },\r
                     { value: 'yyyy-M-d', label: 'yyyy-M-d' },\r
@@ -4377,7 +4388,7 @@ const Config = () => {\r
             <Col span={6} className="f-r --c">\u63D2\u69FD\u540D\u79F0</Col>\r
             <Col span={18}>\r
               <Space.Compact style={{ width: '100%' }}>\r
-                <Input value={currentRow.current.name} onChange={(e) => editQueryFormData('name', e.currentTarget.value, currentRow.current.id)} />\r
+                <Input value={currentRow.current.name} onChange={(e) => edit('name', e.currentTarget.value, currentRow.current.id)} />\r
                 <Button type="primary" onClick={autoSlot}>\u81EA\u52A8\u5199\u5165</Button>\r
               </Space.Compact>\r
             </Col>\r
@@ -4385,6 +4396,35 @@ const Config = () => {\r
           }\r
         </div>\r
       </Drawer>\r
+    </div>\r
+  )\r
+}\r
+\r
+export default () => <QueryForm />`},78449:function(t,e){e.Z=`\r
+import React from 'react'\r
+import { Tabs } from 'antd';\r
+\r
+import QueryForm from './QueryForm'\r
+\r
+import '@liuyuqin1991/quickcss/lib/main.css';\r
+\r
+const Config = () => {\r
+\r
+  const { TabPane } = Tabs;\r
+\r
+  return (\r
+    <React.Fragment>\r
+      <Tabs defaultActiveKey="1">\r
+        <TabPane tab="QueryForm" key="QueryForm">\r
+          <QueryForm />\r
+        </TabPane>\r
+        <TabPane tab="Table" key="Table">\r
+          Content of Tab Pane 2\r
+        </TabPane>\r
+        <TabPane tab="Form" key="Form">\r
+          Content of Tab Pane 3\r
+        </TabPane>\r
+      </Tabs>\r
       </React.Fragment>\r
   )\r
 }\r
