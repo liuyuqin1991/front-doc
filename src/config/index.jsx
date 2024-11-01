@@ -3,6 +3,7 @@ import React from 'react'
 import { Tabs } from 'antd';
 
 import QueryForm from './QueryForm'
+import Table from './Table'
 
 import '@liuyuqin1991/quickcss/lib/main.css';
 
@@ -17,7 +18,7 @@ const Config = () => {
           <QueryForm />
         </TabPane>
         <TabPane tab="Table" key="Table">
-          Content of Tab Pane 2
+          <Table />
         </TabPane>
         <TabPane tab="Form" key="Form">
           Content of Tab Pane 3

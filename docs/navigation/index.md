@@ -120,6 +120,18 @@ title: 导航
       <div class="sub-title">基于HTML/CSS/Javscript的前端框架</div>
     </a>
   </div>
+  <div class="li">
+    <a href="https://www.html5plus.org/doc/h5p.html/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">H5+</div>
+      </div>
+      <div class="sub-title">html5plus api</div>
+    </a>
+  </div>
+
+
+  
 </div>
 
 ### UI库
@@ -153,10 +165,19 @@ title: 导航
     </a>
   </div>
   <div class="li">
-    <a href="https://vant-contrib.gitee.io/vant/v2/#/zh-CN/advanced-usage" target="_blank" class="a">
+    <a href="https://vant-ui.github.io/vant/v2/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">Vant</div>
+        <div class="title">Vant2</div>
+      </div>
+      <div class="sub-title">轻量、可靠的移动端 Vue UI组件库</div>
+    </a>
+  </div>
+    <div class="li">
+    <a href="https://vant-ui.github.io/vant/v3/#/zh-CN" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Vant3</div>
       </div>
       <div class="sub-title">轻量、可靠的移动端 Vue UI组件库</div>
     </a>
@@ -247,6 +268,42 @@ title: 导航
       <div class="sub-title">第四代 Web 地图渲染引擎</div>
     </a>
   </div>
+  <div class="li">
+    <a href="https://www.wangeditor.com/v5/for-frame.html" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">wangeditor</div>
+      </div>
+      <div class="sub-title">富文本编辑器</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://github.com/saucxs/watermark-dom" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">watermark-dom</div>
+      </div>
+      <div class="sub-title">水印生成</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://x6.antv.vision/zh/docs/tutorial/getting-started" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">@antv/x6-1.34.6</div>
+      </div>
+      <div class="sub-title">流程图、DAG图、ER图等图应用</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://dev.qweather.com/docs/start" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">和风天气</div>
+      </div>
+      <div class="sub-title">天气服务</div>
+    </a>
+  </div>
 </div>
 
 ### vue 生态
@@ -267,7 +324,7 @@ title: 导航
         <div>🔖</div>
         <div class="title">Vue CLI</div>
       </div>
-      <div class="sub-title">Vue CLI官方文档</div>
+      <div class="sub-title">Vue 脚手架</div>
     </a>
   </div>
   <div class="li">
@@ -276,7 +333,7 @@ title: 导航
         <div>🔖</div>
         <div class="title">Vuex</div>
       </div>
-      <div class="sub-title">Vuex官方文档</div>
+      <div class="sub-title">状态管理</div>
     </a>
   </div>
   <div class="li">
@@ -285,7 +342,61 @@ title: 导航
         <div>🔖</div>
         <div class="title">RuoYi-Vue</div>
       </div>
-      <div class="sub-title">RuoYi-Vue官方文档</div>
+      <div class="sub-title">RuoYi前端框架</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://www.javasoho.com/vuetreeselect/index_cn.html" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-treeselect</div>
+      </div>
+      <div class="sub-title">vue-treeselect是一个多选组件，具有对Vue.js嵌套选项支持</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://www.itxst.com/vue-draggable/tutorial.html" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-draggable</div>
+      </div>
+      <div class="sub-title">一款基于Sortable.js实现的vue拖拽插件。支持移动设备、拖拽和选择文本、智能滚动</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://github.com/PanJiaChen/vue-countTo" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-count-to</div>
+      </div>
+      <div class="sub-title">数字显示美化</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://github.com/501351981/vue-office" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-office</div>
+      </div>
+      <div class="sub-title">支持多种文件(docx、excel、pdf、pptx)预览的vue组件库，支持vue2/3。也支持非Vue框架的预览</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://github.com/simple-uploader/vue-uploader" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-uploader</div>
+      </div>
+      <div class="sub-title">大文件上传</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://chenxuan0000.github.io/vue-seamless-scroll/zh" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-seamless-scroll</div>
+      </div>
+      <div class="sub-title">一个简单的基于vue.js的无缝滚动</div>
     </a>
   </div>
 </div>

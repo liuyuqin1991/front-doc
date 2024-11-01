@@ -3,7 +3,7 @@ import { Button, Drawer, Row, Col, Table, Input, InputNumber, Select, Space } fr
 import ReactJson from 'react-json-view'
 import _ from 'lodash'
 
-const QueryForm = () => {
+const VQueryForm = () => {
   const [tableData, setTableData] = useState([])
   const [drawer, setDrawer] = useState(false)
   let currentRow =  useRef({})
@@ -73,7 +73,7 @@ const QueryForm = () => {
     edit('name', label, currentRow.current.id)
   }
 
-  // 处理QueryForm输出json，去掉id和span为1的情况
+  // 处理输出json，去掉id和span为1的情况
   const processJson = () => {
     return _.map(tableData, (q) => {
       const temp = {
@@ -85,7 +85,7 @@ const QueryForm = () => {
     })
   }
 
-  // 处理QueryForm输出粘贴板，去掉字典的引号
+  // 处理输出粘贴板，去掉字典的引号
   const onCopy = (copy) => {
     const container = document.createElement('textarea')
     const arr = copy.src
@@ -130,6 +130,7 @@ const QueryForm = () => {
         closable={false}
         onClose={() => toggleDrawer(setDrawer,false)}
         open={drawer}
+        width={400}
       >
         <div className="f-c">
           <Row className="my-12" gutter={4}>
@@ -277,4 +278,4 @@ const QueryForm = () => {
   )
 }
 
-export default () => <QueryForm />
+export default () => <VQueryForm />
