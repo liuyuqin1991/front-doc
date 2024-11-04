@@ -65,8 +65,8 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |   multiple<sup style="color: red">v6</sup>   | 是否多选，type 为 select 特有   |     Boolean     |            否             |
 |   filterable<sup style="color: red">v6</sup>   | 是否可搜索，type 为 select 特有   |     Boolean     |            否             |
 |    rows<sup style="color: red">v2</sup>     | 文本域行数，type 为 textarea 特有         |     Number     |            否             |
-|    format     | 显示格式化，type 为 日期时间类 特有                    |     String     |             否             |
-|    valueFormat     | 输出格式化，type 为 日期时间类 特有                    |     String     |             否             |
+|    format     | 显示格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
+|    valueFormat     | 输出格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
 |   prepend   | 输入框前置内容，type 为 input 特有         |     String     |            否             |
 |   append   | 输入框后置内容，type 为 input 特有         |     String     |            否             |
 |   ignore<sup style="color: red">v3</sup>   | form-item内容是否忽略     |     Boolean     |            否             |
@@ -79,7 +79,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 注：
 
 1. type
-   列类型，可选值：input（输入框）、input-number<sup style="color: red">v5</sup>（数字输入框）、password（密码）、textarea<sup style="color: red">v2</sup>（文本域）、select（下拉框）、radio<sup style="color: red">v5</sup>（单选）、radio-button<sup style="color: red">v5</sup>（单选按钮）、data（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、fileUpload<sup style="color: red">v4</sup>（文件上传）、imageUpload<sup style="color: red">v4</sup>（图片上传）、custom（自定义）
+   列类型，可选值：input（输入框）、input-number<sup style="color: red">v5</sup>（数字输入框）、password（密码）、textarea<sup style="color: red">v2</sup>（文本域）、select（下拉框）、radio<sup style="color: red">v5</sup>（单选）、radio-button<sup style="color: red">v5</sup>（单选按钮）、data（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<sup style="color: red">v7</sup>（时分）、timesecond<sup style="color: red">v7</sup>（时分秒）、timerange<sup style="color: red">v7</sup>（时分范围）、timesecondrange<sup style="color: red">v7</sup>（时分秒范围）、fileUpload<sup style="color: red">v4</sup>（文件上传）、imageUpload<sup style="color: red">v4</sup>（图片上传）、custom（自定义）
 
 2. data
    type 为 select 和 radio 特有，示例如下：
