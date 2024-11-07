@@ -1,31 +1,105 @@
-import React, { useState, useRef } from 'react'
-import { Button, Drawer, Row, Col, Table, Input, Radio , Select, Space } from 'antd';
+import React, { useState, useRef, useContext, useMemo, useEffect } from 'react'
+import { Button, Drawer, Row, Col, Table, Input, InputNumber, Radio , Select, Space } from 'antd';
+import { HolderOutlined } from '@ant-design/icons';
+import { DndContext } from '@dnd-kit/core';
+import { restrictToVerticalAxis } from '@dnd-kit/modifiers';
+import {
+  arrayMove,
+  SortableContext,
+  useSortable,
+  verticalListSortingStrategy,
+} from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
 import ReactJson from 'react-json-view'
 import _ from 'lodash'
 
-const VTable = () => {
+const RowContext = React.createContext({});
+
+const DragHandle = () => {
+  const { setActivatorNodeRef, listeners } = useContext(RowContext);
+  return (
+    <Button
+      type="text"
+      size="small"
+      icon={<HolderOutlined />}
+      style={{ cursor: 'move' }}
+      ref={setActivatorNodeRef}
+      {...listeners}
+    />
+  );
+};
+
+const tableRow = (props) => {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    setActivatorNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id: props['data-row-key'] });
+
+  const style = {
+    ...props.style,
+    transform: CSS.Translate.toString(transform),
+    transition,
+    ...(isDragging ? { position: 'relative', zIndex: 9999 } : {}),
+  };
+
+  const contextValue = useMemo(
+    () => ({ setActivatorNodeRef, listeners }),
+    [setActivatorNodeRef, listeners],
+  );
+
+  return (
+    <RowContext.Provider value={contextValue}>
+      <tr {...props} ref={setNodeRef} style={style} {...attributes} />
+    </RowContext.Provider>
+  );
+};
+
+const VTable = ({ formData }) => {
   const [tableData, setTableData] = useState([])
   const [drawer, setDrawer] = useState(false)
   let currentRow =  useRef({})
-  const columns = [{
-    title: 'label',
-    dataIndex: 'label',
-    render: (text, record, index) => { return(<Input value={text} onChange={(e) => edit('label', e.currentTarget.value, record.id)} />)},
-  },{
-    title: 'key',
-    dataIndex: 'key',
-    render: (text, record, index) => {  return(<Input value={text} onChange={(e) => edit('key', e.currentTarget.value, record.id)} />)},
-  },{
-    title: '操作',
-    dataIndex: 'operation',
-    width: 100,
-    render: (text, record, index) =>
-      <span>
-        <a onClick={() => selectRow(record)}>详情</a>
-        <span className="mx-4" />
-        <a onClick={() => deleteRow(record)}>删除</a>
-      </span>
-  }]
+
+  const onDragEnd = ({ active, over }) => {
+    if (active.id !== over?.id) {
+      setTableData((prevState) => {
+        const activeIndex = prevState.findIndex((record) => record.id === active?.id);
+        const overIndex = prevState.findIndex((record) => record.id === over?.id);
+        return arrayMove(prevState, activeIndex, overIndex);
+      });
+    }
+  };
+
+  const columns = [
+    { 
+      key: 'sort', 
+      align: 'center', 
+      width: 50, 
+      render: () => <DragHandle /> 
+    },{
+      title: 'label',
+      dataIndex: 'label',
+      render: (text, record, index) => { return(<Input value={text} onChange={(e) => edit('label', e.currentTarget.value, record.id)} />)},
+    },{
+      title: 'key',
+      dataIndex: 'key',
+      render: (text, record, index) => {  return(<Input value={text} onChange={(e) => edit('key', e.currentTarget.value, record.id)} />)},
+    },{
+      title: '操作',
+      dataIndex: 'operation',
+      width: 100,
+      render: (text, record, index) =>
+        <span>
+          <a onClick={() => selectRow(record)}>详情</a>
+          <span className="mx-4" />
+          <a onClick={() => deleteRow(record)}>删除</a>
+        </span>
+    }
+  ]
 
   const toggleDrawer = (func, toggle) => {
     func(toggle)
@@ -39,7 +113,7 @@ const VTable = () => {
     currentRow.current = obj
   }
 
-  const add = () => {
+  const addRow = () => {
     setTableData([...tableData, {
       id: _.uniqueId(),
       label: '',
@@ -59,13 +133,34 @@ const VTable = () => {
     }))
   }
 
+  // 自动生成表单 setTableData
+  const autoGenerate = () => {
+    const result = []
+    _.forEach(formData, (d) => {
+      if(_.includes(['input', 'input-number','textarea',], d.type)) {
+        result.push({id: d.id, type: 'text', label: d.label, key: d.key})
+      } else if(_.includes(['select', 'radio','radio-button',], d.type)){
+        result.push({id: d.id, type: 'text', label: d.label, key: d.key, dict: d.data})
+      } else if(d.type === 'custom') {
+        result.push({id: d.id, type: 'custom', label: d.label, key: d.key, name: d.name})
+      } else if(_.includes(['date', 'week','month','year','datetime','daterange'], d.type)) {
+        result.push({id: d.id, type: 'date', label: d.label, key: d.key})
+      } else if(_.includes(['time', 'timerange'], d.type)) {
+        result.push({id: d.id, type: 'time', label: d.label, key: d.key})
+      } else if(d.type === 'imageUpload') {
+        result.push({id: d.id, type: 'image', label: d.label, key: d.key})
+      }
+    })
+    setTableData(result)
+  }
+
   // 自动注入插槽
   const autoSlot = () => {
     const label = !_.isEmpty(currentRow.current.key) ? currentRow.current.key : ''
     edit('name', label, currentRow.current.id)
   }
 
-  // 处理输出json，去掉id和span为1的情况
+  // 处理输出json，去掉不需要的字段与默认值
   const processJson = () => {
     return _.map(tableData, (q) => {
       const temp = {
@@ -100,11 +195,16 @@ const VTable = () => {
   return (
     <div className="f-c">
       <div>
-        <Button type="primary" onClick={add}>新增</Button>
+        <Button type="primary" onClick={addRow}>新增</Button>
+        <Button type="primary" className="ml-8" onClick={autoGenerate}>一键生成</Button>
       </div>
       <Row className="mt-12" gutter={12}>
         <Col span={12}>
-          <Table rowKey="id" columns={columns} dataSource={tableData}/>
+          <DndContext modifiers={[restrictToVerticalAxis]} onDragEnd={onDragEnd}>
+            <SortableContext items={tableData.map((i) => i.id)} strategy={verticalListSortingStrategy}>
+              <Table rowKey="id" columns={columns} dataSource={tableData} components={{ body: { row: tableRow } }} pagination={false} />
+            </SortableContext>
+          </DndContext>
         </Col>
         <Col span={12}>
           <ReactJson 
@@ -252,4 +352,4 @@ const VTable = () => {
   )
 }
 
-export default () => <VTable />
+export default VTable
