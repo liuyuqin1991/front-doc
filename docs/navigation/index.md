@@ -399,6 +399,15 @@ title: 导航
       <div class="sub-title">一个简单的基于vue.js的无缝滚动</div>
     </a>
   </div>
+  <div class="li">
+    <a href="https://github.com/leezng/vue-json-pretty" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-json-pretty</div>
+      </div>
+      <div class="sub-title">一个 JSON 美化工具</div>
+    </a>
+  </div>
 </div>
 
 ### react 生态
