@@ -290,7 +290,7 @@ title: 导航
     <a href="https://x6.antv.vision/zh/docs/tutorial/getting-started" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">@antv/x6-1.34.6</div>
+        <div class="title">antV-x6</div>
       </div>
       <div class="sub-title">流程图、DAG图、ER图等图应用</div>
     </a>
@@ -488,7 +488,6 @@ title: 导航
   </div>
 </div>
 
-
 ### 其他
 
 <div class="ul">
@@ -553,6 +552,15 @@ title: 导航
         <div class="title">ES6</div>
       </div>
       <div class="sub-title">ES6 入门教程</div>
+    </a>
+  </div>
+    <div class="li">
+    <a href="https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vscode</div>
+      </div>
+      <div class="sub-title">vscode插件官方中文文档</div>
     </a>
   </div>
 </div>
