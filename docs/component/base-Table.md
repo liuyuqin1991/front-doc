@@ -32,6 +32,7 @@ order: 3
 | is-height-outer-resize | 是否外部自适应高度，如开启此项，就不要传height与max-height           |      Boolean       |   可选   |  false  |
 | row-key | 列表rowKey，与el-table中的row-key 结构一致          |      [String, Function]      |   可选   |  'id'  |
 | cell-style | 单元格的 style 的回调方法， 与 el-table 组件中 cell-style 结构一致 |      [Function, Object]      |   可选   |  undefined  |
+| span-method<sup style="color: red">v3</sup> | 合并行或列的计算方法 的回调方法， 与 el-table 组件中 span-method 结构一致 |      Function      |   可选   |  undefined  |
 
 注：
 
