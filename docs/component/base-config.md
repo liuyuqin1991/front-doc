@@ -6,7 +6,7 @@ group:
   title: 基础组件
   order: 1
 title: 配置可视化
-order: 11
+order: 99
 ---
 
 # 配置可视化
