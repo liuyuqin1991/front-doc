@@ -408,6 +408,15 @@ title: 导航
       <div class="sub-title">一个 JSON 美化工具</div>
     </a>
   </div>
+  <div class="li">
+    <a href="https://kazupon.github.io/vue-i18n/zh/introduction.html" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">vue-i18n</div>
+      </div>
+      <div class="sub-title">Vue.js的国际化插件</div>
+    </a>
+  </div>
 </div>
 
 ### react 生态
