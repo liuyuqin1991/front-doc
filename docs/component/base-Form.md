@@ -63,7 +63,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    span     | 占据列数，小于columns列数        |     Number     |             否             |
 |    data     | 数据集，type 为 select 和 radio 特有                       | [Array,Object] | 否，但 type 为 select 和 radio 必须 | 
 |   multiple<sup style="color: red">v6</sup>   | 是否多选，type 为 select 特有   |     Boolean     |            否             |
-|   filterable<sup style="color: red">v6</sup>   | 是否可搜索，type 为 select 特有   |     Boolean     |            否             |
+|   filterable<sup style="color: red">v6</sup>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
 |    rows<sup style="color: red">v2</sup>     | 文本域行数，type 为 textarea 特有         |     Number     |            否             |
 |    format     | 显示格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
 |    valueFormat     | 输出格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |

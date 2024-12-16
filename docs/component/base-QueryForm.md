@@ -45,6 +45,7 @@ order: 2
 |    span     | 占据列数，小于columns列数        |     Number     |             否             |
 |    format     | 显示格式化                    |     String     |             否             |
 |    valueFormat     | 输出格式化                    |     String     |             否             |
+|   filterable<sup style="color: red">v3</sup>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
 
 注：
 
