@@ -23,6 +23,8 @@ order: 10
 | :-------------: | :---------------------------- | :-----: | :------: | :-----------------------------------------------: |
 | height | 高度  | Number  |   可选   |                         550                         |
 | mode | 显示模式     | String  |   可选   |                         'simple'                         |
+| start<sup style="color: red">v2</sup>  | 有效的开始日期     | String  |   可选   |                         undefined                         |
+| end<sup style="color: red">v2</sup>  | 有效的结束日期     | String  |   可选   |                         undefined                        |
 
 注：
 
@@ -31,6 +33,9 @@ order: 10
     a. 简单版，只显示日期数字
     b. 标准版，显示日期数字和农历
     c. 复杂版，显示日期数字，法定节假日，休假日，调休日
+
+2. start与end
+  日期格式为字符串，例如：'2024-12-12'，有效期为(start, end]
 
 ### slot
 
