@@ -72,7 +72,6 @@ order: 3
 |     select-all     | 当用户手动勾选全选 Checkbox 时触发的事件，同el-table的select-all事件  |     selection: Array  |
 |      selection-change    | 当选择项发生变化时会触发该事件，同el-table的selection-change事件  |     selection: Array     |
 |       sort       | 排序回调，同el-table的sort-change事件     |     orderList: Array     |
-| paginationChange | 当分页数据发生变化时触发该事件            | {pageNum:xx,pageSize:xx} |
 |    自定义事件    | 列配置中 type 为 tag 时的自定义事件 |       row: Object        |
 
 ### Config Attributes
