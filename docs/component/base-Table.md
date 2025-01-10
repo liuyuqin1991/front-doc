@@ -57,10 +57,6 @@ order: 3
 | :-----------: | :----------- | :----------------------: |
 | setPagination | 设置分页参数 | {pageNum:xx,pageSize:xx} |
 
-注：
-
-1. setPagination
-   在查询，排序事件中需要重置pageNum为1：`this.$refs.table.setPagination({ pageNum: 1 })`
 
 ### Event
 
