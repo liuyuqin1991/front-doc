@@ -69,12 +69,13 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    valueFormat     | 输出格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
 |   prepend   | 输入框前置内容，type 为 input 特有         |     String     |            否             |
 |   append   | 输入框后置内容，type 为 input 特有         |     String     |            否             |
-|   ignore<sup style="color: red">v3</sup>   | form-item内容是否忽略     |     Boolean     |            否             |
+|   ignore<sup style="color: red">v3</sup>   | form-item内容是否忽略     |     [Boolean, Function]     |            否             |
 |   limit<sup style="color: red">v4</sup>   | 上传数量限制，type 为 fileUpload 与 imageUpload 特有   |     Number     |            否             |
 |   fileSize<sup style="color: red">v4</sup>   | 上传大小（MB）限制，type 为 fileUpload 与 imageUpload 特有   |     Number     |            否             |
 |   fileType<sup style="color: red">v4</sup>   | 上传类型限制，type 为 fileUpload 与 imageUpload 特有   |     Array     |            否             |
 |   min<sup style="color: red">v5</sup>   | 输入最小值，type 为 input-number 特有   |     Number     |            否             |
 |   max<sup style="color: red">v5</sup>   | 输入最大值，type 为 input-number 特有   |     Number     |            否             |
+|   tooltip<sup style="color: red">v8</sup>   | 提示信息   |     String     |            否             |
 
 注：
 
@@ -105,33 +106,24 @@ data: {
   type 为 data、daterange、datetimerange 特有，同elementui里DatePicker组件里的format与value-format
 
 5. ignore
-  form-item内容是否忽略，一般用于某一表单项在特定场景下显示或者忽略，比如在新增时显示，在修改/查看时忽略，可进行如下设置
+  form-item内容是否忽略，一般用于某一表单项在特定场景下显示或者忽略，类型为Boolean或Function，类型为Function时，入参为form对象，可以根据form对象其他字段参数来决定是否忽略，比如可进行如下设置
 
 ```
+// 当与action关联时
 {
   type: 'input',
   label: '用户密码',
   key: 'password',
   ignore: this.action !== 'add',  // 新增时显示密码表单项，修改/查看时忽略该表单项
-  rule: [
-    {
-      required: true,
-      message: '用户密码不能为空',
-      trigger: 'blur'
-    },
-    {
-      min: 5,
-      max: 20,
-      message: '用户密码长度必须介于 5 和 20 之间',
-      trigger: 'blur'
-    },
-    {
-      pattern: /^[^<>"'|\\]+$/,
-      message: '不能包含非法字符：< > " \' \\ |',
-      trigger: 'blur'
-    }
-  ]
 },
+
+// 当与其他表单项关联时
+{
+  type: 'input',
+  label: '错误信息',
+  key: 'info',
+  ignore: (form) => { return form.status !== '失败' } // 当表单项状态字段不等于失败时，忽略此表单项
+}
 ```
 
 ## 示例
