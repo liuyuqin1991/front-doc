@@ -84,7 +84,7 @@ order: 3
 | sortable | 是否排序                                               | Boolean |            否             |
 |   dict   | type 为 text 和 tag 特有，字典数据，需要映射字典时使用 |  Array  |            否             |
 |  click   | type 为 text 和 tag 特有，自定义点击事件 emit 的名称   | String  |            否             |
-|  show-overflow-tooltip<sup style="color: red">v5</sup>   | type 为 text 特有，当内容过长被隐藏时显示 tooltip   | Boolean  |            否             |
+|  showOverflowTooltip<sup style="color: red">v5</sup>   | type 为 text 特有，当内容过长被隐藏时显示 tooltip   | Boolean  |            否             |
 |   map    | type 为 text 特有，map 数据，需要映射 map 时使用       | Object  |            否             |
 | mapSize  | type 为 image 特有，map 数据，需要映射 map 时使用      | Object  | 否，但 type 为 image 必须 |
 | disabledFilter<sup style="color: red">v2</sup> | 禁用列过滤，如设置true，则该列不受列过滤影响持续显示 | Boolean |            否             |

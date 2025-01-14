@@ -61,8 +61,8 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    rule     | 规则               |     Array     |             否             |
 |   disabled  | form-item内容是否禁用     |     Boolean     |             否             |
 |    span     | 占据列数，小于columns列数        |     Number     |             否             |
-|    data     | 数据集，type 为 select 和 radio 特有                       | [Array,Object] | 否，但 type 为 select 和 radio 必须 | 
-|   multiple<sup style="color: red">v6</sup>   | 是否多选，type 为 select 特有   |     Boolean     |            否             |
+|    data     | 数据集，type 为 select、select-tree、radio 特有      | [Array,Object] | 否，但 type 为 select、select-tree、radio 必须 | 
+|   multiple<sup style="color: red">v6</sup>   | 是否多选，type 为 select 与 select-tree特有   |     Boolean     |            否             |
 |   filterable<sup style="color: red">v6</sup>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
 |    rows<sup style="color: red">v2</sup>     | 文本域行数，type 为 textarea 特有         |     Number     |            否             |
 |    format     | 显示格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
@@ -75,19 +75,19 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |   fileType<sup style="color: red">v4</sup>   | 上传类型限制，type 为 fileUpload 与 imageUpload 特有   |     Array     |            否             |
 |   min<sup style="color: red">v5</sup>   | 输入最小值，type 为 input-number 特有   |     Number     |            否             |
 |   max<sup style="color: red">v5</sup>   | 输入最大值，type 为 input-number 特有   |     Number     |            否             |
-|   tooltip<sup style="color: red">v8</sup>   | 提示信息   |     String     |            否             |
+|   tooltip<sup style="color: red">v8</sup>   | label的提示信息   |     String     |            否             |
 
 注：
 
 1. type
-   列类型，可选值：input（输入框）、input-number<sup style="color: red">v5</sup>（数字输入框）、password（密码）、textarea<sup style="color: red">v2</sup>（文本域）、select（下拉框）、radio<sup style="color: red">v5</sup>（单选）、radio-button<sup style="color: red">v5</sup>（单选按钮）、date（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<sup style="color: red">v7</sup>（时间）、timerange<sup style="color: red">v7</sup>（时间范围）、fileUpload<sup style="color: red">v4</sup>（文件上传）、imageUpload<sup style="color: red">v4</sup>（图片上传）、custom（自定义）
+   列类型，可选值：input（输入框）、input-number<sup style="color: red">v5</sup>（数字输入框）、password（密码）、textarea<sup style="color: red">v2</sup>（文本域）、select（下拉框）、select-tree<sup style="color: red">v9</sup>（下拉树）、radio<sup style="color: red">v5</sup>（单选）、radio-button<sup style="color: red">v5</sup>（单选按钮）、date（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<sup style="color: red">v7</sup>（时间）、timerange<sup style="color: red">v7</sup>（时间范围）、fileUpload<sup style="color: red">v4</sup>（文件上传）、imageUpload<sup style="color: red">v4</sup>（图片上传）、custom（自定义）
 
 2. data
    type 为 select 和 radio 特有，示例如下：
    
 ```
 
-// data类型为Array，映射关系默认为{ label: 'label' , value: 'value'}
+// data类型为Array，下拉框映射关系默认为{ label: 'label' , value: 'value'}，下拉树映射关系默认为{ label: 'label' , value: 'id'}
 data: this.dict.type.event_status,
 
 // data类型为Object，手动指定映射关系
@@ -100,7 +100,7 @@ data: {
 ```   
 
 3. span
-   占据列数，用于超长的表单项，默认占据 1 列，需 <= columns
+   占据列数，用于超长的表单项，默认占据 1 列，需 <= columns，这并非栅格布局中的span
   
 4. format与valueFormat
   type 为 data、daterange、datetimerange 特有，同elementui里DatePicker组件里的format与value-format
