@@ -346,6 +346,16 @@ const VTable = ({ formData }) => {
             </Col>
             <Col span={24} className="c-r10 mt-4">注：是否隐藏列，如设置true，则该列在表格初始化时不显示，默认为false</Col>
           </Row>
+          <Row className="my-12" gutter={4}>
+            <Col span={6} className="f-r --c">是否内容过长隐藏</Col>
+            <Col span={18}>
+              <Radio.Group value={currentRow.current.showOverflowTooltip} onChange={(e) => edit('showOverflowTooltip', e.target.value, currentRow.current.id)} >
+                <Radio value={true}>是</Radio>
+                <Radio value={false}>否</Radio>
+              </Radio.Group>
+            </Col>
+            <Col span={24} className="c-r10 mt-4">注：内容过长时会隐藏内容，并在鼠标悬停时以tooltip形式展示全部内容，默认为false</Col>
+          </Row>
         </div>
       </Drawer>
     </div>

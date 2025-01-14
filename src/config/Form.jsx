@@ -187,6 +187,14 @@ const VForm = ({ onChange }) => {
     return '{}'
   }
 
+  // 自动注入忽略
+  const autoIgnore = (type) => {
+    if(type === 'function') {
+      return `(form) => { return form.status !== '失败' }`
+    }
+    return `this.action !== 'add'`
+  }
+
   // 处理输出json，去掉不需要的字段与默认值
   const processJson = () => {
     return _.map(tableData, (q) => {
@@ -215,9 +223,16 @@ const VForm = ({ onChange }) => {
     let resultStr = JSON.stringify(arr)
     // 字典字段去引号
     const filterDicts = _.map(arr, (item) => {
-      return (item.type === 'select' || item.type === 'radio' || item.type === 'radio-button') && item.data
+      return (item.type === 'select' || item.type === 'select-tree' || item.type === 'radio' || item.type === 'radio-button' ) && item.data
     })
     _.forEach(filterDicts, (f) => {
+      resultStr = _.replace(resultStr, `"${f}"`, f)
+    })
+    // 忽略字段去引号
+    const filterIgnore = _.map(arr, (item) => {
+      return item.ignore
+    })
+    _.forEach(filterIgnore, (f) => {
       resultStr = _.replace(resultStr, `"${f}"`, f)
     })
     // 规则字段去引号
@@ -286,6 +301,7 @@ const VForm = ({ onChange }) => {
                   { value: 'input', label: 'input-文本输入' },
                   { value: 'input-number', label: 'input-number-数字输入(v5)'},
                   { value: 'select', label: 'select-下拉' },
+                  { value: 'select-tree', label: 'select-tree-下拉树(v9)' },
                   { value: 'custom', label: 'custom-自定义' },
                   { value: 'textarea', label: 'textarea-文本域输入(v2)'},
                   { value: 'radio', label: 'radio-单选(v5)'},
@@ -315,7 +331,16 @@ const VForm = ({ onChange }) => {
             <Col span={24} className="c-r10 mt-4">注：需要映射字典时使用，非字典自定义数据集请随意填写后在代码中修改</Col>
           </Row>
           }
-          { currentRow.current.type === 'select' &&
+          { currentRow.current.type === 'select-tree' && 
+          <Row className="my-12" gutter={4}>
+            <Col span={6} className="f-r --c">数据集</Col>
+            <Col span={18}>
+            <Input value={currentRow.current.data} onChange={(e) => edit('data', e.currentTarget.value, currentRow.current.id)} />
+            </Col>
+            <Col span={24} className="c-r10 mt-4">注：默认映射关系为label: 'label' , value: 'id'，如需定制，则需要调整，详见<a href="./base-form" target='_blank'>示例代码</a></Col>
+          </Row>
+          }
+          { currentRow.current.type === 'select' || currentRow.current.type === 'select-tree' &&
           <React.Fragment>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">是否多选</Col>
@@ -325,8 +350,12 @@ const VForm = ({ onChange }) => {
                   <Radio value={false}>否</Radio>
                 </Radio.Group>
               </Col>
-              <Col span={24} className="c-r10 mt-4">注：不填即默认为否</Col>
+              <Col span={24} className="c-r10 mt-4">注：不填type=select默认为否,type=select-tree默认为是</Col>
             </Row>
+          </React.Fragment>
+          }
+          { currentRow.current.type === 'select' &&
+          <React.Fragment>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">是否可搜索</Col>
               <Col span={18}>
@@ -335,7 +364,7 @@ const VForm = ({ onChange }) => {
                   <Radio value={false}>否</Radio>
                 </Radio.Group>
               </Col>
-              <Col span={24} className="c-r10 mt-4">注：不填即默认为否</Col>
+              <Col span={24} className="c-r10 mt-4">注：不填即默认为是</Col>
             </Row>
           </React.Fragment>
           }
@@ -493,7 +522,7 @@ const VForm = ({ onChange }) => {
                   ]}
                 />
               </Col>
-              <Col span={24} className="c-r10 mt-4">注：不填即默认yyyy[w]WW（补0），输出格式化存在bug，无法直接输出例如yyyy-WW这种格式，默认输出的是当前选择周的周一Date对象，如需要存当年周数，可以用momentjs或者dayjs转换一下</Col>
+              <Col span={24} className="c-r10 mt-4">注：不填即默认yyyy[w]WW（补0），输出格式化存在bug，无法直接输出例如yyyy-WW这种格式，默认输出的是当前选择周的周一Date对象，如需要存当年周数，可以用dayjs转换一下</Col>
             </Row>
           </React.Fragment>
           }
@@ -517,7 +546,7 @@ const VForm = ({ onChange }) => {
                   ]}
                 />
               </Col>
-              <Col span={24} className="c-r10 mt-4">注：不填即默认yyyy-MM-dd（补0）</Col>
+              <Col span={24} className="c-r10 mt-4">注：不填即默认yyyy-MM（补0）</Col>
             </Row>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">输出格式化</Col>
@@ -555,7 +584,7 @@ const VForm = ({ onChange }) => {
                   ]}
                 />
               </Col>
-              <Col span={24} className="c-r10 mt-4">注：不填即默认yyyy-MM-dd（补0）</Col>
+              <Col span={24} className="c-r10 mt-4">注：不填即默认yyyy（补0）</Col>
             </Row>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">输出格式化</Col>
@@ -678,6 +707,15 @@ const VForm = ({ onChange }) => {
               </Col>
             </Row>
             <Row className="my-12" gutter={4}>
+              <Col span={6} className="f-r --c">提示信息</Col>
+              <Col span={18}>
+                <Space.Compact style={{ width: '100%' }}>
+                  <Input value={currentRow.current.tooltip} onChange={(e) => edit('tooltip', e.currentTarget.value, currentRow.current.id)} />
+                </Space.Compact>
+              </Col>
+              <Col span={24} className="c-r10 mt-4">注：label提示信息，会在label前显示一个问号icon，鼠标悬停时显示输入的提示信息</Col>
+            </Row>
+            <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">内容宽度</Col>
               <Col span={18}>
                 <Input value={currentRow.current.width} onChange={(e) => edit('width', e.currentTarget.value, currentRow.current.id)} />
@@ -730,11 +768,11 @@ const VForm = ({ onChange }) => {
               <Col span={6} className="f-r --c">是否忽略</Col>
               <Col span={18}>
                 <Radio.Group value={currentRow.current.ignore} onChange={(e) => edit('ignore', e.target.value, currentRow.current.id)} >
-                  <Radio value={true}>是</Radio>
-                  <Radio value={false}>否</Radio>
+                  <Radio value={autoIgnore('boolean')}>Boolean</Radio>
+                  <Radio value={autoIgnore('function')}>Function</Radio>
                 </Radio.Group>
               </Col>
-              <Col span={24} className="c-r10 mt-4">注：一般用于某一表单项在特定场景下显示或者忽略，详见<a href="./base-form" target='_blank'>示例代码</a></Col>
+              <Col span={24} className="c-r10 mt-4">注：一般用于某一表单项在特定场景下显示或者忽略，选择后会生成示例代码，可复制到config里修改</Col>
             </Row>
           </React.Fragment>
         </div>
