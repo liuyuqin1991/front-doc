@@ -306,6 +306,8 @@ const VForm = ({ onChange }) => {
                   { value: 'textarea', label: 'textarea-文本域输入(v2)'},
                   { value: 'radio', label: 'radio-单选(v5)'},
                   { value: 'radio-button', label: 'radio-button-单选按钮(v5)'},
+                  { value: 'checkbox', label: 'checkbox-复选(v10)'},
+                  { value: 'checkbox-button', label: 'checkbox-button-复选按钮(v10)'},
                   { value: 'password', label: 'password-密码输入'},
                   { value: 'fileUpload', label: 'fileUpload-文件上传(v4)'},
                   { value: 'imageUpload', label: 'imageUpload-图片上传(v4)'},
@@ -322,7 +324,7 @@ const VForm = ({ onChange }) => {
               />
             </Col>  
           </Row>
-          { (currentRow.current.type === 'select' || currentRow.current.type === 'radio' || currentRow.current.type === 'radio-button') && 
+          { (currentRow.current.type === 'select' || currentRow.current.type === 'radio' || currentRow.current.type === 'radio-button' || currentRow.current.type === 'checkbox' || currentRow.current.type === 'checkbox-button') && 
           <Row className="my-12" gutter={4}>
             <Col span={6} className="f-r --c">字典数据集</Col>
             <Col span={18}>
@@ -695,7 +697,7 @@ const VForm = ({ onChange }) => {
             </Row>
           </React.Fragment>
           }
-          { currentRow.current.type !== 'custom' && 
+          { (currentRow.current.type !== 'radio' && currentRow.current.type !== 'radio-button' && currentRow.current.type !== 'checkbox' && currentRow.current.type !== 'checkbox-button' && currentRow.current.type !== 'fileUpload' && currentRow.current.type !== 'imageUpload')&& 
           <React.Fragment>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">占位字符</Col>
@@ -706,6 +708,30 @@ const VForm = ({ onChange }) => {
                 </Space.Compact>
               </Col>
             </Row>
+          </React.Fragment>
+          }
+          {currentRow.current.type !== 'custom' &&
+          <React.Fragment>
+            <Row className="my-12" gutter={4}>
+              <Col span={6} className="f-r --c">内容宽度</Col>
+              <Col span={18}>
+                <Input value={currentRow.current.width} onChange={(e) => edit('width', e.currentTarget.value, currentRow.current.id)} />
+              </Col>
+              <Col span={24} className="c-r10 mt-4">注：填入例如'200px'或'80%'，不填即默认100%宽度</Col>
+            </Row>
+            <Row className="my-12" gutter={4}>
+              <Col span={6} className="f-r --c">是否禁用</Col>
+              <Col span={18}>
+                <Radio.Group value={currentRow.current.disabled} onChange={(e) => edit('disabled', e.target.value, currentRow.current.id)} >
+                  <Radio value={true}>是</Radio>
+                  <Radio value={false}>否</Radio>
+                </Radio.Group>
+              </Col>
+              <Col span={24} className="c-r10 mt-4">注：用于特殊表单项的禁用判断，不填即默认为全局控制，即新增修改不禁用，查看禁用，若需代码条件控制，可随意填写后代码中再修改</Col>
+            </Row>
+          </React.Fragment>
+          }
+          <React.Fragment>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">提示信息</Col>
               <Col span={18}>
@@ -714,13 +740,6 @@ const VForm = ({ onChange }) => {
                 </Space.Compact>
               </Col>
               <Col span={24} className="c-r10 mt-4">注：label提示信息，会在label前显示一个问号icon，鼠标悬停时显示输入的提示信息</Col>
-            </Row>
-            <Row className="my-12" gutter={4}>
-              <Col span={6} className="f-r --c">内容宽度</Col>
-              <Col span={18}>
-                <Input value={currentRow.current.width} onChange={(e) => edit('width', e.currentTarget.value, currentRow.current.id)} />
-              </Col>
-              <Col span={24} className="c-r10 mt-4">注：填入例如'200px'或'80%'，不填即默认100%宽度</Col>
             </Row>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">规则</Col>
@@ -744,19 +763,6 @@ const VForm = ({ onChange }) => {
               </Col>
               <Col span={24} className="c-r10 mt-4">注：如需自定义，请先选择必填后再在代码里修改，点击查看<a href="https://github.com/yiminghe/async-validator" target='_blank'>校验规则</a></Col>
             </Row>
-            <Row className="my-12" gutter={4}>
-              <Col span={6} className="f-r --c">是否禁用</Col>
-              <Col span={18}>
-                <Radio.Group value={currentRow.current.disabled} onChange={(e) => edit('disabled', e.target.value, currentRow.current.id)} >
-                  <Radio value={true}>是</Radio>
-                  <Radio value={false}>否</Radio>
-                </Radio.Group>
-              </Col>
-              <Col span={24} className="c-r10 mt-4">注：用于特殊表单项的禁用判断，不填即默认为全局控制，即新增修改不禁用，查看禁用，若需代码条件控制，可随意填写后代码中再修改</Col>
-            </Row>
-          </React.Fragment>
-          }
-          <React.Fragment>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">占据列数</Col>
               <Col span={18}>

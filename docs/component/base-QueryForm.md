@@ -69,7 +69,7 @@ data: {
 ```
 
 3. span
-   占据列数，用于超长的查询项，默认占据 1 列，需小于 columns
+   占据列数，用于超长的查询项，默认占据 1 列，需小于 columns，特别注意这个span并非栅格布局中的span
   
 4. format与valueFormat
   type 为 data、daterange、datetimerange 特有，同elementui里DatePicker组件里的format与value-format

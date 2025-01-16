@@ -272,7 +272,7 @@ title: 导航
     <a href="https://www.wangeditor.com/v5/for-frame.html" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">wangeditor</div>
+        <div class="title">Wangeditor</div>
       </div>
       <div class="sub-title">富文本编辑器</div>
     </a>
@@ -281,7 +281,7 @@ title: 导航
     <a href="https://github.com/saucxs/watermark-dom" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">watermark-dom</div>
+        <div class="title">Watermark-dom</div>
       </div>
       <div class="sub-title">水印生成</div>
     </a>
@@ -290,7 +290,7 @@ title: 导航
     <a href="https://x6.antv.vision/zh/docs/tutorial/getting-started" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">antV-x6</div>
+        <div class="title">AntV-x6</div>
       </div>
       <div class="sub-title">流程图、DAG图、ER图等图应用</div>
     </a>
