@@ -11,7 +11,7 @@ group:
 
 # quickcss
 
-quickcss 是一个专门针对 web 业务向开发的轻量级 acss 库，提供了在使用最为频繁的 css 属性时的最方便类名记法。
+quickcss 是一个专门针对 web 业务向开发的轻量级 acss 库，师从Tailwind，并进行优化和简化，提高开发效率，降低心智负担。
 
 ![quickcss](../assets/quickcss.png)
 
