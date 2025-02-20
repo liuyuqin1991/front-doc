@@ -20,7 +20,7 @@ title: 导航
     <a href="https://blog.csdn.net/nav/web" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">CSDN</div>
+        <div class="title">Csdn</div>
       </div>
       <div class="sub-title">专业开发者社区</div>
     </a>
@@ -47,7 +47,7 @@ title: 导航
     <a href="https://www.v2ex.com/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">V2EX</div>
+        <div class="title">V2ex</div>
       </div>
       <div class="sub-title">一个关于分享和探索的地方</div>
     </a>
@@ -349,7 +349,7 @@ title: 导航
     <a href="https://www.javasoho.com/vuetreeselect/index_cn.html" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-treeselect</div>
+        <div class="title">Vue-treeselect</div>
       </div>
       <div class="sub-title">vue-treeselect是一个多选组件，具有对Vue.js嵌套选项支持</div>
     </a>
@@ -358,7 +358,7 @@ title: 导航
     <a href="https://www.itxst.com/vue-draggable/tutorial.html" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-draggable</div>
+        <div class="title">Vue-draggable</div>
       </div>
       <div class="sub-title">一款基于Sortable.js实现的vue拖拽插件。支持移动设备、拖拽和选择文本、智能滚动</div>
     </a>
@@ -367,7 +367,7 @@ title: 导航
     <a href="https://github.com/PanJiaChen/vue-countTo" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-count-to</div>
+        <div class="title">Vue-count-to</div>
       </div>
       <div class="sub-title">数字显示美化</div>
     </a>
@@ -376,7 +376,7 @@ title: 导航
     <a href="https://github.com/501351981/vue-office" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-office</div>
+        <div class="title">Vue-office</div>
       </div>
       <div class="sub-title">支持多种文件(docx、excel、pdf、pptx)预览的vue组件库，支持vue2/3。也支持非Vue框架的预览</div>
     </a>
@@ -385,7 +385,7 @@ title: 导航
     <a href="https://github.com/simple-uploader/vue-uploader" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-uploader</div>
+        <div class="title">Vue-uploader</div>
       </div>
       <div class="sub-title">大文件上传</div>
     </a>
@@ -394,7 +394,7 @@ title: 导航
     <a href="https://chenxuan0000.github.io/vue-seamless-scroll/zh" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-seamless-scroll</div>
+        <div class="title">Vue-seamless-scroll</div>
       </div>
       <div class="sub-title">一个简单的基于vue.js的无缝滚动</div>
     </a>
@@ -403,7 +403,7 @@ title: 导航
     <a href="https://github.com/leezng/vue-json-pretty" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-json-pretty</div>
+        <div class="title">Vue-json-pretty</div>
       </div>
       <div class="sub-title">一个 JSON 美化工具</div>
     </a>
@@ -412,7 +412,7 @@ title: 导航
     <a href="https://kazupon.github.io/vue-i18n/zh/introduction.html" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vue-i18n</div>
+        <div class="title">Vue-i18n</div>
       </div>
       <div class="sub-title">Vue.js的国际化插件</div>
     </a>
@@ -567,7 +567,7 @@ title: 导航
     <a href="https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">vscode</div>
+        <div class="title">Vscode</div>
       </div>
       <div class="sub-title">vscode插件官方中文文档</div>
     </a>
