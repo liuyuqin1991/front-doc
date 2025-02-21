@@ -342,7 +342,7 @@ const VForm = ({ onChange }) => {
             <Col span={24} className="c-r10 mt-4">注：默认映射关系为label: 'label' , value: 'id'，如需定制，则需要调整，详见<a href="./base-form" target='_blank'>示例代码</a></Col>
           </Row>
           }
-          { currentRow.current.type === 'select' || currentRow.current.type === 'select-tree' &&
+          { (currentRow.current.type === 'select' || currentRow.current.type === 'select-tree') &&
           <React.Fragment>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">是否多选</Col>
@@ -352,7 +352,7 @@ const VForm = ({ onChange }) => {
                   <Radio value={false}>否</Radio>
                 </Radio.Group>
               </Col>
-              <Col span={24} className="c-r10 mt-4">注：不填type=select默认为否,type=select-tree默认为是</Col>
+              <Col span={24} className="c-r10 mt-4">注：不填type=select默认为否，type=select-tree默认为是</Col>
             </Row>
           </React.Fragment>
           }
