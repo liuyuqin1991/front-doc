@@ -12,10 +12,10 @@ features:
   - title: 规范
     emoji: ✏️
     description: 统一团队的ES6+的vue语法风格、书写习惯、命名规范，减少程序出错的概率，也包含了git相关流程及规范
-  - title: 业务组件库
+  - title: 组件
     emoji: 🏠
     description: 统一公司前端业务组件库，为公司项目开发提供丰富的业务级组件，使用规范化的组件搭建公司项目，一致，反馈，效率，可控
-  - title: 文档
+  - title: 知识
     emoji: 📁
-    description: 各个项目及日常开发工作中的相关文档整理，分类，方便查阅
+    description: 前端技术相关文档整理，分类，方便查阅
 ---

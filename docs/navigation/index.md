@@ -469,12 +469,30 @@ title: 导航
 
 <div class="ul">
   <div class="li">
+    <a href="https://www.deepseek.com/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Deepseek</div>
+      </div>
+      <div class="sub-title">Deepseek</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://www.doubao.com/chat/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">豆包</div>
+      </div>
+      <div class="sub-title">字节跳动-豆包</div>
+    </a>
+  </div>
+  <div class="li">
     <a href="https://kimi.moonshot.cn/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
         <div class="title">Kimi</div>
       </div>
-      <div class="sub-title">Moonshot AI 出品的智能助手</div>
+      <div class="sub-title">月之暗面出品，Moonshot AI 出品的智能助手</div>
     </a>
   </div>
   <div class="li">
