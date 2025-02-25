@@ -118,6 +118,7 @@ group:
 |数据模拟|**mock.js**| <https://github.com/nuysoft/Mock>| 方便前端生成模拟数据，它基于 数据模板 生成模拟数据，基于 HTML模板 生成模拟数据，拦截并模拟 ajax 请求。 Github: <https://github.com/nuysoft/Mock> 官方地址： [http://mockjs.com](http://mockjs.com/)|
 |表格插件|**Datatables.js**| <https://github.com/DataTables/DataTables>| Datatables是一款基于jQuery表格插件。 Github: <https://github.com/DataTables/DataTables>官方网站： <https://www.datatables.net/>|
 |时间插件|**moment.js**| <https://github.com/moment/moment>| JavaScript 日期处理类库。|
+||**dayjs**| <https://dayjs.fenxianglu.cn/>|JavaScript 日期处理类库。|
 |图表插件|**echarts**| <https://github.com/ecomfe/echarts>| 图标类控件。 官方地址： <http://echarts.baidu.com/index.html>|
 |模板引擎|**handlebars.js**| <https://github.com/wycats/handlebars.js/>| Handlebars.js是一套js模版引擎，是一款基于Jquery的插件，以json对象为数据源，支持逻辑判断、循环等操作，同时具有非常好的扩展性，体积60KB左右 教程： <http://www.cnblogs.com/iyangyuan/archive/2013/12/12/3471227.html http://keenwon.com/992.html http://www.ghostchina.com/introducing-the-handlebars-js-templating-engine/>|
 ||**jade(pug)**| <https://github.com/pugjs/pug>| jade是一套js模版引擎，现已改名pug 官方网站： <http://jade-lang.com/> 教程： <http://www.nooong.com/docs/jade_chinese.htm http://cnodejs.org/topic/5368adc5cf738dd6090060f2 https://www.w3cplus.com/html/how-to-use-jade.html>|
@@ -127,8 +128,9 @@ group:
 |动画视觉特效|**rainyday.js**| <https://github.com/mubaidr/rainyday.js>|Rainyday.js 是一个轻量的 JavaScript库，利用 HTML5 Canvas 实现雨滴下落在玻璃表面的动画效果。Rainyday.js尽可能的模拟现实的雨滴效果，几乎可以以假乱真了|
 ||**Vivus**| <https://github.com/maxwellito/vivus>|是一个能动画js类库，它能够给SVG图像显示出被画出来的过程。Vivus是没有其他类库依赖的（比如jQuery)。你仅仅需要在页面中加入这个.js文件，然后传入需要被用来动画的SVG部分就行。同时通过指定一些配置，它能够在页面加载后直接显示动画效果|
 ||**loading**| <http://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html>|使用 CSS3 实现超炫的 Loading（加载）动画效果|
+||**Rough Notation**| <https://roughnotation.com/>| 用于在网页上创建和动画注释，使用RoughJS来创建手绘的外观|
 |tooltip提示|**popper.js**| <https://github.com/FezVrasta/popper.js>| Popper.js 是一个扩展性较好的 tooltips 提示类 JS 插件，不需要依赖 jQuery 库，大小仅为 3.5KB 左右，使用与配置相当简单|
 |触摸滑动|**swiper.js**|<https://github.com/nolimits4web/swiper>|开源、免费、强大的触摸滑动插件 中文官方网站： <https://www.swiper.com.cn/>|
 |下拉刷新，上拉加载|**dropload.js**| <https://github.com/ximan/dropload>| 移动端下拉刷新、上拉加载更多插件|
 ||**mescroll.js**| <https://github.com/mescroll/mescroll>| 移动端下拉刷新、上拉加载更多插件 官方网站： <http://www.mescroll.com/index.html>|
-|日历|**FullCalendar**| <https://fullcalendar.io>| 日历插件|||**mescroll.js**| <https://github.com/mescroll/mescroll>| 移动端下拉刷新、上拉加载更多插件 官方网站： <http://www.mescroll.com/index.html>|
+|日历|**FullCalendar**| <https://fullcalendar.io>| 日历插件|

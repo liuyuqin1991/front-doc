@@ -134,7 +134,7 @@ title: 导航
   
 </div>
 
-### UI库
+### Ui库
 
 <div class="ul">
   <div class="li">
@@ -306,7 +306,7 @@ title: 导航
   </div>
 </div>
 
-### vue 生态
+### Vue 生态
 
 <div class="ul">
   <div class="li">
@@ -419,7 +419,7 @@ title: 导航
   </div>
 </div>
 
-### react 生态
+### React 生态
 
 <div class="ul">
   <div class="li">
@@ -433,7 +433,7 @@ title: 导航
   </div>
 </div>
 
-### css
+### Css
 
 <div class="ul">
   <div class="li">
@@ -465,7 +465,7 @@ title: 导航
   </div>
 </div>
 
-### AI
+### Ai
 
 <div class="ul">
   <div class="li">
@@ -496,7 +496,7 @@ title: 导航
     </a>
   </div>
   <div class="li">
-    <a href="https://www.sass.hk/docs/" target="_blank" class="a">
+    <a href="https://yiyan.baidu.com/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
         <div class="title">文心一言</div>
@@ -505,7 +505,7 @@ title: 导航
     </a>
   </div>
   <div class="li">
-    <a href="https://animate.style/" target="_blank" class="a">
+    <a href="https://gnomic.cn/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
         <div class="title">Gnomic智能体</div>
