@@ -23,8 +23,8 @@ order: 10
 | :-------------: | :---------------------------- | :-----: | :------: | :-----------------------------------------------: |
 | height | 高度  | Number  |   可选   |                         550                         |
 | mode | 显示模式     | String  |   可选   |                         'simple'                         |
-| start<sup style="color: red">v2</sup>  | 有效的开始日期     | String  |   可选   |                         undefined                         |
-| end<sup style="color: red">v2</sup>  | 有效的结束日期     | String  |   可选   |                         undefined                        |
+| start<Badge>v2</Badge>  | 有效的开始日期     | String  |   可选   |                         undefined                         |
+| end<Badge>v2</Badge>  | 有效的结束日期     | String  |   可选   |                         undefined                        |
 
 注：
 

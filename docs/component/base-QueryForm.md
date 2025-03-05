@@ -45,12 +45,12 @@ order: 2
 |    span     | 占据列数，小于columns列数        |     Number     |             否             |
 |    format     | 显示格式化                    |     String     |             否             |
 |    valueFormat     | 输出格式化                    |     String     |             否             |
-|   filterable<sup style="color: red">v3</sup>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
+|   filterable<Badge>v3</Badge>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
 
 注：
 
 1. type
-   列类型，可选值：input（输入框）、select（下拉框）、data（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<sup style="color: red">v2</sup>（时间）、timerange<sup style="color: red">v2</sup>（时间范围）、custom（自定义）
+   列类型，可选值：input（输入框）、select（下拉框）、data（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<Badge>v2</Badge>（时间）、timerange<Badge>v2</Badge>（时间范围）、custom（自定义）
 
 2. data
    type 为 select 特有，下拉框数据集，类型为 Array 或 Object，示例如下：

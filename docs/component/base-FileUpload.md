@@ -35,7 +35,7 @@ order: 6
 | :------: | :----------- | :----------------: |
 | success  | 成功上传回调 | fileListStr 字符串 |
 |  error   | 失败上传回调 |     error 对象     |
-|  remove<sup style="color: red">v1.2</sup>   | 删除列表数据回调 |  fileListStr 字符串     |
+|  remove<Badge>v1.2</Badge>   | 删除列表数据回调 |  fileListStr 字符串     |
 
 ### Slot
 

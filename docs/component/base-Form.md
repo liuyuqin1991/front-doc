@@ -51,7 +51,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 ##### Divider内的表单层级（第二层级）
 
 |    参数     | 说明                        |      类型      |          是否必须          |
-| :---------: | :-------------------------- | :------------: | :------------------------: |
+| :---------------- | :-------------------------- | :---------: | :--------------: |
 |    type     | 表单form-item类型                |     String     |             是             |
 |    label    | 表单label                |     String     |             是             |
 |    name     | 插槽名称，type 为 custom 的特殊form-item场景定制时使用         |     String     |            否，但 type 为 custom 必须             |
@@ -62,25 +62,25 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |   disabled  | form-item内容是否禁用     |     Boolean     |             否             |
 |    span     | 占据列数，小于columns列数        |     Number     |             否             |
 |    data     | 数据集，type 为 select、select-tree、radio 特有      | [Array,Object] | 否，但 type 为 select、select-tree、radio 必须 | 
-|   multiple<sup style="color: red">v6</sup>   | 是否多选，type 为 select 与 select-tree特有   |     Boolean     |            否             |
-|   filterable<sup style="color: red">v6</sup>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
-|    rows<sup style="color: red">v2</sup>     | 文本域行数，type 为 textarea 特有         |     Number     |            否             |
+|   multiple<Badge>v6</Badge>   | 是否多选，type 为 select 与 select-tree特有   |     Boolean     |            否             |
+|   filterable<Badge>v6</Badge>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
+|    rows<Badge>v2</Badge>     | 文本域行数，type 为 textarea 特有         |     Number     |            否             |
 |    format     | 显示格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
 |    valueFormat     | 输出格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
 |   prepend   | 输入框前置内容，type 为 input 特有         |     String     |            否             |
 |   append   | 输入框后置内容，type 为 input 特有         |     String     |            否             |
-|   ignore<sup style="color: red">v3</sup>   | form-item内容是否忽略     |     [Boolean, Function]     |            否             |
-|   limit<sup style="color: red">v4</sup>   | 上传数量限制，type 为 fileUpload 与 imageUpload 特有   |     Number     |            否             |
-|   fileSize<sup style="color: red">v4</sup>   | 上传大小（MB）限制，type 为 fileUpload 与 imageUpload 特有   |     Number     |            否             |
-|   fileType<sup style="color: red">v4</sup>   | 上传类型限制，type 为 fileUpload 与 imageUpload 特有   |     Array     |            否             |
-|   min<sup style="color: red">v5</sup>   | 输入最小值，type 为 input-number 特有   |     Number     |            否             |
-|   max<sup style="color: red">v5</sup>   | 输入最大值，type 为 input-number 特有   |     Number     |            否             |
-|   tooltip<sup style="color: red">v8</sup>   | label的提示信息   |     String     |            否             |
+|   ignore<Badge>v3</Badge>   | form-item内容是否忽略     |     [Boolean, Function]     |            否             |
+|   limit<Badge>v4</Badge>   | 上传数量限制，type 为 fileUpload 与 imageUpload 特有   |     Number     |            否             |
+|   fileSize<Badge>v4</Badge>   | 上传大小（MB）限制，type 为 fileUpload 与 imageUpload 特有   |     Number     |            否             |
+|   fileType<Badge>v4</Badge>   | 上传类型限制，type 为 fileUpload 与 imageUpload 特有   |     Array     |            否             |
+|   min<Badge>v5</Badge>   | 输入最小值，type 为 input-number 特有   |     Number     |            否             |
+|   max<Badge>v5</Badge>   | 输入最大值，type 为 input-number 特有   |     Number     |            否             |
+|   tooltip<Badge>v8</Badge>   | label的提示信息   |     String     |            否             |
 
 注：
 
 1. type
-   列类型，可选值：input（输入框）、input-number<sup style="color: red">v5</sup>（数字输入框）、password（密码）、textarea<sup style="color: red">v2</sup>（文本域）、select（下拉框）、select-tree<sup style="color: red">v9</sup>（下拉树）、radio<sup style="color: red">v5</sup>（单选）、radio-button<sup style="color: red">v5</sup>（单选按钮）、checkbox<sup style="color: red">v10</sup>（复选）、checkbox-button<sup style="color: red">v10</sup>（复选按钮）、date（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<sup style="color: red">v7</sup>（时间）、timerange<sup style="color: red">v7</sup>（时间范围）、fileUpload<sup style="color: red">v4</sup>（文件上传）、imageUpload<sup style="color: red">v4</sup>（图片上传）、custom（自定义）
+   列类型，可选值：input（输入框）、input-number<Badge>v5</Badge>（数字输入框）、password（密码）、textarea<Badge>v2</Badge>（文本域）、select（下拉框）、select-tree<Badge>v9</Badge>（下拉树）、radio<Badge>v5</Badge>（单选）、radio-button<Badge>v5</Badge>（单选按钮）、checkbox<Badge>v10</Badge>（复选）、checkbox-button<Badge>v10</Badge>（复选按钮）、date（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<Badge>v7</Badge>（时间）、timerange<Badge>v7</Badge>（时间范围）、fileUpload<Badge>v4</Badge>（文件上传）、imageUpload<Badge>v4</Badge>（图片上传）、custom（自定义）
 
 2. data
    type 为 select、select-tree、radio、radio-button、checkbox、checkbox-button 特有，示例如下：

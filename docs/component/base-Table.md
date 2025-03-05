@@ -26,16 +26,16 @@ order: 3
 |     page-size   | 每页显示条目个数，分页必须，需要加sync                      |       Number       |   可选   |   10    |
 |  selectable   | 多选框配置                                               | [Boolean,Function] |   可选   | false  |
 | serializable  | 是否在行头显示序号                                       |      Boolean       |   可选   | false  |
-| default-expand-all<sup style="color: red">v5</sup>  | 是否默认展开所有行，当 Table 包含展开行存在或者为树形表格时有效    |      Boolean       |   可选   | true  |
+| default-expand-all<Badge>v5</Badge>  | 是否默认展开所有行，当 Table 包含展开行存在或者为树形表格时有效    |      Boolean       |   可选   | true  |
 | show-top-action | 是否显示 top action                                      |      Boolean       |   可选   |  true  |
 | height | 表格高度，与 el-table 组件中 height 结构一致                 |      Number       |   可选   |  undefined  |
 | max-height | 表格最大高度，与 el-table 组件中 max-height 结构一致            |      Number       |   可选   |  undefined  |
 | is-height-outer-resize | 是否外部自适应高度，如开启此项，就不要传height与max-height           |      Boolean       |   可选   |  false  |
 | row-key | 列表rowKey，与el-table中的row-key 结构一致          |      [String, Function]      |   可选   |  'id'  |
 | cell-style | 单元格的 style 的回调方法， 与 el-table 组件中 cell-style 结构一致 |      [Function, Object]      |   可选   |  undefined  |
-| span-method<sup style="color: red">v3</sup> | 合并行或列的计算方法 的回调方法， 与 el-table 组件中 span-method 结构一致 |      Function      |   可选   |  undefined  |
-| row-class-name<sup style="color: red">v4</sup> | 行的 className 的回调方法， 与 el-table 组件中 row-class-name 结构一致 |      [Function, String]      |   可选   |  undefined  |
-| cell-class-name<sup style="color: red">v4</sup> | 单元格的 className 的回调方法， 与 el-table 组件中 cell-class-name 结构一致 |      [Function, String]      |   可选   |  undefined  |
+| span-method<Badge>v3</Badge> | 合并行或列的计算方法 的回调方法， 与 el-table 组件中 span-method 结构一致 |      Function      |   可选   |  undefined  |
+| row-class-name<Badge>v4</Badge> | 行的 className 的回调方法， 与 el-table 组件中 row-class-name 结构一致 |      [Function, String]      |   可选   |  undefined  |
+| cell-class-name<Badge>v4</Badge> | 单元格的 className 的回调方法， 与 el-table 组件中 cell-class-name 结构一致 |      [Function, String]      |   可选   |  undefined  |
 
 注：
 
@@ -84,11 +84,11 @@ order: 3
 | sortable | 是否排序                                               | Boolean |            否             |
 |   dict   | type 为 text 和 tag 特有，字典数据，需要映射字典时使用 |  Array  |            否             |
 |  click   | type 为 text 和 tag 特有，自定义点击事件 emit 的名称   | String  |            否             |
-|  showOverflowTooltip<sup style="color: red">v5</sup>   | type 为 text 特有，当内容过长被隐藏时显示 tooltip   | Boolean  |            否             |
+|  showOverflowTooltip<Badge>v5</Badge>   | type 为 text 特有，当内容过长被隐藏时显示 tooltip   | Boolean  |            否             |
 |   map    | type 为 text 特有，map 数据，需要映射 map 时使用       | Object  |            否             |
 | mapSize  | type 为 image 特有，map 数据，需要映射 map 时使用      | Object  | 否，但 type 为 image 必须 |
-| disabledFilter<sup style="color: red">v2</sup> | 禁用列过滤，如设置true，则该列不受列过滤影响持续显示 | Boolean |            否             |
-| isHidden<sup style="color: red">v2</sup> | 是否隐藏列，如设置true，则该列在表格初始化时不显示 | Boolean |            否             |
+| disabledFilter<Badge>v2</Badge> | 禁用列过滤，如设置true，则该列不受列过滤影响持续显示 | Boolean |            否             |
+| isHidden<Badge>v2</Badge> | 是否隐藏列，如设置true，则该列在表格初始化时不显示 | Boolean |            否             |
 
 注：
 
