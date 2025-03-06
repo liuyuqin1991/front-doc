@@ -79,6 +79,10 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 
 注：
 
+:::warning{title=重要}
+为降低心智负担，文档库配备了可视化页面来创建Form表单配置代码，详见左侧菜单<配置可视化>
+:::
+
 1. type
    列类型，可选值：input（输入框）、input-number<Badge>v5</Badge>（数字输入框）、password（密码）、textarea<Badge>v2</Badge>（文本域）、select（下拉框）、select-tree<Badge>v9</Badge>（下拉树）、radio<Badge>v5</Badge>（单选）、radio-button<Badge>v5</Badge>（单选按钮）、checkbox<Badge>v10</Badge>（复选）、checkbox-button<Badge>v10</Badge>（复选按钮）、date（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<Badge>v7</Badge>（时间）、timerange<Badge>v7</Badge>（时间范围）、fileUpload<Badge>v4</Badge>（文件上传）、imageUpload<Badge>v4</Badge>（图片上传）、custom（自定义）
 
@@ -130,7 +134,7 @@ data: {
 
 ### 1. 简单表单
 
-![form-1](../assets/base-component/form-form-simple.png)
+![form-1](../assets/base-component/form-simple.png)
 
 <details>
   <summary><b style="color: #0366d6">查看代码</b></summary>

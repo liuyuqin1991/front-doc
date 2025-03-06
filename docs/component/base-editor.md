@@ -13,6 +13,8 @@ order: 9
 
 基于 wangeditor 的 @wangeditor/editor-for-vue 插件库进行封装，只适用于一般富文本编辑，包含基础功能，不包含视频。
 
+![VEditor](../assets/base-component/editor.png)
+
 ## 属性
 
 ### Attributes

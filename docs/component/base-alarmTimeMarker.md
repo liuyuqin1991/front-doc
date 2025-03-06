@@ -104,7 +104,7 @@ export default {
 <template>
   <div class="b-time-marker">
     <div v-for="w in weeks" :key="`time-marker-week-${w.id}`" class="f-r --c my-12">
-      <div class="f-r --c h-28 fs-14">{{ w.name }}</div>
+      <div class="f-r --c h-28 fs-14">{{ t(w.name) }}</div>
       <div class="b-time-bar" />
       <div>
         <el-popover v-model="visible[w.id]" placement="top" width="200" @show="setTimeRange()">
