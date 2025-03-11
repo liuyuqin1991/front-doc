@@ -127,8 +127,8 @@ export default {
           </div>
           <el-button slot="reference" type="text" size="mini" :disabled="action === 'view'">{{ t('新增') }}</el-button>
         </el-popover>
-        <el-button type="text" size="mini" style="margin-left:10px;" :disabled="action === 'view'" @click="resetAllTime(w)">{{ t('重置') }}</el-button>
-        <el-button type="text" size="mini" :disabled="action === 'view'" @click="deleteAllTime(w)">{{ t('删除') }}</el-button>
+        <el-button type="text" size="mini" style="margin-left:10px;" :disabled="action === 'view'" @click="resetDayTime(w)">{{ t('重置') }}</el-button>
+        <el-button type="text" size="mini" :disabled="action === 'view'" @click="deleteDayTime(w)">{{ t('删除') }}</el-button>
       </div>
     </div>
     <el-popover v-for="time in value" :key="`time-marker-day-${time.id}`" v-model="visible[time.id]" placement="top" width="200" @show="setTimeRange(time)">
@@ -183,31 +183,31 @@ export default {
       visible: {},
       weeks: [
         {
-          id: '1',
+          id: 'week1',
           name: '星期一'
         },
         {
-          id: '2',
+          id: 'week2',
           name: '星期二'
         },
         {
-          id: '3',
+          id: 'week3',
           name: '星期三'
         },
         {
-          id: '4',
+          id: 'week4',
           name: '星期四'
         },
         {
-          id: '5',
+          id: 'week5',
           name: '星期五'
         },
         {
-          id: '6',
+          id: 'week6',
           name: '星期六'
         },
         {
-          id: '7',
+          id: 'week7',
           name: '星期日'
         }
       ],
@@ -280,13 +280,13 @@ export default {
       })
       this.$emit('input', newTimeArr)
     },
-    deleteAllTime(w) {
+    deleteDayTime(w) {
       const newTimeArr = _.filter(this.value, (d) => {
         return d.dayOfWeek !== w.id
       })
       this.$emit('input', newTimeArr)
     },
-    resetAllTime(w) {
+    resetDayTime(w) {
       const newTimeArr = _.filter(this.value, (d) => {
         return d.dayOfWeek !== w.id
       })

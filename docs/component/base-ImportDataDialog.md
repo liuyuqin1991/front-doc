@@ -7,6 +7,7 @@ group:
   order: 1
 title: VImportDataDialog
 order: 8
+debug: true
 ---
 
 # VImportDataDialog

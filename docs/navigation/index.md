@@ -278,12 +278,12 @@ title: 导航
     </a>
   </div>
   <div class="li">
-    <a href="https://github.com/saucxs/watermark-dom" target="_blank" class="a">
+    <a href="https://fabricjs.cc/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
-        <div class="title">Watermark-dom</div>
+        <div class="title">Fabricjs</div>
       </div>
-      <div class="sub-title">水印生成</div>
+      <div class="sub-title">一款流行的Canvas操作库</div>
     </a>
   </div>
   <div class="li">
