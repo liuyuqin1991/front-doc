@@ -3,7 +3,7 @@ nav:
   title: 规范
   order: 1
 group:
-  title: 版本控制
+  title: 项目层
   order: 4
 order: 1
 ---

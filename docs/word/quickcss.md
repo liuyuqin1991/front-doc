@@ -255,7 +255,7 @@ import '@liuyuqin1991/quickcss/lib/main.css';
 
 ### 10. 阴影
 
-用于控制元素的盒状阴影（box-shadow）的功能类，定义了常见的 5 种阴影类型。
+用于控制元素的盒状阴影（box-shadow）的功能类，定义了常见的几种阴影类型。
 
 #### 格式
 
@@ -290,7 +290,7 @@ import '@liuyuqin1991/quickcss/lib/main.css';
 
 ### 12. 伪类
 
-用于控制元素伪类的功能类，目前只定义了下列五种常见的 hover 的效果。
+用于控制元素伪类的功能类，目前只定义了下列几种常见的 hover 的效果。
 
 #### 格式
 
@@ -310,7 +310,7 @@ import '@liuyuqin1991/quickcss/lib/main.css';
 
 ### 13. 位置
 
-用于控制元素位置（position）的功能类，目前定义了下列3种常见的position效果
+用于控制元素位置（position）的功能类，目前定义了下列几种常见的position效果
 
 #### 格式
 
