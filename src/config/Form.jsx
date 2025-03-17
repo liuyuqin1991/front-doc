@@ -128,6 +128,7 @@ const VForm = ({ onChange }) => {
       type: 'input',
       rows: 2,
       span: 1,
+      tip: '',
       limit: 5,
       fileSize: 5,
       fileType: ['doc','docx','xls','xlsx','ppt','pptx','txt','pdf','png','jpg']
@@ -206,6 +207,7 @@ const VForm = ({ onChange }) => {
       temp.rows === 2 && delete temp.rows
       temp.prepend === '' && delete temp.prepend
       temp.append === '' && delete temp.append
+      temp.tip === '' && delete temp.tip
       temp.limit === 5 && delete temp.limit
       temp.fileSize === 5  && delete temp.fileSize
       _.isEqual(temp.fileType,['doc','docx','xls','xlsx','ppt','pptx','txt','pdf','png','jpg']) && delete temp.fileType
@@ -424,6 +426,13 @@ const VForm = ({ onChange }) => {
           }
           { (currentRow.current.type === 'fileUpload' || currentRow.current.type === 'imageUpload' ) && 
           <React.Fragment>
+            <Row className="my-12" gutter={4}>
+              <Col span={6} className="f-r --c">个性化提示</Col>
+              <Col span={18}>
+                <Input value={currentRow.current.tip} onChange={(e) => edit('tip', e.currentTarget.value, currentRow.current.id)} />
+              </Col>
+              <Col span={24} className="c-r10 mt-4">注：这是上传的定制提示，显示在限制提示文案前，颜色为普通黑色，如需更深层次定制上传提示，可使用tip插槽进行定制</Col>
+            </Row>
             <Row className="my-12" gutter={4}>
               <Col span={6} className="f-r --c">数量限制</Col>
               <Col span={18}>
