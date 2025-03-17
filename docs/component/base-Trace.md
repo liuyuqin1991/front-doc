@@ -9,9 +9,11 @@ title: VTrace
 order: 5
 ---
 
-# VTrace
+# VTrace<Badge>v1.0</Badge>
 
-重构版的追踪组件，显示填报信息（人，单位，时间）和修改信息（人，单位，时间）
+通用追踪组件，显示填报信息（人，单位，时间）和修改信息（人，单位，时间），在表单的查看页面限制，不会在新增和修改表单中显示
+
+![Trace](../assets/base-component/trace.png)
 
 ## 属性
 

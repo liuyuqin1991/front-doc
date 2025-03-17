@@ -9,9 +9,9 @@ title: VFullCalendar
 order: 10
 ---
 
-# VFullCalendar
+# VFullCalendar<Badge>v2.1</Badge>
 
-基于 FullCalendar 插件库进行封装，适用于一般日历功能，包含显示农历，法定节假日，调休。
+基于 FullCalendar 插件库进行封装，适用于一般日历功能场景，实现了显示农历，法定节假日，调休等功能。
 
 ![full-calendar](../assets/base-component/full-calendar.png)
 

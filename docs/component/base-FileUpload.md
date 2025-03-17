@@ -9,9 +9,11 @@ title: VFileUpload
 order: 6
 ---
 
-# VFileUpload
+# VFileUpload<Badge>v2.2</Badge>
 
-基于 element ui 的 FileUpload 进行封装，只适用于一般文件上传并显示文件目录。
+基于 element ui 的 FileUpload 进行封装，适用于一般文件上传场景。
+
+![FileUpload](../assets/base-component/file-upload.png)
 
 ## 属性
 
@@ -27,7 +29,6 @@ order: 6
 |    disabled     | 是否禁用                      | Boolean |   可选   |                       false                       |
 |      size       | 按钮大小 ，可选'small'或'big' | String  |   可选   |                      'small'                      |
 |      label      | 按钮文字                      | String  |   可选   |                        ''                         |
-|    forbidden-characters     | 禁用字符数组       | Array  |   可选   |  ['：', '？', '，', '！', '；']                     |
 
 ### Event
 

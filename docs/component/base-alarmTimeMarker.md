@@ -9,9 +9,9 @@ title: VAlarmTimeMarker
 order: 96
 ---
 
-# VAlarmTimeMarker
+# VAlarmTimeMarker<Badge>v1.0</Badge>
 
-告警时段选择组件，能直观显示一个标准周内的所有告警时段，支持增删改时间段，一键重置与一键删除当天时间段
+告警时段选择组件，实现了直观显示一个标准周内的所有告警时段，支持增删改时间段，一键重置与一键删除当天时间段等功能。
 
 ![VAlarmTimeMarker](../assets/base-component/alarm-time-marker.png)
 

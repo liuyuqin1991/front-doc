@@ -9,9 +9,11 @@ title: VTable
 order: 3
 ---
 
-# VTable
+# VTable<Badge>v5.2</Badge>
 
-基于 element ui 的 Table 进行了封装，只适用于一般通用表格。
+基于 element ui 的 Table 进行了封装，实现了一般通用表格展示、自定义功能按钮、隐藏/显示搜索栏、刷新数据、列过滤、分页、批量操作等功能。
+
+![Table](../assets/base-component/table.png)
 
 ## 属性
 

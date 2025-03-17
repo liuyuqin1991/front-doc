@@ -9,7 +9,7 @@ title: VProcessFlow
 order: 97
 ---
 
-# VProcessFlow
+# VProcessFlow<Badge>v1.0</Badge>
 
 基于 @antv/x6 二开的工艺流程编辑组件
 

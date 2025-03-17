@@ -9,9 +9,11 @@ title: VForm
 order: 1
 ---
 
-# VForm
+# VForm<Badge>v10.2</Badge>
 
-基于 element ui 的 Form 定制新增/修改/查看模版组件
+基于 element ui 的 Form 进行封装，实现了一般通用模块表单的新增/修改/查看功能。
+
+![Form](../assets/base-component/form.png)
 
 ## 属性
 
