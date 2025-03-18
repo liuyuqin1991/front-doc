@@ -9,7 +9,7 @@ title: VForm
 order: 1
 ---
 
-# VForm<Badge>v10.2</Badge>
+# VForm<Badge>v11.0</Badge>
 
 基于 element ui 的 Form 进行封装，实现了一般通用模块表单的新增/修改/查看功能。
 
@@ -55,7 +55,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    参数     | 说明                        |      类型      |          是否必须          |
 | :---------------- | :-------------------------- | :---------: | :--------------: |
 |    type     | 表单form-item类型                |     String     |             是             |
-|    label    | 表单label                |     String     |             是             |
+|    label    | 表单label                |     String     |             否             |
 |    name     | 插槽名称，type 为 custom 的特殊form-item场景定制时使用         |     String     |            否，但 type 为 custom 必须             |
 |     key     | 键值                |     String     |             是             |
 |    width    | form-item内容宽度                |     String     |             否             |
@@ -78,6 +78,8 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |   min<Badge>v5</Badge>   | 输入最小值，type 为 input-number 特有   |     Number     |            否             |
 |   max<Badge>v5</Badge>   | 输入最大值，type 为 input-number 特有   |     Number     |            否             |
 |   tooltip<Badge>v8</Badge>   | label的提示信息   |     String     |            否             |
+|   tip<Badge>v11</Badge>   | 个性化提示，type 为 fileUpload 与 imageUpload 特有   |     String     |            否             |
+|   predefine<Badge>v11</Badge>   | 预定义颜色数组，type 为 color 特有   |     Array     |            否             |
 
 注：
 
@@ -86,7 +88,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 :::
 
 1. type
-   列类型，可选值：input（输入框）、input-number<Badge>v5</Badge>（数字输入框）、password（密码）、textarea<Badge>v2</Badge>（文本域）、select（下拉框）、select-tree<Badge>v9</Badge>（下拉树）、radio<Badge>v5</Badge>（单选）、radio-button<Badge>v5</Badge>（单选按钮）、checkbox<Badge>v10</Badge>（复选）、checkbox-button<Badge>v10</Badge>（复选按钮）、date（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<Badge>v7</Badge>（时间）、timerange<Badge>v7</Badge>（时间范围）、fileUpload<Badge>v4</Badge>（文件上传）、imageUpload<Badge>v4</Badge>（图片上传）、custom（自定义）
+   列类型，可选值：input（输入框）、input-number<Badge>v5</Badge>（数字输入框）、password（密码）、textarea<Badge>v2</Badge>（文本域）、select（下拉框）、select-tree<Badge>v9</Badge>（下拉树）、radio<Badge>v5</Badge>（单选）、radio-button<Badge>v5</Badge>（单选按钮）、checkbox<Badge>v10</Badge>（复选）、checkbox-button<Badge>v10</Badge>（复选按钮）、date（日）、week（周）、month（月）、year（年）、datetime（日期时间）、daterange（日期范围）、datetimerange（日期时间范围）、time<Badge>v7</Badge>（时间）、timerange<Badge>v7</Badge>（时间范围）、fileUpload<Badge>v4</Badge>（文件上传）、imageUpload<Badge>v4</Badge>（图片上传）、color<Badge>v11</Badge>（颜色编辑器）、custom（自定义）
 
 2. data
    type 为 select、select-tree、radio、radio-button、checkbox、checkbox-button 特有，示例如下：
@@ -132,66 +134,13 @@ data: {
 }
 ```
 
-## 示例
+6. type='custom'
+  form-item使用自定义插槽，插槽参数slotProps传递代码示例如下：
 
-### 1. 简单表单
-
-![form-1](../assets/base-component/form-simple.png)
-
-<details>
-  <summary><b style="color: #0366d6">查看代码</b></summary>
-  <pre><code> 
-    
-    <VForm ref="form" :config="formConfig" :action="action" :object="selectObj">
-      <template #nickName="slotProps">
-        <el-input v-model="slotProps.form.nickName" placeholder="请输入用户昵称" maxlength="30" style="width: 100%" />
-      </template>
-    </VForm>
-
-    computed: {
-      formConfig() {
-        return [
-          {
-            title: '基本信息',
-            type: 'form',
-            children: [
-              {
-                type: 'input',
-                label: '用户名称',
-                key: 'userName',
-                placeholder: '请输入用户名称',
-                rule: [
-                  { required: true, message: '用户名称不能为空', trigger: 'blur' }
-                ]
-              },
-              {
-                type: 'custom',
-                name: 'nickName',
-                label: '用户昵称'
-              }
-            ]
-          },
-          {
-            title: '详细信息',
-            type: 'form',
-            children: [
-              {
-                type: 'password',
-                label: '用户密码',
-                key: 'password'
-              },
-              {
-                type: 'select',
-                label: '用户状态',
-                key: 'status',
-                placeholder: '请选择用户状态',
-                data: this.dict.type.sys_normal_disable,
-                width: '70%'
-              }
-            ]
-          }
-        ]
-      }
-    }
-  </code></pre>
-</details>
+```
+<VForm ref="form" :config="formConfig" :action="action" :object="selectObj">
+  <template #{name}="slotProps">
+    <el-input v-model="slotProps.form.name" placeholder="请输入用户名" />
+  </template>
+</VForm>
+```

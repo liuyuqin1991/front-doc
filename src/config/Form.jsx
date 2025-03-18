@@ -131,7 +131,8 @@ const VForm = ({ onChange }) => {
       tip: '',
       limit: 5,
       fileSize: 5,
-      fileType: ['doc','docx','xls','xlsx','ppt','pptx','txt','pdf','png','jpg']
+      fileType: ['doc','docx','xls','xlsx','ppt','pptx','txt','pdf','png','jpg'],
+      predefine: ''
     }])
   }
 
@@ -209,6 +210,7 @@ const VForm = ({ onChange }) => {
       temp.append === '' && delete temp.append
       temp.tip === '' && delete temp.tip
       temp.limit === 5 && delete temp.limit
+      temp.predefine === '' && delete temp.predefine
       temp.fileSize === 5  && delete temp.fileSize
       _.isEqual(temp.fileType,['doc','docx','xls','xlsx','ppt','pptx','txt','pdf','png','jpg']) && delete temp.fileType
       _.isEmpty(temp.rule) && delete temp.rule
@@ -223,6 +225,7 @@ const VForm = ({ onChange }) => {
     const container = document.createElement('textarea')
     const arr = copy.src
     let resultStr = JSON.stringify(arr)
+
     // 字典字段去引号
     const filterDicts = _.map(arr, (item) => {
       return (item.type === 'select' || item.type === 'select-tree' || item.type === 'radio' || item.type === 'radio-button' ) && item.data
@@ -230,6 +233,7 @@ const VForm = ({ onChange }) => {
     _.forEach(filterDicts, (f) => {
       resultStr = _.replace(resultStr, `"${f}"`, f)
     })
+
     // 忽略字段去引号
     const filterIgnore = _.map(arr, (item) => {
       return item.ignore
@@ -237,20 +241,32 @@ const VForm = ({ onChange }) => {
     _.forEach(filterIgnore, (f) => {
       resultStr = _.replace(resultStr, `"${f}"`, f)
     })
+
     // 规则字段去引号
     const filterRules = _.map(arr, (item) => {
       return item.rule
     })
     _.forEach(filterRules, (f) => {
       // 保留一份原始f的json
-      let tempArr = JSON.stringify(f)
+      let oldStr = JSON.stringify(f)
       // 修改后的f的json
-      let resultArr = JSON.stringify(f)
+      let newStr = JSON.stringify(f)
       _.forEach(f, (a) => {
-        resultArr = _.replace(resultArr, `"${a}"`, a)
+        newStr = _.replace(newStr, `"${a}"`, a)
       })
-      resultStr = _.replace(resultStr, tempArr, resultArr)
+      resultStr = _.replace(resultStr, oldStr, newStr)
     })
+
+    // 预定义颜色去引号，变数组
+    const filterPredefine = _.map(arr, (item) => {
+      return item.predefine
+    })
+    _.forEach(filterPredefine, (f) => {
+      const oldStr = JSON.stringify(f)
+      const newStr = _.replace(JSON.stringify(_.split(f, ',')), /#/g, '\#')
+      resultStr = _.replace(resultStr, oldStr, newStr)
+    })
+
     container.innerHTML = resultStr
     document.body.appendChild(container)
     container.select()
@@ -322,6 +338,7 @@ const VForm = ({ onChange }) => {
                   { value: 'datetimerange', label: 'datetimerange-日期时间范围选择'},
                   { value: 'time', label: 'time-时分选择(v7)'},
                   { value: 'timerange', label: 'timerange-时分范围选(v7)'},
+                  { value: 'color', label: 'color-颜色编辑器(v11)'}
                 ]}
               />
             </Col>  
@@ -705,6 +722,16 @@ const VForm = ({ onChange }) => {
               <Col span={24} className="c-r10 mt-4">注：不填即绑定选择时间的Date对象（当前日期），选择后，则输出相应格式的String字符串</Col>
             </Row>
           </React.Fragment>
+          }
+          {
+            currentRow.current.type === 'color' &&
+            <Row className="my-12" gutter={4}>
+              <Col span={6} className="f-r --c">预设颜色数组</Col>
+              <Col span={18}>
+                <Input value={currentRow.current.predefine} onChange={(e) => edit('predefine', e.currentTarget.value, currentRow.current.id)} />
+              </Col>
+              <Col span={24} className="c-r10 mt-4">注：多个颜色用英文逗号隔开</Col>
+            </Row>
           }
           { (currentRow.current.type !== 'radio' && currentRow.current.type !== 'radio-button' && currentRow.current.type !== 'checkbox' && currentRow.current.type !== 'checkbox-button' && currentRow.current.type !== 'fileUpload' && currentRow.current.type !== 'imageUpload')&& 
           <React.Fragment>
