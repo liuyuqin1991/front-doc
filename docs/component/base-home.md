@@ -44,7 +44,8 @@ order: 1
 |    天气组件     | 和风天气 |  和风天气  |   [文档](https://dev.qweather.com/docs/start)    | 
 |    复杂日历组件     | VFullCalendar | 基于fullcalendar二开  |   [文档](https://fullcalendar.io/)    | 
 |    农历组件     | chinese-days |  chinese-days  |   [文档](https://github.com/vsme/chinese-days/tree/main)    | 
-|    canvas操作   | Fabric |  FabricJS  |   [文档](https://fabricjs.cc/docs/)    | 
+|    canvas操作   | Fabric |  FabricJS  |   [文档](https://fabricjs.cc/docs/)    |
+|    markdown渲染   | markdownit |  markdown-it  |   [文档](https://github.com/markdown-it/markdown-it/)    |  
 
 
 ## h5端
