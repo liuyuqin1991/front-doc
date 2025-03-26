@@ -57,7 +57,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    type     | 表单form-item类型                |     String     |             是             |
 |    label    | 表单label                |     String     |             否             |
 |    name     | 插槽名称，type 为 custom 的特殊form-item场景定制时使用         |     String     |            否，但 type 为 custom 必须             |
-|     key     | 键值                |     String     |             是             |
+|     key     | 键值                |     String     |             否，但 type 为 非custom 必须             |
 |    width    | form-item内容宽度                |     String     |             否             |
 | placeholder | 占位显示文案                |     String     |             否             |
 |    rule     | 规则               |     Array     |             否             |
@@ -65,7 +65,7 @@ config是表单配置项参数，数组中的对象是表单中的Divider对象�
 |    span     | 占据列数，小于columns列数        |     Number     |             否             |
 |    data     | 数据集，type 为 select、select-tree、radio 特有      | [Array,Object] | 否，但 type 为 select、select-tree、radio 必须 | 
 |   multiple<Badge>v6</Badge>   | 是否多选，type 为 select 与 select-tree特有   |     Boolean     |            否             |
-|   filterable<Badge>v6</Badge>   | 是否可搜索，type 为 select 特有   |     Boolean     |            是             |
+|   filterable<Badge>v6</Badge>   | 是否可搜索，type 为 select 特有   |     Boolean     |            否             |
 |    rows<Badge>v2</Badge>     | 文本域行数，type 为 textarea 特有         |     Number     |            否             |
 |    format     | 显示格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
 |    valueFormat     | 输出格式化，type 为 日期类 特有，不包含时间类                    |     String     |             否             |
