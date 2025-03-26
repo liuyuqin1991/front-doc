@@ -37,9 +37,8 @@ group:
 | N5  | $neutral-5  | <div class="f-r -sa" ><div>#b6c2cd</div><div class="item" style="background-color: #b6c2cd;" /></div>  | $icon-dark-fill                       |
 | N4  | $neutral-4  | <div class="f-r -sa" ><div>#c6d1dc</div><div class="item" style="background-color: #c6d1dc;" /></div>  |                                       |
 | N3  | $neutral-3  | <div class="f-r -sa" ><div>#d5dee7</div><div class="item" style="background-color: #d5dee7;" /></div>  | $border-color                         |
-| N2  | $neutral-2  | <div class="f-r -sa" ><div>#e4ebf1</div><div class="item" style="background-color: #e4ebf1;" /></div>  | 
-$body-background |
-| N1  | $neutral-1  | <div class="f-r -sa" ><div>#f5f7fa</div><div class="item" style="background-color: #f5f7fa;" /></div>  | $light-background                     |
+| N2  | $neutral-2  | <div class="f-r -sa" ><div>#e4ebf1</div><div class="item" style="background-color: #e4ebf1;" /></div>  | $body-background |
+| N1  | $neutral-1  | <div class="f-r -sa" ><div>#f5f7fa</div><div class="item" style="background-color: #f5f7fa;" /></div>  |  $light-background                     |
 | N0  | $neutral-0  | <div class="f-r -sa" ><div>#ffffff</div><div class="item" style="background-color: #ffffff;" /></div>  | $white                                |
 
 ## 绿色 Green
