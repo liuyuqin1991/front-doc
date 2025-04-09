@@ -9,7 +9,7 @@ title: VTable
 order: 3
 ---
 
-# VTable<Badge>v5.2</Badge>
+# VTable<Badge>v6.0</Badge>
 
 基于 element ui 的 Table 进行了封装，实现了一般通用表格展示、自定义功能按钮、隐藏/显示搜索栏、刷新数据、列过滤、分页、批量操作等功能。
 
@@ -84,6 +84,7 @@ order: 3
 |  align   | 对齐方式                                               | String  |            否             |
 |  width   | 列宽                                                   | String  |            否             |
 | sortable | 是否排序                                               | Boolean |            否             |
+|  formatter<Badge>v6</Badge>   | type 为 text 特有，格式化内容   | Function  |            否             |
 |   dict   | type 为 text 和 tag 特有，字典数据，需要映射字典时使用 |  Array  |            否             |
 |  click   | type 为 text 和 tag 特有，自定义点击事件 emit 的名称   | String  |            否             |
 |  showOverflowTooltip<Badge>v5</Badge>   | type 为 text 特有，当内容过长被隐藏时显示 tooltip   | Boolean  |            否             |
@@ -119,6 +120,22 @@ order: 3
 
 4. click
    自定义点击事件 emit 名称，设置后，在 Table 组件属性中声明与该名称相同的事件
+
+5. formatter
+   格式化内容回调函数，(value, config) => {}， value为当前值，config为当前列配置对象，例如：
+
+```
+{
+   type: 'text',
+   label: '参数键值',
+   key: 'configValue',
+   align: 'center',
+   showOverflowTooltip: true,
+   formatter: (value, config) => {
+      return _.isEmpty(value) ? '/' : value
+   }
+},
+```
 
 ### Slot
 
