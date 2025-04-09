@@ -133,6 +133,11 @@ const VTable = ({ formData }) => {
     }))
   }
 
+    // 自动注入内容格式化
+    const autoFormatter = () => {
+      return `(value, config) => { return _.isEmpty(value) ? '/' : value }`
+    }
+
   // 自动生成表单 setTableData
   const autoGenerate = () => {
     const result = []
@@ -175,14 +180,21 @@ const VTable = ({ formData }) => {
   const onCopy = (copy) => {
     const container = document.createElement('textarea')
     const arr = copy.src
+    let resultStr = JSON.stringify(arr)
     const filterStr = _.map(arr, (item) => {
       return ((item.type === 'text' || item.type === 'tag') && item.dict) || (item.type === 'text' && item.map) || (item.type === 'image' && item.mapSize)
     })
-    let tempStr = JSON.stringify(arr)
     _.forEach(filterStr, (s) => {
-      tempStr = _.replace(tempStr, `"${s}"`, s)
+      resultStr = _.replace(resultStr, `"${s}"`, s)
     })
-    container.innerHTML = tempStr
+    // 内容格式化字段去引号
+    const filterFormatter = _.map(arr, (item) => {
+      return item.formatter
+    })
+    _.forEach(filterFormatter, (f) => {
+      resultStr = _.replace(resultStr, `"${f}"`, f)
+    })
+    container.innerHTML = resultStr
     document.body.appendChild(container)
     container.select()
     document.execCommand('copy')
@@ -248,6 +260,17 @@ const VTable = ({ formData }) => {
               />
             </Col>  
           </Row>
+          { currentRow.current.type === 'text' && 
+          <Row className="my-12" gutter={4}>
+            <Col span={6} className="f-r --c">内容格式化</Col>
+            <Col span={18}>
+              <Radio.Group value={currentRow.current.formatter} onChange={(e) => edit('formatter', e.target.value, currentRow.current.id)} >
+                <Radio value={autoFormatter()}>Function</Radio>
+              </Radio.Group>
+            </Col>
+            <Col span={24} className="c-r10 mt-4">注：格式化内容回调函数</Col>
+          </Row>
+          }
           { (currentRow.current.type === 'text' || currentRow.current.type === 'tag') && 
           <Row className="my-12" gutter={4}>
             <Col span={6} className="f-r --c">字典数据集</Col>
