@@ -144,3 +144,51 @@ order: 3
 |  top-action   | 表格左上自定义 button 区               |
 | column-action | 表格行右侧操作栏                       |
 |    自定义     | 列配置中 type 为 custom 时的自定义插槽 |
+
+示例：
+
+```
+<VTable
+   ref="table"
+   :config="tableColumnsConfig"
+   :data="tableData"
+   :total="total"
+   :page-num.sync="queryParams.pageNum"
+   :page-size.sync="queryParams.pageSize"
+   serializable
+   selectable
+   is-height-outer-resize
+   @refresh="getTableData"
+   @selection-change="selectionChange"
+   @sort="sort"
+>
+   <template #status>
+      <el-table-column :label="t('状态')" align="center">
+         <template slot-scope="scope">
+            <el-switch v-model="scope.row.status" active-value="0" inactive-value="1" @change="handleStatusChange(scope.row)" />
+         </template>
+      </el-table-column>
+   </template>
+   <template #top-action>
+      <el-button type="primary" icon="el-icon-plus" size="mini" @click="showAdd()">{{ t('新增') }}</el-button>
+      <el-button type="primary" icon="el-icon-delete" size="mini" @click="showBatchDeleteDialog()">{{ t('批量删除') }}</el-button>
+      <el-button type="primary" icon="el-icon-download" size="mini" @click="handleExport">{{ t('导出') }}</el-button>
+   </template>
+   <template #column-action>
+      <el-table-column :label="t('操作')" width="200" align="center">
+         <template slot-scope="scope">
+            <el-button type="text" size="mini" @click="showEditDialog(scope.row)">{{ t('修改') }}</el-button>
+            <el-button type="text" size="mini" @click="showDetailDialog(scope.row)">{{ t('查看') }}</el-button>
+            <el-button type="text" size="mini" @click="handleDelete(scope.row)">{{ t('删除') }}</el-button>
+            <el-dropdown size="mini" @command="(command) => handleCommand(command, scope.row)">
+               <el-button size="mini" type="text">{{ t('更多') }}</el-button>
+               <el-dropdown-menu slot="dropdown">
+               <el-dropdown-item command="handleRun">{{ t('执行一次') }}</el-dropdown-item>
+               <el-dropdown-item command="handleJobLog">{{ t('调度日志') }}</el-dropdown-item>
+               </el-dropdown-menu>
+            </el-dropdown>
+         </template>
+      </el-table-column>
+   </template>
+</VTable>
+```
