@@ -9,7 +9,7 @@ title: VTree
 order: 4
 ---
 
-# VTree<Badge>v1.1</Badge>
+# VTree<Badge>v1.2</Badge>
 
 基于 element ui 的 Tree 进行树组件封装，适用于展示一个通用树，实现了树展示、关键字查询、节点收起/展开、树左收起/展开、树局部拉宽/收窄等功能
 

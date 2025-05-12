@@ -9,7 +9,7 @@ title: VImageUpload
 order: 7
 ---
 
-# VImageUpload<Badge>v2.2</Badge>
+# VImageUpload<Badge>v2.3</Badge>
 
 基于 element ui 的 FileUpload 进行封装，适用于一般图片上传场景。
 
