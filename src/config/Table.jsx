@@ -261,15 +261,24 @@ const VTable = ({ formData }) => {
             </Col>  
           </Row>
           { currentRow.current.type === 'text' && 
-          <Row className="my-12" gutter={4}>
-            <Col span={6} className="f-r --c">内容格式化</Col>
-            <Col span={18}>
-              <Radio.Group value={currentRow.current.formatter} onChange={(e) => edit('formatter', e.target.value, currentRow.current.id)} >
-                <Radio value={autoFormatter()}>Function</Radio>
-              </Radio.Group>
-            </Col>
-            <Col span={24} className="c-r10 mt-4">注：格式化内容回调函数</Col>
-          </Row>
+          <React.Fragment>
+            <Row className="my-12" gutter={4}>
+              <Col span={6} className="f-r --c">内容格式化</Col>
+              <Col span={18}>
+                <Radio.Group value={currentRow.current.formatter} onChange={(e) => edit('formatter', e.target.value, currentRow.current.id)} >
+                  <Radio value={autoFormatter()}>Function</Radio>
+                </Radio.Group>
+              </Col>
+              <Col span={24} className="c-r10 mt-4">注：格式化内容回调函数</Col>
+            </Row>
+            <Row className="my-12" gutter={4}>
+              <Col span={6} className="f-r --c">空值占位符</Col>
+              <Col span={18}>
+                <Input value={currentRow.current.emptyPlaceholder} onChange={(e) => edit('emptyPlaceholder', e.currentTarget.value, currentRow.current.id)} />
+              </Col>
+              <Col span={24} className="c-r10 mt-4">注：格式化undefined、''、null三类数据，一般填'-'、'/'这类字符串，优先级低于内容格式化</Col>
+            </Row>
+          </React.Fragment>
           }
           { (currentRow.current.type === 'text' || currentRow.current.type === 'tag') && 
           <Row className="my-12" gutter={4}>
