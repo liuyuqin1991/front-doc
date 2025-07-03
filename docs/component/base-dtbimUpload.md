@@ -5,15 +5,15 @@ nav:
 group:
   title: 基础组件
   order: 1
-title: VFileUpload
-order: 6
+title: VDtbimUpload
+order: 8
 ---
 
-# VFileUpload<Badge>v2.2</Badge>
+# VDtbimUpload<Badge>v1.0</Badge>
 
-基于 element ui 的 FileUpload 进行封装，适用于一般文件上传场景。
+基于 element ui 的 FileUpload 进行封装，只适用于Dtbim模型文件上传场景。[dtbim官方文档](https://www.dtbim.cn/)
 
-![FileUpload](../assets/base-component/file-upload.png)
+![DtbimUpload](../assets/base-component/dtbim-upload.png)
 
 ## 属性
 
@@ -22,6 +22,8 @@ order: 6
 |      参数       | 说明                          |  类型   | 是否必须 |                      默认值                       |
 | :-------------: | :---------------------------- | :-----: | :------: | :-----------------------------------------------: |
 | value / v-model | v-model 绑定值                | String  |   必选   |                        ''                         |
+|   project-id    | 项目id                      | String  |   必选   |                        ''                         |
+|      token      | dtbim的token                  | String  |   必选   |                        ''                         |
 |      limit      | 上传数量限制                  | Number  |   可选   |                         5                         |
 |    file-size     | 上传文件大小限制              | Number  |   可选   |                         5                         |
 |    file-type     | 上传文件类型                  |  Array  |   可选   | ['doc','docx','xls','xlsx','ppt','pptx','txt','pdf','png','jpg'] |

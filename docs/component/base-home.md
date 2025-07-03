@@ -29,13 +29,14 @@ order: 1
 |    通用表单     | VForm |  基于element二开  |      | 
 |    通用跟踪     | VTrace |  基于element二开  |      | 
 |    通用文件上传     | VFileUpload |  基于element二开  |      | 
-|    通用图片上传     | VImageUpload |  vue-treeselect  |   [文档](https://www.javasoho.com/vuetreeselect/index_cn.html)   | 
-|    通用大文件上传     | uploader |  vue-simple-uploader  |   [文档](https://github.com/simple-uploader/vue-uploader)   | 
+|    通用图片上传     | VImageUpload |  基于element二开  |     | 
+|    dtbim模型文件上传  | VDtbimUpload |  基于element二开  |    | 
 |    fbx/obj模型渲染     | VShowModule |  基于three二开  |      | 
 |    bimface模型渲染     | VBimface |  基于bimface二开  |      | 
+|    告警时段     | VAlarmTimeMarker |  基于element二开  |      |
 |    高德地图渲染     | VMap |  基于高德地图api二开  |      | 
-|    工艺流程图     | VProcessFlow |  基于@antv/x6二开  |   [文档](https://x6.antv.vision/zh/docs/tutorial/getting-started)   | 
-|    告警时段     | VAlarmTimeMarker |  基于element二开  |      | 
+|    工艺流程图     | VProcessFlow |  基于element和@antv/x6二开  |   [文档](https://x6.antv.vision/zh/docs/tutorial/getting-started)   | 
+|   通用大文件上传     | uploader |  vue-simple-uploader  |   [文档](https://github.com/simple-uploader/vue-uploader)   | 
 |    自动滚动     | vue-seamless-scroll |  vue-seamless-scroll  |   [文档](https://chenxuan0000.github.io/vue-seamless-scroll/zh/)   | 
 |    轮播     | swiper |  swiper  |    [文档](https://www.swiper.com.cn/index.html)  | 
 |    word预览     | vue-office/docx |  vue-office/docx  |   [文档](https://github.com/501351981/vue-office)    | 
