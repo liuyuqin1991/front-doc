@@ -173,13 +173,22 @@ title: 导航
       <div class="sub-title">轻量、可靠的移动端 Vue UI组件库</div>
     </a>
   </div>
-    <div class="li">
+  <div class="li">
     <a href="https://vant-ui.github.io/vant/v3/#/zh-CN" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
         <div class="title">Vant3</div>
       </div>
       <div class="sub-title">轻量、可靠的移动端 Vue UI组件库</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://www.jeasyui.cn/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">EasyUI</div>
+      </div>
+      <div class="sub-title">基于jQuery、Angular.、Vue和React的用户界面组件的集合</div>
     </a>
   </div>
 </div>
