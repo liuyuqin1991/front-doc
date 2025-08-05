@@ -26,7 +26,7 @@ order: 8
 |      token      | dtbim的token                  | String  |   必选   |                        ''                         |
 |      limit      | 上传数量限制                  | Number  |   可选   |                         5                         |
 |    file-size     | 上传文件大小限制              | Number  |   可选   |                         5                         |
-|    file-type     | 上传文件类型                  |  Array  |   可选   | ['doc','docx','xls','xlsx','ppt','pptx','txt','pdf','png','jpg'] |
+|    file-type     | 上传文件类型                  |  Array  |   可选   |                     ['rvt']                       |
 |    is-show-tip    | 是否显示提示                  | Boolean |   可选   |                       true                        |
 |    disabled     | 是否禁用                      | Boolean |   可选   |                       false                       |
 |      size       | 按钮大小 ，可选'small'或'big' | String  |   可选   |                      'small'                      |
