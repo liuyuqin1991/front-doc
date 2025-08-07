@@ -13,8 +13,6 @@ order: 2
 
 基于 element ui 的 Form 进行查询栏表单封装，实现了一般查询表单展示、搜索、重置等功能。
 
-![QueryForm](../assets/base-component/query-form.png)
-
 ## 属性
 
 ### Attributes

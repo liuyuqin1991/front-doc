@@ -13,8 +13,6 @@ order: 1
 
 基于 element ui 的 Form 进行封装，实现了一般通用模块表单的新增/修改/查看功能。
 
-![Form](../assets/base-component/form.png)
-
 ## 属性
 
 ### Attributes
