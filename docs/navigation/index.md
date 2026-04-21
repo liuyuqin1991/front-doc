@@ -478,6 +478,78 @@ title: 导航
 
 <div class="ul">
   <div class="li">
+    <a href="https://www.anthropic.com/claude-code" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Claude Code</div>
+      </div>
+      <div class="sub-title">Anthropic 推出的终端智能编程助手</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://openai.com/codex/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Codex</div>
+      </div>
+      <div class="sub-title">OpenAI 面向开发者的代码智能体能力</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://www.cursor.com/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Cursor</div>
+      </div>
+      <div class="sub-title">面向工程师的 AI 原生代码编辑器</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://chatglm.cn/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">GLM（智谱清言）</div>
+      </div>
+      <div class="sub-title">智谱 AI 推出的 GLM 系列大模型助手</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://platform.moonshot.cn/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Kimi 开放平台</div>
+      </div>
+      <div class="sub-title">Moonshot AI 提供的 Kimi 模型开发者平台</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://gemini.google.com/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">Gemini</div>
+      </div>
+      <div class="sub-title">Google 推出的 Gemini 多模态大模型助手</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://chatgpt.com/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">ChatGPT</div>
+      </div>
+      <div class="sub-title">OpenAI 推出的通用 AI 助手</div>
+    </a>
+  </div>
+  <div class="li">
+    <a href="https://chat.qwen.ai/" target="_blank" class="a">
+      <div class="title-box">
+        <div>🔖</div>
+        <div class="title">通义千问（Qwen）</div>
+      </div>
+      <div class="sub-title">阿里云推出的 Qwen 系列大模型助手</div>
+    </a>
+  </div>
+  <div class="li">
     <a href="https://www.deepseek.com/" target="_blank" class="a">
       <div class="title-box">
         <div>🔖</div>
