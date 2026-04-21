@@ -1,8 +1,8 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  base: '/front-doc',
-  publicPath: '/front-doc/',
+  // base: '/front-doc',
+  // publicPath: '/front-doc/',
   themeConfig: {
     logo: false,
     name: '',
